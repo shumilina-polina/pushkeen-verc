@@ -1,0 +1,46 @@
+@import "~normalize.css";
+@import url("");
+
+*,
+h1,
+h2,
+h3,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  // font-family: "Open Sans", sans-serif;
+}
+.global-container {
+  position: relative;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.container {
+  // max-width: 995px;
+  margin: 0 auto;
+}
+
+@media (max-width: 997px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 420px) {
+}
