@@ -1,5 +1,5 @@
 @import "~normalize.css";
-@import url("");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Mulish&family=Open+Sans:wght@600&display=swap");
 
 *,
 h1,
@@ -12,9 +12,15 @@ h3,
   margin: 0;
 }
 
-body {
-  // font-family: "Open Sans", sans-serif;
+ul {
+  list-style-type: none;
 }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+
 .global-container {
   position: relative;
 }
@@ -22,18 +28,17 @@ body {
 button {
   outline: none;
   cursor: pointer;
-
-  &:hover {
-    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  &:focus {
-    opacity: 0.7;
-  }
 }
 
 .container {
-  // max-width: 995px;
+  max-width: 1322px;
   margin: 0 auto;
+}
+
+.link,
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 997px) {

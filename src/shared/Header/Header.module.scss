@@ -1,0 +1,107 @@
+@import "../../styles/variables.scss";
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: $header;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: $text-light;
+  text-transform: uppercase;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.links_list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  .link_active {
+    opacity: 0.3;
+  }
+
+  & a {
+    margin-right: 64px;
+  }
+
+  & li {
+    position: relative;
+    transition: text-shadow 0.3s ease;
+
+    &:hover {
+      text-shadow: $text-shadow;
+      transition: text-shadow 0.3s ease;
+    }
+
+    &::after {
+      content: "";
+      cursor: pointer;
+      position: absolute;
+      right: -5px;
+      transform: translate(100%, -50%);
+      top: 50%;
+      width: 11px;
+      height: 11px;
+      background: url("../../assets/svg/arrow.svg");
+    }
+  }
+}
+
+.wrapper_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .contacts_list {
+    display: flex;
+    align-items: center;
+    margin-right: 67px;
+
+    .phone {
+      margin-right: 36px;
+    }
+
+    .phone,
+    .email {
+      transition: text-shadow 0.3s ease;
+      &:hover {
+        text-shadow: $text-shadow;
+        transition: text-shadow 0.3s ease;
+      }
+    }
+  }
+}
+
+.ru,
+.en {
+  color: inherit;
+  background: inherit;
+  text-transform: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  transition: text-shadow 0.3s ease;
+
+  &:hover {
+    text-shadow: $text-shadow;
+    transition: text-shadow 0.3s ease;
+  }
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.lang_active {
+  opacity: 0.3;
+}
