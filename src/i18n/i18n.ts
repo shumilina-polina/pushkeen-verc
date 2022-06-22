@@ -18,7 +18,6 @@ i18n
   .init({
     resources,
     lng: localStorage.getItem("i18nextLng") || "ru",
-    keySeparator: false,
     interpolation: {
       escapeValue: false,
     },

@@ -1,5 +1,6 @@
 import s from "./Home.module.scss";
 import rings from "../../assets/animate/ct_gif.mp4";
+import { Projects } from "./components/Projects/Projects";
 
 export const Home = () => {
   return (
@@ -9,7 +10,7 @@ export const Home = () => {
           <h1 className={s.title}>pushkeen</h1>
         </div>
         <div className="container">
-          <div className={s.wrapper}>
+          <div className={s.wrapper_slogan}>
             <div className={s.slogan}>
               <p className={s.slogan_text}>
                 <span className={s.arrow}>Pushing culture</span>
@@ -26,13 +27,14 @@ export const Home = () => {
               src={rings}
               autoPlay
               preload="auto"
-              no-controls
+              no-controls="true"
               muted
               loop
             ></video>
           </div>
         </div>
       </section>
+      <Projects/>
     </>
   );
 };

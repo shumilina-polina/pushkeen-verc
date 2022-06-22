@@ -2,88 +2,88 @@
 
 .main {
   padding-top: 90px;
-}
 
-.title_container {
-  max-width: 1368px;
-  margin: 0 auto 191px;
-}
-
-.title {
-  font-family: "IBM Plex Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 285px;
-  line-height: 202px;
-  text-transform: uppercase;
-  color: $text-dark;
-  position: relative;
-  text-align: center;
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1322px;
-    border-bottom: 1px solid $text-dark;
-    bottom: -35px;
-    left: 50%;
-    transform: translateX(-50%);
+  .title_container {
+    max-width: 1368px;
+    margin: 0 auto 191px;
   }
-}
 
-.wrapper {
-  position: relative;
-}
-
-.slogan {
-  font-family: "IBM Plex Mono";
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-  max-width: 40%;
-  margin-bottom: 199px;
-
-  &_text {
-    font-size: 40px;
-    line-height: 48px;
+  .title {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 285px;
+    line-height: 202px;
+    text-transform: uppercase;
     color: $text-dark;
-    margin-bottom: 18px;
-
-    .arrow {
-      position: relative;
-      &::after {
-        content: url("../../assets/svg/slogan_arrow.svg");
-        position: absolute;
-        line-height: 0;
-        top: calc(50% + 1px);
-        left: calc(100% + 3px);
-        transform: translateY(-50%);
-      }
-    }
-    .star {
-      position: relative;
-      &::after {
-        content: url("../../assets/svg/slogan_star.svg");
-        position: absolute;
-        line-height: 0;
-        top: 3px;
-        left: calc(100% + 3px);
-        transform: translateY(50%);
-      }
+    position: relative;
+    text-align: center;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1322px;
+      border-bottom: 1px solid $text-dark;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
-  &_desc {
-    font-size: 21px;
-    line-height: 27px;
-    color: #999999;
-  }
-}
+  .wrapper_slogan {
+    position: relative;
 
-.rings {
-  position: absolute;
-  top: 0;
-  transform: translateY(-50%);
-  right: 0;
-  display: none;
+    .slogan {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+      text-transform: uppercase;
+      max-width: 40%;
+      margin-bottom: 199px;
+
+      &_text {
+        font-size: 40px;
+        line-height: 48px;
+        color: $text-dark;
+        margin-bottom: 18px;
+
+        .arrow {
+          position: relative;
+          &::after {
+            content: url("../../assets/svg/slogan_arrow.svg");
+            position: absolute;
+            line-height: 0;
+            top: calc(50% + 1px);
+            left: calc(100% + 3px);
+            transform: translateY(-50%);
+          }
+        }
+        .star {
+          position: relative;
+          &::after {
+            content: url("../../assets/svg/slogan_star.svg");
+            position: absolute;
+            line-height: 0;
+            top: 3px;
+            left: calc(100% + 3px);
+            transform: translateY(50%);
+          }
+        }
+      }
+
+      &_desc {
+        font-size: 21px;
+        line-height: 27px;
+        color: #999999;
+      }
+    }
+
+    .rings {
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      right: 0;
+      display: none;
+    }
+  }
 }

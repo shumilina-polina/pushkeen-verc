@@ -1,3 +1,5 @@
 {
-  "part1": "To get started"
+  "main": {
+    "projects": "our projects"
+  }
 }

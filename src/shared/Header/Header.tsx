@@ -38,7 +38,6 @@ const Header = () => {
                   }
                 >
                   {linkValue.Pushkeen}
-                  {/* {t("part1")} */}
                 </li>
               </Link>
               <Link

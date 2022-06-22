@@ -3,3 +3,9 @@ export enum linkValue {
   NFT = "nft",
   PublicArt = "publicart",
 }
+
+export type Project = {
+  id: number;
+  imageURL: string;
+  title: string;
+};
