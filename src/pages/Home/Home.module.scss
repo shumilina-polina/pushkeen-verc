@@ -31,6 +31,10 @@
   }
 }
 
+.wrapper {
+  position: relative;
+}
+
 .slogan {
   font-family: "IBM Plex Mono";
   font-style: normal;
@@ -74,4 +78,12 @@
     line-height: 27px;
     color: #999999;
   }
+}
+
+.rings {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  right: 0;
+  display: none;
 }
