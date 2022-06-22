@@ -4,6 +4,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 100;
   background: $header;
   font-family: "Open Sans";
   font-weight: 600;
@@ -22,7 +23,7 @@
 .links_list {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
 
   .link_active {
     opacity: 0.3;
