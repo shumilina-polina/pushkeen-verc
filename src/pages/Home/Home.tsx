@@ -1,6 +1,8 @@
 import s from "./Home.module.scss";
 import { Projects } from "./components/Projects/Projects";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { linkValue } from "../../types/types";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -59,25 +61,35 @@ export const Home = () => {
                 <h3 className={s.develop_title}>
                   {t("main.activity.content.develop")}
                 </h3>
-                <button className={s.develop_button}>
-                  <span className={s.top}>push</span>
-                  <br />
-                  <span className={s.bottom}>
-                    {t("main.activity.content.in")} public art
-                  </span>
-                </button>
+                <Link
+                  className="link"
+                  to="/publicart"
+                  onClick={() => {
+                    localStorage.setItem("currentLink", linkValue.NFT);
+                  }}
+                >
+                  <button className={s.develop_button}>
+                    <span className={s.top}>push</span>
+                    <br />
+                    <span className={s.bottom}>
+                      {t("main.activity.content.in")} public art
+                    </span>
+                  </button>
+                </Link>
               </div>
               <div className={s.reality}>
                 <h3 className={s.reality_title}>
                   {t("main.activity.content.reality")}
                 </h3>
-                <button className={s.reality_button}>
-                  <span className={s.top}>push</span>
-                  <br />
-                  <span className={s.bottom}>
-                    {t("main.activity.content.in")} nft
-                  </span>
-                </button>
+                <Link className="link" to="/nft">
+                  <button className={s.reality_button}>
+                    <span className={s.top}>push</span>
+                    <br />
+                    <span className={s.bottom}>
+                      {t("main.activity.content.in")} nft
+                    </span>
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

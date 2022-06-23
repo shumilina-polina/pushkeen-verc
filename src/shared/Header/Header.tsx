@@ -1,14 +1,11 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../../hooks/redux";
+import { RootState } from "../../store/store";
 import { linkValue } from "../../types/types";
+import { CustomLink } from "../CustomLink";
 import s from "./Header.module.scss";
 
 const Header = () => {
-  const [currentLink, setCurrentLink] = useState(
-    localStorage.getItem("currentLink") || linkValue.Pushkeen
-  );
-
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (language: string) => {
@@ -21,61 +18,33 @@ const Header = () => {
         <div className={s.wrapper}>
           <nav className={s.links}>
             <ul className={s.links_list}>
-              <Link
+              <CustomLink
                 className="link"
                 to="/"
                 onClick={() => {
-                  setCurrentLink(linkValue.Pushkeen);
                   localStorage.setItem("currentLink", linkValue.Pushkeen);
                 }}
               >
-                <li
-                  className={
-                    s.pushkeen +
-                    (currentLink === linkValue.Pushkeen
-                      ? " " + s.link_active
-                      : "")
-                  }
-                >
-                  {linkValue.Pushkeen}
-                </li>
-              </Link>
-              <Link
+                <li className={s.pushkeen}>{linkValue.Pushkeen}</li>
+              </CustomLink>
+              <CustomLink
                 className="link"
                 to="/nft"
                 onClick={() => {
-                  setCurrentLink(linkValue.NFT);
                   localStorage.setItem("currentLink", linkValue.NFT);
                 }}
               >
-                <li
-                  className={
-                    s.nft +
-                    (currentLink === linkValue.NFT ? " " + s.link_active : "")
-                  }
-                >
-                  {linkValue.NFT}
-                </li>
-              </Link>
-              <Link
+                <li className={s.nft}>{linkValue.NFT}</li>
+              </CustomLink>
+              <CustomLink
                 className="link"
                 to="/publicart"
                 onClick={() => {
-                  setCurrentLink(linkValue.PublicArt);
                   localStorage.setItem("currentLink", linkValue.PublicArt);
                 }}
               >
-                <li
-                  className={
-                    s.publicart +
-                    (currentLink === linkValue.PublicArt
-                      ? " " + s.link_active
-                      : "")
-                  }
-                >
-                  {linkValue.PublicArt}
-                </li>
-              </Link>
+                <li className={s.publicart}>{linkValue.PublicArt}</li>
+              </CustomLink>
             </ul>
           </nav>
 
