@@ -3,6 +3,12 @@ import { Projects } from "./components/Projects/Projects";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { linkValue } from "../../types/types";
+import i1 from "../../assets/svg/pairs/arrow_1.svg";
+import i2 from "../../assets/svg/pairs/square_2.svg";
+import i3 from "../../assets/svg/pairs/star_3.svg";
+import i4 from "../../assets/svg/pairs/triangle_4.svg";
+import i5 from "../../assets/svg/pairs/figure_5.svg";
+import i6 from "../../assets/svg/pairs/half_6.svg";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -93,6 +99,25 @@ export const Home = () => {
               </div>
             </div>
           </div>
+        </section>
+        <section className={s.pairs}>
+          <h2 className={s.pairs_title}>{t("main.pairs.title")}</h2>
+          <p className={s.pairs_content}>
+            {t("main.pairs.list.1")}
+            <img src={i1} alt="1" />
+            {t("main.pairs.list.2")}
+            <img src={i2} alt="1" />
+            {t("main.pairs.list.3")}
+            <img src={i3} alt="1" />
+            {t("main.pairs.list.4")}
+            <br />
+            <img src={i4} alt="1" />
+            {t("main.pairs.list.5")}
+            <img src={i5} alt="1" />
+            {t("main.pairs.list.6")}
+            <img src={i6} alt="1" />
+            {t("main.pairs.list.7")}
+          </p>
         </section>
       </div>
     </>

@@ -250,3 +250,28 @@
     }
   }
 }
+
+.pairs {
+  &_title,
+  &_content {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    color: $text-dark;
+    margin-bottom: 100px;
+  }
+
+  &_title {
+    margin-bottom: 50px;
+    font-size: 69px;
+    text-transform: uppercase;
+  }
+  &_content {
+    font-size: 45px;
+
+    & img {
+      margin-right: 10px;
+    }
+  }
+}
