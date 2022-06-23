@@ -8,14 +8,12 @@ export const Projects = () => {
 
   return (
     <section className={s.projects}>
-      <div className="container">
         <h2 className={s.projects_title}>{t("main.projects")}</h2>
         <div className={s.cards}>
           {projectsList.map((elem) => {
             return <Card key={elem.id} {...elem} />;
           })}
         </div>
-      </div>
     </section>
   );
 };

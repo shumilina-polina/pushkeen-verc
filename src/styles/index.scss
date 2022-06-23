@@ -12,10 +12,6 @@ h3,
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -39,6 +35,14 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: none;
 }
 
 @media (max-width: 997px) {

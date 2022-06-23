@@ -84,9 +84,170 @@
       top: 45px;
       transform: translateY(-50%);
       right: -90px;
-
       // dev
-      // display: none;
+      display: none;
+    }
+  }
+}
+
+.activity {
+  margin-bottom: 100px;
+
+  &_title {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 76px;
+    text-transform: uppercase;
+    color: $text-dark;
+    margin-bottom: 27px;
+  }
+
+  &_desc {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    color: $text-dark;
+    margin-bottom: 38px;
+  }
+
+  &_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .create_title,
+    .develop_title,
+    .reality_title {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 39px;
+      line-height: 48px;
+      color: $text-dark;
+    }
+
+    .top {
+      font-size: 47px;
+      position: relative;
+
+      &::after {
+        content: "";
+        background: url("../../assets/svg/arrow-black.svg");
+        cursor: pointer;
+        position: absolute;
+        transform: translateY(50%);
+        right: -40px;
+        top: 2px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .bottom {
+      font-size: 24px;
+    }
+
+    .develop_button,
+    .reality_button {
+      border-radius: 1000px;
+      background: inherit;
+      text-transform: inherit;
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      text-transform: uppercase;
+      color: $text-dark;
+      text-align: left;
+      border: 0px;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+      &:focus {
+        opacity: 0.6;
+      }
+    }
+
+    .create {
+      &_title {
+        margin-bottom: 35px;
+      }
+      &_list {
+        li {
+          position: relative;
+          padding-left: 20px;
+          font-family: "Mulish";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 26px;
+          line-height: 41px;
+
+          color: #000000;
+          &::before {
+            content: "";
+            position: absolute;
+            list-style-type: disc;
+            display: list-item;
+            width: 1px;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .buttons_wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .develop {
+        margin-right: 94px;
+        &_title {
+          margin-bottom: 44px;
+        }
+        &_button {
+          padding: 81px 22px;
+          position: relative;
+          &::before {
+            content: "";
+            z-index: -1;
+            background: url("../../assets/svg/circle_button.svg");
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 227px;
+            height: 227px;
+          }
+        }
+      }
+      .reality {
+        &_title {
+          margin-bottom: 17px;
+        }
+        &_button {
+          padding: 112px 75px 91px 58px;
+
+          position: relative;
+          &::before {
+            content: "";
+            background: url("../../assets/svg/star_button.svg");
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            // left: 50%;
+            left: calc(50% + 10px);
+            transform: translate(-50%, -50%);
+            width: 261px;
+            height: 268px;
+          }
+        }
+      }
     }
   }
 }
