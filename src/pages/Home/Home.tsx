@@ -1,5 +1,5 @@
 import s from "./Home.module.scss";
-import rings from "../../assets/animate/ct_gif.mp4";
+import rings from "../../assets/animate/rings50fps.gif";
 import { Projects } from "./components/Projects/Projects";
 
 export const Home = () => {
@@ -21,20 +21,11 @@ export const Home = () => {
                 *продвигаем культуру, внедряем инновации
               </span>
             </div>
-            <video
-              className={s.rings}
-              width="900"
-              src={rings}
-              autoPlay
-              preload="auto"
-              no-controls="true"
-              muted
-              loop
-            ></video>
+            <img className={s.rings} src={rings} alt="rings" />
           </div>
         </div>
       </section>
-      <Projects/>
+      <Projects />
     </>
   );
 };

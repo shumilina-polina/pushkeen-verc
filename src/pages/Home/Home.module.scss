@@ -79,11 +79,14 @@
     }
 
     .rings {
+      width: 950px;
       position: absolute;
-      top: 0;
+      top: 45px;
       transform: translateY(-50%);
-      right: 0;
-      display: none;
+      right: -90px;
+
+      // dev
+      // display: none;
     }
   }
 }
