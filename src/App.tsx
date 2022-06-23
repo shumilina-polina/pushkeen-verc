@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { Contact } from "./shared/Contact/Contact";
+import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         {/* <Route path="/nft" element={<><NFT /><Contact /></>} /> */}
         {/* <Route path="/publicart" element={<PublicArt />} /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }

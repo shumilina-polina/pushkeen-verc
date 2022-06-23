@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background: $header;
+  width: 100%;
+  z-index: 100;
+  background: $header;
+  color: $text-light;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 55px 85px 63px;
+  color: #ffffff;
+}
+
+.info {
+  .contacts {
+    margin-bottom: 67px;
+    .email {
+      font-family: "IBM Plex Mono";
+      line-height: 28px;
+      font-weight: 400;
+      font-size: 42px;
+      margin-bottom: 24px;
+    }
+    .phone {
+      font-family: "IBM Plex Mono";
+      line-height: 28px;
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+  .address {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+.phone,
+.email {
+  transition: text-shadow 0.3s ease;
+  display: block;
+  &:hover {
+    text-shadow: $text-shadow;
+    transition: text-shadow 0.3s ease;
+  }
+}
