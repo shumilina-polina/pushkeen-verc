@@ -1,7 +1,9 @@
 @import "../../styles/variables.scss";
 
 .footer {
-  background: $header;
+  position: absolute;
+  left: 0;
+	bottom: 0;
   width: 100%;
   z-index: 100;
   background: $header;
@@ -12,13 +14,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 55px 55px 85px 63px;
+  padding: 55px 0px 63px;
   color: #ffffff;
+  height: 359px;
 }
 
 .info {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   .contacts {
-    margin-bottom: 67px;
     .email {
       font-family: "IBM Plex Mono";
       line-height: 28px;
@@ -43,11 +49,45 @@
 }
 
 .phone,
-.email {
+.email,
+.address {
   transition: text-shadow 0.3s ease;
   display: block;
   &:hover {
     text-shadow: $text-shadow;
     transition: text-shadow 0.3s ease;
+  }
+}
+
+.social {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  .links {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+
+    & img {
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      border-radius: 100%;
+      width: 53px;
+      height: 53px;
+      &:hover {
+        box-shadow: $box-shadow;
+        transform: translateY(-5px);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+      }
+    }
+  }
+  .label {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-light;
   }
 }
