@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { useAppDispatch, useAppSelector } from "../../hooks/redux";
-import { RootState } from "../../store/store";
 import { linkValue } from "../../types/types";
-import { CustomLink } from "../CustomLink";
+import { CustomLink } from "../components/CustomLink";
 import s from "./Header.module.scss";
 
 const Header = () => {

@@ -1,5 +1,4 @@
 import s from "./Home.module.scss";
-import { Projects } from "./components/Projects/Projects";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { linkValue } from "../../types/types";
@@ -9,6 +8,8 @@ import i3 from "../../assets/svg/pairs/star_3.svg";
 import i4 from "../../assets/svg/pairs/triangle_4.svg";
 import i5 from "../../assets/svg/pairs/figure_5.svg";
 import i6 from "../../assets/svg/pairs/half_6.svg";
+import { Cards } from "../../shared/components/Cards/Cards";
+import { projectsList } from "./ProjectsList";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -40,7 +41,11 @@ export const Home = () => {
         </div>
       </section>
       <div className="container">
-        <Projects />
+        <section className={s.projects}>
+          <h2 className={s.projects_title}>{t("main.projects")}</h2>
+          <Cards list={projectsList} />
+        </section>
+
         <section className={s.activity}>
           <h2 className={s.activity_title}>{t("main.activity.title")}</h2>
           <p className={s.activity_desc}>{t("main.activity.description")}</p>

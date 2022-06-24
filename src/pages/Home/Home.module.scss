@@ -285,6 +285,21 @@
   }
 }
 
+.projects {
+  margin-bottom: 65px;
+
+  &_title {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 79px;
+    text-transform: uppercase;
+    color: $text-dark;
+    margin-bottom: 60px;
+  }
+}
+
 @keyframes slideText {
   0% {
     opacity: 0;

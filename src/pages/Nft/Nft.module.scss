@@ -1,0 +1,62 @@
+@import "../../styles/variables.scss";
+
+.desc {
+  margin-bottom: 80px;
+  padding-top: 30px;
+
+  .button {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 52px;
+    color: $text-light;
+    background: #1858fb;
+    border-radius: 100px;
+    margin-bottom: 49px;
+    padding: 0 20px;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: translateY(-5px);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+  }
+  .title {
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 69px;
+    color: $text-dark;
+    border-bottom: 1px solid $text-dark;
+    margin-bottom: 23px;
+    padding-bottom: 17px;
+  }
+  .text {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: $text-dark;
+  }
+}
+
+.collections {
+  margin-bottom: 99px;
+  .title {
+    margin-bottom: 60px;
+  }
+}
+
+.title {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 68px;
+  line-height: 79px;
+  text-transform: uppercase;
+  color: $text-dark;
+}
