@@ -33,7 +33,7 @@ export const Home = () => {
             </div>
             <img
               className={s.rings}
-              src={require("../../assets/animate/rings50fps.gif")}
+              src={require("../../assets/animate/ringswhite.gif")}
               alt="rings"
             />
           </div>
