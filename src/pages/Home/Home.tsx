@@ -10,6 +10,7 @@ import i5 from "../../assets/svg/pairs/figure_5.svg";
 import i6 from "../../assets/svg/pairs/half_6.svg";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
+import { CustomLink } from "../../shared/components/CustomLink";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -42,7 +43,22 @@ export const Home = () => {
       </section>
       <div className="container">
         <section className={s.projects}>
-          <h2 className={s.projects_title}>{t("main.projects")}</h2>
+          <div className={s.projects_wrapper}>
+            <h2 className={s.projects_title}>{t("main.projects")}</h2>
+            <Link
+              className="link"
+              to="/projects"
+              style={
+                projectsList.length > 11
+                  ? { display: "block" }
+                  : { display: "none" }
+              }
+            >
+              <button type="button" className={s.button_more}>
+                {t("main.button")}
+              </button>
+            </Link>
+          </div>
           <Cards list={projectsList} />
         </section>
 
@@ -75,9 +91,6 @@ export const Home = () => {
                 <Link
                   className="link"
                   to="/publicart"
-                  onClick={() => {
-                    localStorage.setItem("currentLink", linkValue.NFT);
-                  }}
                 >
                   <button className={s.develop_button}>
                     <span className={s.top}>push</span>
@@ -92,7 +105,10 @@ export const Home = () => {
                 <h3 className={s.reality_title}>
                   {t("main.activity.content.reality")}
                 </h3>
-                <Link className="link" to="/nft">
+                <Link
+                  className="link"
+                  to="/nft"
+                >
                   <button className={s.reality_button}>
                     <span className={s.top}>push</span>
                     <br />

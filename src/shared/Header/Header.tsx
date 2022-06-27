@@ -19,27 +19,18 @@ const Header = () => {
               <CustomLink
                 className="link"
                 to="/"
-                onClick={() => {
-                  localStorage.setItem("currentLink", linkValue.Pushkeen);
-                }}
               >
                 <li className={s.pushkeen}>{linkValue.Pushkeen}</li>
               </CustomLink>
               <CustomLink
                 className="link"
                 to="/nft"
-                onClick={() => {
-                  localStorage.setItem("currentLink", linkValue.NFT);
-                }}
               >
                 <li className={s.nft}>{linkValue.NFT}</li>
               </CustomLink>
               <CustomLink
                 className="link"
                 to="/publicart"
-                onClick={() => {
-                  localStorage.setItem("currentLink", linkValue.PublicArt);
-                }}
               >
                 <li className={s.publicart}>{linkValue.PublicArt}</li>
               </CustomLink>

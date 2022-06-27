@@ -16,9 +16,6 @@ export const Nft = () => {
           <CustomLink
             className="link"
             to="/"
-            onClick={() => {
-              localStorage.setItem("currentLink", linkValue.Pushkeen);
-            }}
           >
             <button className={s.button}>{t("nft.title.button")}</button>
           </CustomLink>

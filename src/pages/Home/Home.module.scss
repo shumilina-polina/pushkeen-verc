@@ -288,6 +288,32 @@
 .projects {
   margin-bottom: 65px;
 
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button_more {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    padding: 18px 20px;
+    background: $header;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: translateY(-3px);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+  }
+
   &_title {
     font-family: "IBM Plex Mono";
     font-style: normal;
