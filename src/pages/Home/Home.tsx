@@ -1,7 +1,6 @@
 import s from "./Home.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { linkValue } from "../../types/types";
 import i1 from "../../assets/svg/pairs/arrow_1.svg";
 import i2 from "../../assets/svg/pairs/square_2.svg";
 import i3 from "../../assets/svg/pairs/star_3.svg";
@@ -10,7 +9,6 @@ import i5 from "../../assets/svg/pairs/figure_5.svg";
 import i6 from "../../assets/svg/pairs/half_6.svg";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
-import { CustomLink } from "../../shared/components/CustomLink";
 
 export const Home = () => {
   const { t } = useTranslation();

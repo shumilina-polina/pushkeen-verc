@@ -1,5 +1,34 @@
 @import "../../styles/variables.scss";
 
+.burger_menu {
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+  animation-name: slideBurger;
+  animation-fill-mode: forwards;
+  padding-bottom: 10px;
+  & .wrapper {
+    display: block;
+    padding: 16px 14px;
+  }
+  & .burger_nft,
+  .burger_publicart {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      transform: translateY(-50%);
+      top: 50%;
+      width: 11px;
+      height: 11px;
+      background: url("../../assets/svg/arrow.svg");
+    }
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -14,6 +43,7 @@
   text-transform: uppercase;
 }
 .wrapper {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,10 +54,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  // .link_active {
-  //   opacity: 0.3;
-  // }
 
   & a {
     margin-right: 64px;
@@ -105,4 +131,58 @@
 
 .lang_active {
   opacity: 0.3;
+}
+
+.burger,
+.burger * {
+  display: none;
+}
+
+.burger_list {
+  display: none;
+}
+
+@keyframes slideBurger {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//--------- MEDIA ---------
+
+@media (max-width: 420px) {
+  .burger * {
+    display: block;
+  }
+
+  .burger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger_button {
+    transition: transform 0.3s ease;
+    transform-origin: 16px 11px;
+    outline: 0;
+    border: 0;
+    background: none;
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  .wrapper {
+    padding: 16px 14px;
+  }
+
+  .links,
+  .wrapper_right {
+    display: none;
+  }
 }

@@ -3,7 +3,7 @@
 .footer {
   position: absolute;
   left: 0;
-	bottom: 0;
+  bottom: 0;
   width: 100%;
   z-index: 100;
   background: $header;
@@ -90,4 +90,9 @@
     line-height: 22px;
     color: $text-light;
   }
+}
+
+//--------- MEDIA ---------
+
+@media (max-width: 420px) {
 }
