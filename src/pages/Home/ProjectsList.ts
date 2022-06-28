@@ -46,21 +46,21 @@ export const projectsList: Project[] = [
     title: "Public Art 2",
     imageURL: "projects/publicart/logo.png",
   },
-  // {
-  //   id: 9,
-  //   title: "Public Art 2",
-  //   imageURL: "projects/publicart/logo.png",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Public Art 2",
-  //   imageURL: "projects/publicart/logo.png",
-  // },
-  // {
-  //   id: 11,
-  //   title: "Public Art 2",
-  //   imageURL: "projects/publicart/logo.png",
-  // },
+  {
+    id: 9,
+    title: "Public Art 2",
+    imageURL: "projects/publicart/logo.png",
+  },
+  {
+    id: 10,
+    title: "Public Art 2",
+    imageURL: "projects/publicart/logo.png",
+  },
+  {
+    id: 11,
+    title: "Public Art 2",
+    imageURL: "projects/publicart/logo.png",
+  },
   // {
   //   id: 12,
   //   title: "Public Art 2",

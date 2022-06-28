@@ -85,13 +85,11 @@
     }
 
     .rings {
-      width: 950px;
+      width: 800px;
       position: absolute;
-      top: 45px;
+      top: 110px;
       transform: translateY(-50%);
-      right: -90px;
-      // dev
-      // display: none;
+      right: -35px;
     }
   }
 }
@@ -358,5 +356,221 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+//--------- MEDIA ---------
+
+@media (max-width: 420px) {
+  .main {
+    padding-top: 10px;
+
+    .title_container {
+      max-width: 355px;
+      margin: 0 auto 0px;
+    }
+
+    .title {
+      font-size: 74px;
+      line-height: 80px;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -9px;
+      }
+    }
+
+    .wrapper_slogan {
+      padding-top: 300px;
+      .slogan {
+        max-width: 100%;
+        margin-bottom: 50px;
+        &_text {
+          font-size: 23px;
+          line-height: 32px;
+          margin-bottom: 5px;
+
+          .arrow {
+            &::after {
+              content: url("../../assets/svg/mobile/arrow.svg");
+            }
+          }
+          .star {
+            &::after {
+              content: url("../../assets/svg/mobile/star.svg");
+            }
+          }
+        }
+
+        &_desc {
+          font-size: 14px;
+        }
+      }
+
+      .rings {
+        width: 350px;
+        top: 0px;
+        right: unset;
+        transform: unset;
+      }
+    }
+  }
+
+  .projects {
+    margin-bottom: 35px;
+    &_wrapper {
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .button_more {
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 0px;
+      color: #ffffff;
+      padding: 9px 10px;
+    }
+
+    &_title {
+      font-size: 38px;
+      line-height: 79px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .activity {
+    margin-bottom: 161px;
+
+    &_title {
+      font-size: 38px;
+      line-height: 48px;
+      margin-bottom: 17px;
+    }
+
+    &_desc {
+      font-size: 17px;
+      line-height: 24px;
+      margin-bottom: 47px;
+    }
+
+    &_wrapper {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .create_title,
+      .develop_title,
+      .reality_title {
+        font-size: 26px;
+      }
+
+      .top {
+        font-size: 33px;
+
+        &::after {
+          background: url("../../assets/svg/mobile/arrow-white.svg") no-repeat;
+          transform: translateY(50%);
+          right: -20px;
+          top: 0px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .bottom {
+        font-size: 20px;
+      }
+
+      .develop_button,
+      .reality_button {
+        color: $text-light;
+        transition: none;
+      }
+
+      .create {
+        margin-bottom: 49px;
+
+        &_title {
+          margin-bottom: 2px;
+        }
+        &_list {
+          li {
+            padding-left: 15px;
+            font-size: 18px;
+            line-height: 29px;
+          }
+        }
+      }
+
+      .buttons_wrapper {
+        position: relative;
+        .develop {
+          width: 150px;
+          margin-right: 0px;
+          &_title {
+            margin-bottom: 10px;
+          }
+          &_button {
+            padding: 40px 0 40px 40px;
+
+            &::before {
+              content: "";
+              background: url("../../assets/svg/mobile/circle_button_hover.svg");
+              top: 0;
+              left: 0;
+              transform: none;
+              transition: none;
+              width: 174px;
+              height: 174px;
+            }
+
+            &:hover {
+              &::before {
+                background-image: url("../../assets/svg/mobile/circle_button_hover.svg");
+              }
+            }
+          }
+        }
+        .reality {
+          position: absolute;
+          bottom: -100px;
+          left: 50px;
+          display: flex;
+          align-items: center;
+          flex-direction: column-reverse;
+          &_title {
+            white-space: nowrap;
+            margin-bottom: 0px;
+          }
+          &_button {
+            padding: 80px 0 40px 55px;
+
+            &::before {
+              content: "";
+              background-image: url("../../assets/svg/mobile/star_button_hover.svg");
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              transform: none;
+              transition: none;
+              width: 199px;
+              height: 204px;
+            }
+
+            &:hover {
+              &::before {
+                background-image: url("../../assets/svg/mobile/star_button_hover.svg");
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -47,7 +47,7 @@ export const Home = () => {
               className="link"
               to="/projects"
               style={
-                projectsList.length > 11
+                projectsList.length > 12
                   ? { display: "block" }
                   : { display: "none" }
               }
@@ -86,10 +86,7 @@ export const Home = () => {
                 <h3 className={s.develop_title}>
                   {t("main.activity.content.develop")}
                 </h3>
-                <Link
-                  className="link"
-                  to="/publicart"
-                >
+                <Link className="link" to="/publicart">
                   <button className={s.develop_button}>
                     <span className={s.top}>push</span>
                     <br />
@@ -103,10 +100,7 @@ export const Home = () => {
                 <h3 className={s.reality_title}>
                   {t("main.activity.content.reality")}
                 </h3>
-                <Link
-                  className="link"
-                  to="/nft"
-                >
+                <Link className="link" to="/nft">
                   <button className={s.reality_button}>
                     <span className={s.top}>push</span>
                     <br />
