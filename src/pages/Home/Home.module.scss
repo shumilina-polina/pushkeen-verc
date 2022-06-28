@@ -546,6 +546,7 @@
           &_title {
             white-space: nowrap;
             margin-bottom: 0px;
+            margin-top: 20px;
           }
           &_button {
             padding: 80px 0 40px 55px;
@@ -570,6 +571,28 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .pairs {
+    border-bottom: none;
+    margin-bottom: 53px;
+    padding-bottom: 0;
+
+    &_title {
+      margin-bottom: 5px;
+      font-size: 38px;
+      line-height: 79px;
+    }
+    &_content {
+      font-size: 25px;
+      line-height: 38px;
+
+      & img {
+        width: 20px;
+        height: 20px;
+        margin-right: 1px;
       }
     }
   }
