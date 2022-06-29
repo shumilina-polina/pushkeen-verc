@@ -47,11 +47,6 @@ ul {
   list-style-type: none;
 }
 
-.burger_active {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
 //--------- MEDIA ---------
 
 @media (max-width: 997px) {
@@ -66,5 +61,10 @@ ul {
   }
   .container {
     max-width: 346px;
+  }
+
+  .burger_active {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
   }
 }

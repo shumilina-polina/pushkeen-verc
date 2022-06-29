@@ -11,28 +11,30 @@ function App() {
   return (
     <div className="global_container">
       <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-              <Contact />
-            </>
-          }
-        />
-        <Route
-          path="/nft"
-          element={
-            <>
-              <Nft />
-              <Contact />
-            </>
-          }
-        />
-        <Route path="/publicart" element={<PublicArt />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-      </Routes>
+      <div className="mobile_container">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Contact />
+              </>
+            }
+          />
+          <Route
+            path="/nft"
+            element={
+              <>
+                <Nft />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/publicart" element={<PublicArt />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

@@ -19,6 +19,21 @@ const Header = () => {
     i18n.changeLanguage(language);
   };
 
+  useEffect(() => {
+    const container = document.getElementsByClassName("mobile_container")[0];
+    const footer = document.getElementsByTagName("footer")[0];
+    if (isBurgerOpen) {
+      document.body.style.backgroundColor = "#161414";
+      container.setAttribute("style", "display:none");
+      footer.setAttribute("style", "border-top:1px solid #fff");
+    }
+    return () => {
+      document.body.style.backgroundColor = "";
+      container.setAttribute("style", "display:block");
+      footer.setAttribute("style", "border-top:none");
+    };
+  }, [isBurgerOpen]);
+
   return (
     <header className={s.header}>
       <div className="container">
