@@ -15,11 +15,9 @@
   .burger_pushkeen {
     margin-bottom: 20px;
     position: relative;
-    // display: block;
     width: min-content;
     &::after {
       content: "";
-      cursor: pointer;
       position: absolute;
       right: -5px;
       transform: translate(100%, -50%);
@@ -72,7 +70,6 @@
 
     &::after {
       content: "";
-      cursor: pointer;
       position: absolute;
       right: -5px;
       transform: translate(100%, -50%);

@@ -29,8 +29,8 @@ const Header = () => {
     }
     return () => {
       document.body.style.backgroundColor = "";
-      container.setAttribute("style", "display:block");
-      footer.setAttribute("style", "border-top:none");
+      container.setAttribute("style", "");
+      footer.setAttribute("style", "");
     };
   }, [isBurgerOpen]);
 

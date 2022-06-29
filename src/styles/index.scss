@@ -10,6 +10,7 @@ h3,
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: none;
 }
 
 body {
@@ -22,7 +23,6 @@ body {
 
 button {
   outline: none;
-  cursor: pointer;
   &:focus {
     opacity: 0.6;
   }
@@ -56,6 +56,18 @@ ul {
 }
 
 @media (max-width: 420px) {
+  *,
+  h1,
+  h2,
+  h3,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: auto;
+  }
+  
   body {
     padding: 60px 0 426px;
   }

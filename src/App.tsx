@@ -4,39 +4,43 @@ import { Nft } from "./pages/Nft/Nft";
 import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
 import { PublicArt } from "./pages/PublicArt/PublicArt";
 import { Contact } from "./shared/Contact/Contact";
+import CursorProvider from "./shared/CursorProvider/CursorProvider";
 import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
 
 function App() {
   return (
-    <div className="global_container">
-      <Header />
-      <div className="mobile_container">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Home />
-                <Contact />
-              </>
-            }
-          />
-          <Route
-            path="/nft"
-            element={
-              <>
-                <Nft />
-                <Contact />
-              </>
-            }
-          />
-          <Route path="/publicart" element={<PublicArt />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
+    <CursorProvider>
+      <div className="global_container">
+        <Header />
+        <div className="mobile_container">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <Contact />
+                </>
+              }
+            />
+            <Route
+              path="/nft"
+              element={
+                <>
+                  <Nft />
+                  <Contact />
+                </>
+              }
+            />
+            <Route path="/publicart" element={<PublicArt />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
+        </div>
+        <Footer />
+        {/* <div className="custom_cursor"></div> */}
       </div>
-      <Footer />
-    </div>
+    </CursorProvider>
   );
 }
 
