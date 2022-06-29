@@ -187,6 +187,7 @@
     }
 
     .create {
+      max-width: 300px;
       &_title {
         margin-bottom: 35px;
       }
@@ -635,6 +636,15 @@
         color: $text-light;
         transition: none;
         border-radius: 100px;
+
+        &:hover {
+          .top {
+            &::after {
+              content: "";
+              background: url("../../assets/svg/mobile/arrow-white.svg  ");
+            }
+          }
+        }
       }
 
       .create {
@@ -645,6 +655,7 @@
         }
         &_list {
           li {
+            white-space: nowrap;
             padding-left: 15px;
             font-size: 18px;
             line-height: 29px;

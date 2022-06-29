@@ -70,11 +70,7 @@ export const Home = () => {
               </h3>
               <ul className={s.create_list}>
                 <li>{t("main.activity.content.create.list.1")}</li>
-                <li>
-                  {t("main.activity.content.create.list.2_1")}
-                  <br />
-                  {t("main.activity.content.create.list.2_2")}
-                </li>
+                <li>{t("main.activity.content.create.list.2")}</li>
                 <li>{t("main.activity.content.create.list.3")}</li>
                 <li>{t("main.activity.content.create.list.4")}</li>
                 <li>{t("main.activity.content.create.list.5")}</li>

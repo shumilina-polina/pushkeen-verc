@@ -48,6 +48,7 @@
           border-radius: 20px;
           margin-bottom: 25px;
           transition: box-shadow 0.3s ease, transform 0.3s ease;
+          border:none;
 
           &:hover {
             box-shadow: $box-shadow;
