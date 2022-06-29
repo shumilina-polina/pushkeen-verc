@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.projects_page{
+.projects_page {
   margin-top: 50px;
   margin-bottom: 20px;
 }
@@ -14,4 +14,17 @@
   text-transform: uppercase;
   color: $text-dark;
   margin-bottom: 60px;
+}
+
+@media (max-width: 420px) {
+  .projects_page {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
 }

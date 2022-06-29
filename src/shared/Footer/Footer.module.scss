@@ -12,59 +12,17 @@
 
 .wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   padding: 55px 0px 63px;
   color: #ffffff;
   height: 359px;
 }
 
-.info {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  .contacts {
-    .email {
-      font-family: "IBM Plex Mono";
-      line-height: 28px;
-      font-weight: 400;
-      font-size: 42px;
-      margin-bottom: 24px;
-    }
-    .phone {
-      font-family: "IBM Plex Mono";
-      line-height: 28px;
-      font-weight: 500;
-      font-size: 22px;
-    }
-  }
-  .address {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-  }
-}
-
-.phone,
-.email,
-.address {
-  transition: text-shadow 0.3s ease;
-  display: block;
-  &:hover {
-    text-shadow: $text-shadow;
-    transition: text-shadow 0.3s ease;
-  }
-}
-
 .social {
   display: flex;
-  height: 100%;
   align-items: flex-start;
   justify-content: space-between;
-  flex-direction: column;
   .links {
     display: flex;
     width: 200px;
@@ -83,6 +41,39 @@
       }
     }
   }
+  .contacts {
+    .email {
+      font-family: "IBM Plex Mono";
+      line-height: 28px;
+      font-weight: 400;
+      font-size: 42px;
+      margin-bottom: 24px;
+    }
+    .phone {
+      font-family: "IBM Plex Mono";
+      line-height: 28px;
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+}
+
+.phone,
+.email,
+.address {
+  transition: text-shadow 0.3s ease;
+  display: block;
+  &:hover {
+    text-shadow: $text-shadow;
+    transition: text-shadow 0.3s ease;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
   .label {
     font-family: "Open Sans";
     font-weight: 400;
@@ -90,9 +81,57 @@
     line-height: 22px;
     color: $text-light;
   }
+  .address {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 //--------- MEDIA ---------
 
 @media (max-width: 420px) {
+  .wrapper {
+    padding: 43px 0px 63px 15px;
+    height: auto;
+  }
+
+  .social {
+    flex-direction: column;
+    .links {
+      margin-bottom: 37px;
+      width: 147px;
+      & img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .contacts {
+      margin-bottom: 62px;
+      .email {
+        font-size: 27px;
+        margin-bottom: 17px;
+      }
+      .phone {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .info {
+    align-items: flex-start;
+    flex-direction: column;
+
+    .label {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .address {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 37px;
+    }
+  }
 }
