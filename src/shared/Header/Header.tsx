@@ -24,13 +24,7 @@ const Header = () => {
       <div className="container">
         <div className={s.wrapper}>
           <div className={s.burger}>
-            <CustomLink
-              className="link"
-              to="/"
-              onClick={() => toggleBurder(false)}
-            >
-              <span className={s.pushkeen}>{linkValue.Pushkeen}</span>
-            </CustomLink>
+            <span className={s.burger_title}>Pushkeen</span>
             <button
               className={
                 s.burger_button + (isBurgerOpen ? " " + "burger_active" : "")
@@ -94,13 +88,16 @@ const Header = () => {
       <ul
         className={s.burger_menu}
         style={{ display: isBurgerOpen ? "block" : "none" }}
-        // onScroll={() => {
-        //   console.log('hi');
-        //   window.scrollTo(0, 0);
-        // }}
       >
         <div className="container">
           <div className={s.wrapper}>
+            <CustomLink
+              className="link"
+              to="/"
+              onClick={() => toggleBurder(false)}
+            >
+              <li className={s.burger_pushkeen}>{t("header")}</li>
+            </CustomLink>
             <CustomLink
               className="link"
               to="/nft"

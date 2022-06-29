@@ -463,6 +463,7 @@
       align-items: flex-start;
       flex-direction: column;
       justify-content: flex-start;
+      width: min-content;
 
       .create_title,
       .develop_title,
@@ -490,6 +491,7 @@
       .reality_button {
         color: $text-light;
         transition: none;
+        border-radius: 100px;
       }
 
       .create {
@@ -538,12 +540,15 @@
         }
         .reality {
           position: absolute;
-          bottom: -100px;
-          left: 50px;
+          bottom: -40px;
+          left: 150px;
           display: flex;
           align-items: center;
           flex-direction: column-reverse;
           &_title {
+            position: absolute;
+            bottom: -60px;
+            right: -60px;
             white-space: nowrap;
             margin-bottom: 0px;
             margin-top: 20px;

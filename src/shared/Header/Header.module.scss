@@ -11,16 +11,18 @@
     padding: 16px 14px;
   }
   & .burger_nft,
-  .burger_publicart {
+  .burger_publicart,
+  .burger_pushkeen {
     margin-bottom: 20px;
     position: relative;
-
+    // display: block;
+    width: min-content;
     &::after {
       content: "";
       cursor: pointer;
       position: absolute;
-      right: 0;
-      transform: translateY(-50%);
+      right: -5px;
+      transform: translate(100%, -50%);
       top: 50%;
       width: 11px;
       height: 11px;
@@ -140,6 +142,16 @@
 
 .burger_list {
   display: none;
+}
+
+.burger_title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 @keyframes slideBurger {
