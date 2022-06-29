@@ -9,6 +9,7 @@
   }
 
   .title {
+    z-index: -1;
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
@@ -90,6 +91,7 @@
       top: 110px;
       transform: translateY(-50%);
       right: -35px;
+      z-index: -1;
     }
   }
 }
@@ -315,9 +317,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 60px;
   }
 
   .button_more {
+    z-index: 100;
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
@@ -327,7 +331,6 @@
     padding: 18px 20px;
     background: $header;
     border-radius: 20px;
-    margin-bottom: 25px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
     &:hover {
@@ -345,7 +348,6 @@
     line-height: 79px;
     text-transform: uppercase;
     color: $text-dark;
-    margin-bottom: 60px;
   }
 }
 
@@ -360,7 +362,149 @@
 
 //--------- MEDIA ---------
 
-@media (max-width: 420px) {
+@media (max-width: 1400px) {
+  .main {
+    padding-top: 50px;
+
+    .title_container {
+      max-width: 768px;
+      margin: 0 auto 120px;
+    }
+
+    .title {
+      font-size: 162px;
+      line-height: 170px;
+
+      &::after {
+        width: 768px;
+        bottom: -20px;
+      }
+    }
+
+    .wrapper_slogan {
+      .slogan {
+        margin-bottom: 120px;
+
+        &_text {
+          font-size: 27px;
+          line-height: 40px;
+          margin-bottom: 18px;
+        }
+
+        &_desc {
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+
+      .rings {
+        width: 470px;
+        position: absolute;
+        top: 30px;
+        right: -15px;
+      }
+    }
+  }
+
+  .projects {
+    .button_more {
+      font-size: 20px;
+    }
+
+    &_title {
+      font-size: 50px;
+      line-height: 40px;
+    }
+  }
+
+  .activity {
+    margin-bottom: 70px;
+
+    &_title {
+      font-size: 50px;
+      line-height: 40px;
+    }
+
+    &_desc {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 33px;
+    }
+
+    &_wrapper {
+      .create_title,
+      .develop_title,
+      .reality_title {
+        font-size: 22px;
+        line-height: 40px;
+      }
+
+      .top {
+        font-size: 40px;
+        &::after {
+          right: -30px;
+        }
+      }
+      .bottom {
+        font-size: 20px;
+      }
+
+      .create {
+        &_title {
+          margin-bottom: 30px;
+        }
+        &_list {
+          li {
+            padding-left: 15px;
+            font-size: 22px;
+            line-height: 36px;
+          }
+        }
+      }
+
+      .buttons_wrapper {
+        .develop {
+          margin-right: 60px;
+          &_title {
+            margin-bottom: 40px;
+          }
+        }
+        .reality {
+          width: min-content;
+          &_title {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+
+  .pairs {
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+
+    &_title,
+    &_content {
+      line-height: 40px;
+    }
+
+    &_title {
+      margin-bottom: 50px;
+      font-size: 50px;
+    }
+    &_content {
+      font-size: 38px;
+
+      & img {
+        margin-right: 5px;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
   .main {
     padding-top: 10px;
 

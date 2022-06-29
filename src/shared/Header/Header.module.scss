@@ -162,7 +162,7 @@
 
 //--------- MEDIA ---------
 
-@media (max-width: 420px) {
+@media (max-width: 770px) {
   .burger * {
     display: block;
   }
@@ -189,5 +189,28 @@
   .links,
   .wrapper_right {
     display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .header {
+    font-size: 12px;
+    line-height: 28px;
+  }
+
+  .links_list {
+    & a {
+      margin-right: 40px;
+    }
+  }
+
+  .wrapper_right {
+    .contacts_list {
+      margin-right: 50px;
+
+      .phone {
+        margin-right: 26px;
+      }
+    }
   }
 }

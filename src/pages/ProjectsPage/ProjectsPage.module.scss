@@ -16,7 +16,22 @@
   margin-bottom: 60px;
 }
 
-@media (max-width: 420px) {
+//--------MEDIA--------
+
+@media (max-width: 1400px) {
+  .projects_page {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 770px) {
   .projects_page {
     margin-top: 30px;
     margin-bottom: 10px;

@@ -170,7 +170,56 @@
 
 //--------- MEDIA ---------
 
-@media (max-width: 420px) {
+@media (max-width: 1400px) {
+  .contact {
+    &_wrapper {
+      padding-bottom: 30px;
+      .content {
+        max-width: 50%;
+        height: 400px;
+
+        .title_wrapper {
+          .title {
+            font-size: 50px;
+            line-height: 40px;
+            margin-bottom: 20px;
+          }
+          .desc {
+            font-size: 20px;
+            max-width: 230px;
+          }
+        }
+
+        .button_wrapper {
+          .button {
+            font-size: 19px;
+            line-height: 22px;
+            padding: 18px 100px;
+            margin-bottom: 20px;
+          }
+          .label {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+      }
+
+      .form {
+        width: auto;
+        .input_wrapper {
+          margin-bottom: 15px;
+        }
+
+        & textarea {
+          padding: 16px 60px 0px 10px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
   .contact {
     &_wrapper {
       position: relative;

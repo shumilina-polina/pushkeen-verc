@@ -49,13 +49,16 @@ ul {
 
 //--------- MEDIA ---------
 
-@media (max-width: 997px) {
+@media (max-width: 1400px) {
+  .container {
+    max-width: 768px;
+  }
+  body {
+    padding: 60px 0 250px;
+  }
 }
 
-@media (max-width: 768px) {
-}
-
-@media (max-width: 420px) {
+@media (max-width: 770px) {
   *,
   h1,
   h2,
@@ -67,7 +70,7 @@ ul {
     margin: 0;
     cursor: auto;
   }
-  
+
   body {
     padding: 60px 0 426px;
   }

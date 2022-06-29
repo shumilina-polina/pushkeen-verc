@@ -61,7 +61,32 @@
   color: $text-dark;
 }
 
-@media (max-width: 420px) {
+//-------MEDIA-------
+
+@media (max-width: 1400px) {
+  .desc {
+    margin-bottom: 70px;
+
+    .text {
+      font-size: 22px;
+      line-height: 25px;
+    }
+  }
+
+  .collections {
+    margin-bottom: 80px;
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+
+  .title {
+    font-size: 50px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 770px) {
   .desc {
     margin-bottom: 75px;
     padding-top: 23px;

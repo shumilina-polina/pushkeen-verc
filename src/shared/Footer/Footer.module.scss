@@ -91,8 +91,48 @@
 }
 
 //--------- MEDIA ---------
+@media (max-width: 1400px) {
+  .wrapper {
+    padding: 50px 0px;
+    color: #ffffff;
+    height: 250px;
+  }
 
-@media (max-width: 420px) {
+  .social {
+    .links {
+      width: 150px;
+
+      & img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .contacts {
+      .email {
+        line-height: 23px;
+        font-size: 30px;
+        margin-bottom: 16px;
+      }
+      .phone {
+        line-height: 23px;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .info {
+    .label {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .address {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
   .wrapper {
     padding: 43px 0px 63px 15px;
     height: auto;
