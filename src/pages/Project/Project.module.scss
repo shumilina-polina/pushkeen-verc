@@ -1,15 +1,19 @@
 @import "../../styles/variables.scss";
 
 .project {
+  padding-top: 29px;
   .nav_wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 49px;
+
+    .link_wrapper {
+      margin-right: 62px;
+    }
   }
 
   &_button {
-    margin-right: 62px;
     font-family: "IBM Plex Mono";
     font-style: normal;
     text-transform: uppercase;

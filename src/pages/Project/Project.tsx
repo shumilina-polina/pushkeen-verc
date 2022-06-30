@@ -14,9 +14,14 @@ export const Project = (props: Props) => {
     <div className="container">
       <section className={s.project}>
         <nav className={s.nav_wrapper}>
-          <CustomLink className="link" to="/">
-            <button className={s.project_button}>{t("project.button")}</button>
-          </CustomLink>
+          <div className={s.link_wrapper}>
+            <CustomLink className="link " to="/">
+              <button className={s.project_button}>
+                {t("project.button")}
+              </button>
+            </CustomLink>
+          </div>
+
           <ul className={s.breadcrumb}>
             <CustomLink className="link" to="/">
               <li className={s.pushkeen}>{t("project.breadcrumb.main")}</li>

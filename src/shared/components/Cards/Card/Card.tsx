@@ -1,5 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
-import { MyMoscow } from "../../../../pages/Project/MyMoscow/MyMoscow";
+import { Link } from "react-router-dom";
 import { Project } from "../../../../types/types";
 import s from "./Card.module.scss";
 

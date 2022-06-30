@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { Nft } from "./pages/Nft/Nft";
+import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
 import { Project } from "./pages/Project/Project";
 import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
@@ -37,11 +38,22 @@ function App() {
             />
             <Route path="/publicart" element={<PublicArt />} />
             <Route path="/projects" element={<ProjectsPage />} />
+
+            {/* ------PROJECTS------- */}
+
             <Route
               path="mymoscow"
               element={
                 <Project locales_title="mymoscow">
                   <MyMoscow />
+                </Project>
+              }
+            />
+            <Route
+              path="ladogaGuide"
+              element={
+                <Project locales_title="ladoga">
+                  <Ladoga />
                 </Project>
               }
             />
