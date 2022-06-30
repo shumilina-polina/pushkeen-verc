@@ -61,5 +61,17 @@
       "title": "Наши коллекции"
     }
   },
-  "projects": "Все проекты"
+  "projects": "Все проекты",
+  "project": {
+    "button": "На главную",
+    "breadcrumb": {
+      "main": "Главная",
+      "projects": "Наши проекты"
+    },
+    "list": {
+      "myMoscow": {
+        "name": "Мой Московский"
+      }
+    }
+  }
 }

@@ -9,4 +9,5 @@ export type Project = {
   id: number;
   imageURL: string;
   title: string;
+  name: string;
 };

@@ -1,6 +1,10 @@
+import { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
+import { projectsList } from "./pages/Home/ProjectsList";
 import { Nft } from "./pages/Nft/Nft";
+import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
+import { Project } from "./pages/Project/Project";
 import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
 import { PublicArt } from "./pages/PublicArt/PublicArt";
 import { Contact } from "./shared/Contact/Contact";
@@ -35,10 +39,17 @@ function App() {
             />
             <Route path="/publicart" element={<PublicArt />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route
+              path="/mymoscow"
+              element={
+                <Project>
+                  <MyMoscow />
+                </Project>
+              }
+            />
           </Routes>
         </div>
         <Footer />
-        {/* <div className="custom_cursor"></div> */}
       </div>
     </CursorProvider>
   );
