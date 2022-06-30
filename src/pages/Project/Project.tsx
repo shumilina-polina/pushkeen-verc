@@ -2,7 +2,12 @@ import { useTranslation } from "react-i18next";
 import { CustomLink } from "../../shared/components/CustomLink";
 import s from "./Project.module.scss";
 
-export const Project = ({ children }: any) => {
+type Props = {
+  children: any;
+  locales_title: string;
+};
+
+export const Project = (props: Props) => {
   const { t } = useTranslation();
 
   return (
@@ -21,15 +26,13 @@ export const Project = ({ children }: any) => {
               <li className={s.projects}>{t("project.breadcrumb.projects")}</li>
             </CustomLink>{" "}
             /{" "}
-            <CustomLink className="link" to={"/" + children.path}>
-              <li className={s.title}>
-                {t("project.list." + children.name + ".name")}
-              </li>
-            </CustomLink>
+            <li className={s.title}>
+              {t("project.list." + props.locales_title + ".title")}
+            </li>
           </ul>
         </nav>
 
-        {children}
+        {props.children}
       </section>
     </div>
   );

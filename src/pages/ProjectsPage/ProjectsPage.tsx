@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "../Home/ProjectsList";
 import { MyMoscow } from "../Project/MyMoscow/MyMoscow";
-import { Project } from "../Project/Project";
 import s from "./ProjectsPage.module.scss";
 
 export const ProjectsPage = () => {
@@ -17,16 +16,6 @@ export const ProjectsPage = () => {
           <Cards list={projectsList} />
         </section>
       </div>
-      <Routes>
-        <Route
-          path="mymoscow"
-          element={
-            <Project>
-              <MyMoscow />
-            </Project>
-          }
-        />
-      </Routes>
     </>
   );
 };

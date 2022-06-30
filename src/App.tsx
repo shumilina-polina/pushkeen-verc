@@ -1,7 +1,5 @@
-import { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
-import { projectsList } from "./pages/Home/ProjectsList";
 import { Nft } from "./pages/Nft/Nft";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
 import { Project } from "./pages/Project/Project";
@@ -40,9 +38,9 @@ function App() {
             <Route path="/publicart" element={<PublicArt />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route
-              path="/mymoscow"
+              path="mymoscow"
               element={
-                <Project>
+                <Project locales_title="mymoscow">
                   <MyMoscow />
                 </Project>
               }
