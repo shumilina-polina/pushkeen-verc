@@ -3,6 +3,7 @@ import { Home } from "./pages/Home/Home";
 import { Nft } from "./pages/Nft/Nft";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
+import { MyViborg } from "./pages/Project/MyViborg/MyViborg";
 import { Project } from "./pages/Project/Project";
 import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
 import { PublicArt } from "./pages/PublicArt/PublicArt";
@@ -54,6 +55,14 @@ function App() {
               element={
                 <Project locales_title="ladoga">
                   <Ladoga />
+                </Project>
+              }
+            />
+            <Route
+              path="myViborg"
+              element={
+                <Project locales_title="myviborg">
+                  <MyViborg />
                 </Project>
               }
             />
