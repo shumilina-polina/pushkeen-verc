@@ -2,12 +2,17 @@
 
 .contact {
   &_wrapper {
+    position: relative;
     padding-bottom: 102px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 
     .content {
+      animation-iteration-count: 1;
+      animation-duration: 1s;
+      animation-name: slideContent;
+      animation-fill-mode: forwards;
       max-width: 545px;
       height: 443px;
       display: flex;
@@ -48,7 +53,7 @@
           border-radius: 20px;
           margin-bottom: 25px;
           transition: box-shadow 0.3s ease, transform 0.3s ease;
-          border:none;
+          border: none;
 
           &:hover {
             box-shadow: $box-shadow;
@@ -169,6 +174,62 @@
   }
 }
 
+.submit {
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-name: slideContent;
+  animation-fill-mode: forwards;
+  text-align: center;
+  margin: 0 auto;
+
+  &_title {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $projects-text;
+    margin-bottom: 40px;
+  }
+  &_label {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    color: $projects-text;
+  }
+
+  &_button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: -30%;
+    right: 30px;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../../assets/svg/close.svg");
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@keyframes slideContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 //--------- MEDIA ---------
 
 @media (max-width: 1400px) {
@@ -280,6 +341,17 @@
           line-height: 26px;
         }
       }
+    }
+  }
+  .submit {
+    &_title {
+      font-size: 35px;
+      line-height: 58px;
+    }
+
+    &_button {
+      top: 0;
+      right: 0;
     }
   }
 }
