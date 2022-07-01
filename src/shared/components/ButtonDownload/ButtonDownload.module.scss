@@ -1,0 +1,57 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $projects_text;
+  border: 1px solid $projects_text;
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 13px 43px 13px 20px;
+  position: relative;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: #1858fb;
+    color: #fff;
+    border-color: #1858fb;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    &::after {
+      transition: background-image 0.3s ease;
+      background-image: url("../../../assets/projects/arrow-white.svg");
+    }
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../../assets/projects/arrow-black.svg");
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-image 0.3s ease;
+    width: 13px;
+    height: 13px;
+  }
+}
+
+//--------- MEDIA ---------
+
+@media (max-width: 770px) {
+  .button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    &::after {
+      content: "";
+      right: 65px;
+    }
+  }
+}

@@ -1,12 +1,20 @@
 import { useTranslation } from "react-i18next";
 import s from "./Ladoga.module.scss";
+import mainscreen from "../../../assets/projects/ladoga/mainscreen.png";
+import phones from "../../../assets/projects/ladoga/phones.png";
+
+import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
 
 export const Ladoga = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.ladoga}>
-      <img className={s.ladoga_image} src="" alt="Ladoga Audio Guide" />
+      <img
+        className={s.ladoga_image}
+        src={mainscreen}
+        alt="Ladoga Audio Guide"
+      />
       <div className={s.tasks}>
         <div className={s.tasks_title}>
           <h2 className={s.tasks_title_name}>
@@ -26,12 +34,16 @@ export const Ladoga = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <button className={s.load_button}>
-          {t("project.list.ladoga.buttons.1")}
-        </button>
+        <ButtonDownload text={t("project.list.ladoga.buttons.1")} />
         <div className={s.app}>{t("project.list.ladoga.buttons.2")}</div>
       </div>
-      <div>VIDEO</div>
+      <div className={s.phones_wrapper}>
+        <img
+          className={s.phones_image}
+          src={phones}
+          alt="Ladoga Audio Guide Screens"
+        />
+      </div>
       <div className={s.steps}>
         <div className={s.steps_text}>
           <span className={s.text0}>
@@ -57,7 +69,14 @@ export const Ladoga = () => {
           </span>
         </div>
       </div>
-      <div>VIDEO</div>
+      <div className={s.video_wrapper}>
+        <video autoPlay loop preload="metadata" muted>
+          <source
+            src={require("../../../assets/projects/ladoga/appvideo.mp4")}
+            type="video/mp4"
+          />
+        </video>
+      </div>
       <div className={s.results}>
         <h3 className={s.results_title}>
           {t("project.list.ladoga.results.title")}
