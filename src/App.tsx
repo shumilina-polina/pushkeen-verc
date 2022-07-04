@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
+import { Halloween } from "./pages/Nft/Halloween/Halloween";
 import { Nft } from "./pages/Nft/Nft";
 import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
@@ -91,6 +92,14 @@ function App() {
               element={
                 <Project locales_page="nft" locales_title="nft_list.dirtydrops">
                   <DirtyDrops />
+                </Project>
+              }
+            />
+            <Route
+              path="nft/halloween"
+              element={
+                <Project locales_page="nft" locales_title="nft_list.halloween">
+                  <Halloween />
                 </Project>
               }
             />
