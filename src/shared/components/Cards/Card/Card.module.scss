@@ -42,8 +42,13 @@
     transform: rotateY(180deg);
 
     .link_wrapper {
+      padding: 12px 14px 22px;
       height: 100%;
       width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
     }
 
     .title {
@@ -54,10 +59,61 @@
       line-height: 79px;
       text-transform: uppercase;
     }
+    .content {
+      & li {
+        text-transform: uppercase;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   img {
     width: 100%;
     height: 100%;
+  }
+}
+
+//------MEDIA------
+
+@media (max-width: 1440px) {
+  .card {
+    .back {
+      .title {
+        font-size: 28px;
+        line-height: 49px;
+      }
+      .content {
+        & li {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    .back {
+      .title {
+        font-size: 20px;
+        line-height: 29px;
+      }
+      .content {
+        & li {
+          font-size: 12px;
+          line-height: 15px;
+        }
+      }
+    }
   }
 }

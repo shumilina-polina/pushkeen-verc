@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { CustomLink } from "../../shared/components/CustomLink";
 import s from "./Project.module.scss";
@@ -5,10 +6,15 @@ import s from "./Project.module.scss";
 type Props = {
   children: any;
   locales_title: string;
+  locales_page: string;
 };
 
 export const Project = (props: Props) => {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="container">
@@ -27,8 +33,12 @@ export const Project = (props: Props) => {
               <li className={s.pushkeen}>{t("project.breadcrumb.main")}</li>
             </CustomLink>{" "}
             /{" "}
-            <CustomLink className="link" to="/projects">
-              <li className={s.projects}>{t("project.breadcrumb.projects")}</li>
+            <CustomLink className="link" to={"/" + props.locales_page}>
+              <li className={s.projects}>
+                {props.locales_page === "nft"
+                  ? "NFT"
+                  : t("project.breadcrumb.projects")}
+              </li>
             </CustomLink>{" "}
             /{" "}
             <li className={s.title}>

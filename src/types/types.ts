@@ -8,6 +8,7 @@ export enum linkValue {
 export type Project = {
   id: number;
   imageURL: string;
-  title: string;
+  content_locales: string;
+  tag_count: number;
   name: string;
 };

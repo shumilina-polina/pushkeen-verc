@@ -71,6 +71,11 @@ ul {
     cursor: auto;
   }
 
+  .link li,
+  button {
+    cursor: pointer;
+  }
+
   body {
     padding: 60px 0 426px;
   }

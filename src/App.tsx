@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
+import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
 import { Nft } from "./pages/Nft/Nft";
 import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
@@ -31,7 +32,7 @@ function App() {
               }
             />
             <Route
-              path="/nft"
+              path="nft/*"
               element={
                 <>
                   <Nft />
@@ -39,15 +40,15 @@ function App() {
                 </>
               }
             />
-            <Route path="/publicart" element={<PublicArt />} />
-            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="publicart" element={<PublicArt />} />
+            <Route path="projects" element={<ProjectsPage />} />
 
             {/* ------PROJECTS------- */}
 
             <Route
               path="mymoscow"
               element={
-                <Project locales_title="mymoscow">
+                <Project locales_page="projects" locales_title="mymoscow">
                   <MyMoscow />
                 </Project>
               }
@@ -55,7 +56,7 @@ function App() {
             <Route
               path="ladogaGuide"
               element={
-                <Project locales_title="ladoga">
+                <Project locales_page="projects" locales_title="ladoga">
                   <Ladoga />
                 </Project>
               }
@@ -63,7 +64,7 @@ function App() {
             <Route
               path="myViborg"
               element={
-                <Project locales_title="myviborg">
+                <Project locales_page="projects" locales_title="myviborg">
                   <MyViborg />
                 </Project>
               }
@@ -71,7 +72,7 @@ function App() {
             <Route
               path="streetArtMemo"
               element={
-                <Project locales_title="streetart">
+                <Project locales_page="projects" locales_title="streetart">
                   <StreetArt />
                 </Project>
               }
@@ -79,8 +80,17 @@ function App() {
             <Route
               path="geniusLociMemo"
               element={
-                <Project locales_title="geniusloci">
+                <Project locales_page="projects" locales_title="geniusloci">
                   <GeniusLoci />
+                </Project>
+              }
+            />
+            {/* ------NFT------- */}
+            <Route
+              path="nft/dirtyDrops"
+              element={
+                <Project locales_page="nft" locales_title="nft_list.dirtydrops">
+                  <DirtyDrops />
                 </Project>
               }
             />
