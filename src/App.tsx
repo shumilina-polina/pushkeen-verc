@@ -5,6 +5,7 @@ import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
 import { MyViborg } from "./pages/Project/MyViborg/MyViborg";
 import { Project } from "./pages/Project/Project";
+import { StreetArt } from "./pages/Project/StreetArt/StreetArt";
 import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
 import { PublicArt } from "./pages/PublicArt/PublicArt";
 import { Contact } from "./shared/Contact/Contact";
@@ -63,6 +64,14 @@ function App() {
               element={
                 <Project locales_title="myviborg">
                   <MyViborg />
+                </Project>
+              }
+            />
+            <Route
+              path="streetArtMemo"
+              element={
+                <Project locales_title="streetart">
+                  <StreetArt />
                 </Project>
               }
             />
