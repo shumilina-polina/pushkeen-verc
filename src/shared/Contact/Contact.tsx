@@ -8,7 +8,7 @@ import { SubmitMessage } from "./SubmitMessage";
 export const Contact = () => {
   const { t } = useTranslation();
 
-  const [submitMessage, setSubmitMessage] = useState<boolean>(true);
+  const [submitMessage, setSubmitMessage] = useState<boolean>(false);
 
   const renderContent = useCallback(() => {
     if (submitMessage) {
@@ -23,17 +23,22 @@ export const Contact = () => {
     e.preventDefault();
     setSubmitMessage(true);
 
-    // emailjs
-    //   .sendForm("gmail", "template_mine", e.target, "Rfs0JK0pSRV-tYFNs")
-    //   .then(
-    //     (result: any) => {
-    //       console.log(result.text);
-    //     },
-    //     (error: Error) => {
-    //       console.log(error.message);
-    //     }
-    //   );
-    // e.target.reset();
+    emailjs
+      .sendForm(
+        "service_g5bbd95",
+        "template_b1izhed",
+        e.target,
+        "b9BCqPQmwMN7r8f4z"
+      )
+      .then(
+        (result: any) => {
+          console.log(result.text);
+        },
+        (error: Error) => {
+          console.log(error.message);
+        }
+      );
+    e.target.reset();
   };
 
   return (
