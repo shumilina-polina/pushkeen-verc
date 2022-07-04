@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { Nft } from "./pages/Nft/Nft";
+import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
 import { MyViborg } from "./pages/Project/MyViborg/MyViborg";
@@ -72,6 +73,14 @@ function App() {
               element={
                 <Project locales_title="streetart">
                   <StreetArt />
+                </Project>
+              }
+            />
+            <Route
+              path="geniusLociMemo"
+              element={
+                <Project locales_title="geniusloci">
+                  <GeniusLoci />
                 </Project>
               }
             />
