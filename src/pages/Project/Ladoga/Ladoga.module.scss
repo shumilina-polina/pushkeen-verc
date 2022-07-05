@@ -316,6 +316,11 @@
     }
     .buttons {
       margin-bottom: 70px;
+      & button {
+        &::after{
+          right: 30px;
+        }
+      }
       .app {
         width: 100%;
         text-align: center;
