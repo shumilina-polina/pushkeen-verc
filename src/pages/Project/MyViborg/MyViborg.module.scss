@@ -62,9 +62,15 @@
     }
   }
   .buttons {
-    max-width: 50%;
+    max-width: 45%;
     margin-bottom: 96px;
     margin-top: -45px;
+    & button{
+      margin-bottom: 10px;
+    }
+    .app{
+      margin-right: 10px;
+    }
     .app,
     .game {
       margin-bottom: 16px;
@@ -188,7 +194,6 @@
   }
   .video_wrapper {
     margin-bottom: 131px;
-    padding-left: 20px;
     & video {
       object-fit: contain;
       max-width: 100%;
@@ -213,9 +218,8 @@
       }
     }
     .buttons {
-      max-width: 100%;
       margin-bottom: 90px;
-      margin-top: 0;
+      margin-top: -100px;
       .app {
         margin-right: 10px;
       }
@@ -261,7 +265,14 @@
       }
     }
     .buttons {
+      max-width: 100%;
+      margin-top: 0;
       margin-bottom: 70px;
+      & button {
+        &::after{
+          right: 30px;
+        }
+      }
       .app,
       .game {
         width: 100%;

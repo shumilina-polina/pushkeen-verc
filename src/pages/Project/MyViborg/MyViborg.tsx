@@ -29,9 +29,14 @@ export const MyViborg = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <ButtonDownload text={t("project.list.myviborg.buttons.1")} />
-        <div className={s.app}>{t("project.list.myviborg.buttons.2")}</div>
-        <div className={s.game}>{t("project.list.myviborg.buttons.3")}</div>
+        <a href="https://onelink.to/yc3eak" target="_blank" rel="noopener">
+          <ButtonDownload text={t("project.list.myviborg.buttons.1")} />
+        </a>
+        <a href="https://onelink.to/yc3eak" target="_blank" rel="noopener">
+          <ButtonDownload text={t("project.list.myviborg.buttons.2")} />
+        </a>
+        <div className={s.app}>{t("project.list.myviborg.buttons.3")}</div>
+        <div className={s.game}>{t("project.list.myviborg.buttons.4")}</div>
       </div>
       <div className={s.phones_wrapper}>
         <img
