@@ -4,8 +4,8 @@ export const nftList: Project[] = [
   {
     id: 0,
     imageURL: "nft/newcityartist/logo.png",
-    name: "nft/newcityartist",
-    content_locales: "nft_list.newcityartist",
+    name: "nft/newCityArtist",
+    content_locales: "nft_list.newcity",
     tag_count: 1,
   },
   {
