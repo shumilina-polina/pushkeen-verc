@@ -27,7 +27,7 @@ function App() {
         <div className="mobile_container">
           <Routes>
             <Route
-              path="/"
+              path="/*"
               element={
                 <>
                   <Home />
