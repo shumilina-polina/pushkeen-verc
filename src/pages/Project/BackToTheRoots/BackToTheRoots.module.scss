@@ -1,0 +1,152 @@
+@import "../../../styles/variables.scss";
+
+.backtotheroots {
+  .backtotheroots_image,
+  .landing_image {
+    margin-bottom: 58px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .about {
+    margin-bottom: 33px;
+    color: $projects_text;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &_title {
+      max-width: 45%;
+      padding-bottom: 30px;
+      position: relative;
+
+      &_name {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "IBM Plex Mono";
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      &_label {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "Mulish";
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 544px;
+        border-bottom: 1px solid $text-dark;
+        bottom: 0;
+      }
+    }
+    &_content {
+      max-width: 655px;
+      line-height: 31px;
+      &_name {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "IBM Plex Mono";
+        font-size: 28px;
+        margin-bottom: 27px;
+      }
+      &_label {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "Mulish";
+        font-size: 24px;
+      }
+    }
+  }
+  .buttons {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    & button {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//-------MEDIA-------
+
+@media (max-width: 1400px) {
+  .backtotheroots {
+    .about {
+      &_title {
+        &_name {
+          font-size: 55px;
+          line-height: 60px;
+          margin-bottom: 20px;
+        }
+        &::after {
+          width: 350px;
+        }
+      }
+      &_content {
+        max-width: 50%;
+        &_label {
+          font-size: 22px;
+        }
+      }
+    }
+    .buttons {
+      margin-bottom: 90px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .backtotheroots {
+    .backtotheroots_image {
+      margin-bottom: 40px;
+    }
+    .about {
+      margin-bottom: 40px;
+      flex-direction: column;
+
+      &_title {
+        max-width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+
+        &_name {
+          font-size: 40px;
+          line-height: 60px;
+        }
+        &_label {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+      &_content {
+        max-width: 100%;
+        &_name {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+        &_label {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+    .buttons {
+      & button{
+        &::after{
+          right: 30px;
+        }
+      }
+      margin-bottom: 70px;
+    }
+  }
+}

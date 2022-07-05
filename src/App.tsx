@@ -3,6 +3,7 @@ import { Home } from "./pages/Home/Home";
 import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
 import { Halloween } from "./pages/Nft/Halloween/Halloween";
 import { Nft } from "./pages/Nft/Nft";
+import { BackToTheRoots } from "./pages/Project/BackToTheRoots/BackToTheRoots";
 import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
@@ -83,6 +84,14 @@ function App() {
               element={
                 <Project locales_page="projects" locales_title="geniusloci">
                   <GeniusLoci />
+                </Project>
+              }
+            />
+            <Route
+              path="backToTheRoots"
+              element={
+                <Project locales_page="projects" locales_title="backtotheroots">
+                  <BackToTheRoots />
                 </Project>
               }
             />
