@@ -1,1 +1,167 @@
 @import "../../styles/variables.scss";
+
+.publicart {
+  .publicart_image {
+    margin-bottom: 58px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .about {
+    color: $projects_text;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &_title {
+      width: 45%;
+      padding-bottom: 30px;
+      position: relative;
+
+      &_name {
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      &_label {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 544px;
+        border-bottom: 1px solid $text-dark;
+        bottom: 0;
+      }
+    }
+    &_content {
+      width: 50%;
+      line-height: 31px;
+      &_name {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "IBM Plex Mono";
+        font-size: 28px;
+        margin-bottom: 27px;
+      }
+      &_label {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "Mulish";
+        font-size: 24px;
+      }
+    }
+  }
+  .buttons {
+    max-width: 45%;
+    margin-bottom: 33px;
+    margin-top: 33px;
+    & button {
+      margin-bottom: 10px;
+    }
+    .app {
+      margin-right: 10px;
+    }
+    .app,
+    .game {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $projects_text;
+      border: 1px solid $projects_text;
+      background-color: transparent;
+      border-radius: 100px;
+      display: inline-block;
+      padding: 13px 20px;
+    }
+  }
+}
+
+//-------MEDIA-------
+
+@media (max-width: 1400px) {
+  .publicart {
+    .about {
+      margin-bottom: 20px;
+      &_title {
+        &::after {
+          width: 350px;
+        }
+      }
+      &_content {
+        width: 50%;
+        line-height: 31px;
+      }
+    }
+    .buttons {
+      max-width: 100%;
+      margin-bottom: 90px;
+      margin-top: 0;
+      .app,
+      .game {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .publicart {
+    .publicart_image {
+      margin-bottom: 40px;
+    }
+    .about {
+      margin-bottom: 40px;
+      flex-direction: column;
+
+      &_title {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+
+        &_name {
+          font-size: 45px;
+          line-height: 60px;
+        }
+        &_label {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+      &_content {
+        width: 100%;
+        &_name {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+        &_label {
+          font-size: 20px;
+        }
+      }
+    }
+    .buttons {
+      margin-bottom: 70px;
+      .app,
+      .game {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
