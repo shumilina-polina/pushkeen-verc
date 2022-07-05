@@ -1,7 +1,7 @@
 @import "../../../styles/variables.scss";
 
-.newcity {
-  .newcity_image {
+.newnames {
+  .newnames_image {
     margin-bottom: 58px;
     max-width: 100%;
     object-fit: contain;
@@ -85,7 +85,7 @@
 //-------MEDIA-------
 
 @media (max-width: 1400px) {
-  .newcity {
+  .newnames {
     .about {
       margin-bottom: 20px;
       &_title {
@@ -115,8 +115,8 @@
   }
 }
 @media (max-width: 770px) {
-  .newcity {
-    .newcity_image {
+  .newnames {
+    .newnames_image {
       margin-bottom: 40px;
     }
     .about {
