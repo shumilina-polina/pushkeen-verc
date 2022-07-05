@@ -12,7 +12,7 @@ export const projectsList: Project[] = [
   {
     id: 1,
     imageURL: "projects/backtotheroots/logo.png",
-    name: "backtotheroots",
+    name: "backToTheRootsLanding",
     content_locales: "backtotheroots",
     tag_count: 1,
   },
@@ -68,7 +68,7 @@ export const projectsList: Project[] = [
   {
     id: 9,
     imageURL: "projects/streetart/logo.png",
-    name: "myMoscow",
+    name: "streetArtMemo",
     content_locales: "streetart",
     tag_count: 1,
   },

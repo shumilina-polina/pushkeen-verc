@@ -5,7 +5,7 @@
 
   .title_container {
     max-width: 1368px;
-    margin: 0 auto 191px;
+    margin: 0 auto 220px;
   }
 
   .title {
@@ -42,9 +42,9 @@
       max-width: 40%;
 
       opacity: 1;
-      margin-bottom: 320px;
+      margin-bottom: 270px;
       animation-iteration-count: 1;
-      animation-duration: 2s;
+      animation-duration: 1s;
       animation-name: slideText;
       animation-fill-mode: forwards;
 
@@ -88,7 +88,7 @@
     .rings {
       width: 800px;
       position: absolute;
-      top: 110px;
+      top: 90px;
       transform: translateY(-50%);
       right: -35px;
       z-index: -1;
@@ -355,9 +355,11 @@
 @keyframes slideText {
   0% {
     opacity: 0;
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
+    transform: translateX(0%);
   }
 }
 
@@ -753,6 +755,16 @@
         height: 20px;
         margin-right: 1px;
       }
+    }
+  }
+  @keyframes slideText {
+    0% {
+      opacity: 0;
+      transform: translateX(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
     }
   }
 }
