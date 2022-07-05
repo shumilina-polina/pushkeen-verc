@@ -24,9 +24,9 @@ export const nftList: Project[] = [
   },
   {
     id: 3,
-    imageURL: "nft/streetartmemo/logo.png",
-    name: "nft/streetartmemo",
-    content_locales: "nft_list.streetartmemo",
+    imageURL: "nft/newnames/logo.png",
+    name: "nft/newNamesInFashion",
+    content_locales: "nft_list.newnames",
     tag_count: 1,
   },
   {

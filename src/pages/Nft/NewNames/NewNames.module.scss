@@ -1,0 +1,161 @@
+@import "../../../styles/variables.scss";
+
+.newnames {
+  .newnames_image {
+    margin-bottom: 58px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .about {
+    color: $projects_text;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 33px;
+
+    &_title {
+      width: 50%;
+      padding-bottom: 30px;
+      position: relative;
+
+      &_name {
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 544px;
+        border-bottom: 1px solid $text-dark;
+        bottom: 0;
+      }
+    }
+    &_content {
+      width: 50%;
+      line-height: 31px;
+      &_name {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "IBM Plex Mono";
+        font-size: 28px;
+        margin-bottom: 27px;
+      }
+      &_label {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "Mulish";
+        font-size: 24px;
+      }
+    }
+  }
+  .buttons {
+    max-width: 50%;
+    margin-bottom: 96px;
+    .button_2 {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $projects_text;
+      border: 1px solid $projects_text;
+      background-color: transparent;
+      border-radius: 100px;
+      display: inline-block;
+      padding: 13px 20px;
+    }
+  }
+  .video_wrapper {
+    margin-bottom: 96px;
+    & video {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+}
+
+//-------MEDIA-------
+
+@media (max-width: 1400px) {
+  .newnames {
+    .about {
+      margin-bottom: 20px;
+      &_title {
+        &::after {
+          width: 350px;
+        }
+        &_name {
+          font-size: 55px;
+          line-height: 60px;
+        }
+      }
+      &_content {
+        width: 50%;
+        line-height: 31px;
+      }
+    }
+    .buttons {
+      margin-top: -70px;
+      margin-bottom: 80px;
+      & button {
+        margin-bottom: 10px;
+      }
+    }
+    .video_wrapper {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 770px) {
+  .newnames {
+    .newnames_image {
+      margin-bottom: 40px;
+    }
+    .about {
+      margin-bottom: 40px;
+      flex-direction: column;
+
+      &_title {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+
+        &_name {
+          font-size: 50px;
+          line-height: 60px;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+      &_content {
+        width: 100%;
+        &_name {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+        &_label {
+          font-size: 20px;
+        }
+      }
+    }
+    .buttons {
+      max-width: 100%;
+      margin-bottom: 40px;
+      margin-top: 0;
+      .button_2 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
