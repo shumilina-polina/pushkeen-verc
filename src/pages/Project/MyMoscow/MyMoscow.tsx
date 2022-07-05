@@ -35,7 +35,13 @@ export const MyMoscow = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <ButtonDownload text={t("project.list.mymoscow.buttons.1")} />
+        <a
+          href="http://xn--b1ambccbkbqcb8ad.xn--p1ai/"
+          target="_blank"
+          rel="noopener"
+        >
+          <ButtonDownload text={t("project.list.mymoscow.buttons.1")} />
+        </a>
         <div className={s.button_2}>{t("project.list.mymoscow.buttons.2")}</div>
         <div className={s.button_3}>{t("project.list.mymoscow.buttons.3")}</div>
         <div className={s.button_4}>{t("project.list.mymoscow.buttons.4")}</div>

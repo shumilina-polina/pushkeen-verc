@@ -34,8 +34,21 @@ export const Ladoga = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <ButtonDownload text={t("project.list.ladoga.buttons.1")} />
-        <div className={s.app}>{t("project.list.ladoga.buttons.2")}</div>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.pushkeen.novayaladoga&hl=ru&gl=US"
+          target="_blank"
+          rel="noopener"
+        >
+          <ButtonDownload text={t("project.list.ladoga.buttons.1")} />
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.pushkeen.novayaladoga&hl=ru&gl=US"
+          target="_blank"
+          rel="noopener"
+        >
+          <ButtonDownload text={t("project.list.ladoga.buttons.2")} />
+        </a>
+        <div className={s.app}>{t("project.list.ladoga.buttons.3")}</div>
       </div>
       <div className={s.phones_wrapper}>
         <img

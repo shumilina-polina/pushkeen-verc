@@ -29,7 +29,15 @@ export const Halloween = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <ButtonDownload text={t("project.list.nft_list.halloween.buttons.1")} />
+        <a
+          href="https://www.binance.com/en/nft/collection/pushkeen-522004967883681792?orderBy=list_time&orderType=-1&isBack=1&id=522004967883681792&order=list_time%40-1"
+          target="_blank"
+          rel="noopener"
+        >
+          <ButtonDownload
+            text={t("project.list.nft_list.halloween.buttons.1")}
+          />
+        </a>
         <div className={s.button_2}>
           {t("project.list.nft_list.halloween.buttons.2")}
         </div>

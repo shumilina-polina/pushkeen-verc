@@ -29,9 +29,15 @@ export const DirtyDrops = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <ButtonDownload
-          text={t("project.list.nft_list.dirtydrops.buttons.1")}
-        />
+        <a
+          href="https://www.binance.com/en/nft/collection/proboynick-545307944658112512?orderBy=list_time&orderType=-1&isBack=1&id=545307944658112512&order=list_time%40-1"
+          target="_blank"
+          rel="noopener"
+        >
+          <ButtonDownload
+            text={t("project.list.nft_list.dirtydrops.buttons.1")}
+          />
+        </a>
         <div className={s.button_2}>
           {t("project.list.nft_list.dirtydrops.buttons.2")}
         </div>

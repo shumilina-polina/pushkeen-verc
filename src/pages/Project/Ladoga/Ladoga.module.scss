@@ -65,6 +65,12 @@
   }
   .buttons {
     margin-bottom: 96px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    & button {
+      margin-bottom: 10px;
+    }
 
     .app {
       font-family: "IBM Plex Mono";
