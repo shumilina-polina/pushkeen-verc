@@ -20,6 +20,7 @@ import { Contact } from "./shared/Contact/Contact";
 import CursorProvider from "./shared/CursorProvider/CursorProvider";
 import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
+import { PageNotFound } from "./shared/PageNotFound/PageNotFound";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
               }
             />
             <Route
-              path="nft/*"
+              path="nft/"
               element={
                 <>
                   <Nft />
@@ -151,6 +152,8 @@ function App() {
                 </Project>
               }
             />
+            {/* --------NOT FOUND--------- */}
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </div>
         <Footer />

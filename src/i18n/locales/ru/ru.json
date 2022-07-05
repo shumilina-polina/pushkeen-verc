@@ -1,4 +1,5 @@
 {
+  "notfound": "Страница не найдена!",
   "main": {
     "projects": "наши проекты",
     "button": "Все проекты",
@@ -514,7 +515,7 @@
             "title": "new city artist",
             "content_0": "nft"
           },
-          "title": "new city artist",
+          "title": "New City Artist",
           "about": {
             "title": {
               "name": "new city artist"
