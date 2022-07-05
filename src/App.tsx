@@ -3,6 +3,7 @@ import { Home } from "./pages/Home/Home";
 import { BackToTheRootsNFT } from "./pages/Nft/BackToTheRootsNFT/BackToTheRootsNFT";
 import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
 import { Halloween } from "./pages/Nft/Halloween/Halloween";
+import { MetaFemHistory } from "./pages/Nft/MetaFemHistory/MetaFemHistory";
 import { Nft } from "./pages/Nft/Nft";
 import { BackToTheRoots } from "./pages/Project/BackToTheRoots/BackToTheRoots";
 import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
@@ -118,6 +119,17 @@ function App() {
               element={
                 <Project locales_page="nft" locales_title="nft_list.btrNft">
                   <BackToTheRootsNFT />
+                </Project>
+              }
+            />
+            <Route
+              path="nft/metaFemHistory"
+              element={
+                <Project
+                  locales_page="nft"
+                  locales_title="nft_list.metafemhistory"
+                >
+                  <MetaFemHistory />
                 </Project>
               }
             />
