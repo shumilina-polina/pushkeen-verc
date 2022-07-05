@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
+import { BackToTheRootsNFT } from "./pages/Nft/BackToTheRootsNFT/BackToTheRootsNFT";
 import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
 import { Halloween } from "./pages/Nft/Halloween/Halloween";
 import { Nft } from "./pages/Nft/Nft";
@@ -88,7 +89,7 @@ function App() {
               }
             />
             <Route
-              path="backToTheRoots"
+              path="backToTheRootsLanding"
               element={
                 <Project locales_page="projects" locales_title="backtotheroots">
                   <BackToTheRoots />
@@ -109,6 +110,14 @@ function App() {
               element={
                 <Project locales_page="nft" locales_title="nft_list.halloween">
                   <Halloween />
+                </Project>
+              }
+            />
+            <Route
+              path="nft/backToTheRoots"
+              element={
+                <Project locales_page="nft" locales_title="nft_list.btrNft">
+                  <BackToTheRootsNFT />
                 </Project>
               }
             />
