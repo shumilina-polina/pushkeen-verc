@@ -1,12 +1,6 @@
 import { useTranslation } from "react-i18next";
 import s from "./MetaFemHistory.module.scss";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
-import mainscreen from "../../../assets/nft/metafemhistory/mainscreen.png";
-import i1 from "../../../assets/nft/metafemhistory/i1.png";
-import i2 from "../../../assets/nft/metafemhistory/i2.png";
-import i3 from "../../../assets/nft/metafemhistory/i3.png";
-import i4 from "../../../assets/nft/metafemhistory/i4.png";
-import i5 from "../../../assets/nft/metafemhistory/i5.png";
 
 export const MetaFemHistory = () => {
   const { t } = useTranslation();
@@ -15,7 +9,7 @@ export const MetaFemHistory = () => {
     <section className={s.metafemhistory}>
       <img
         className={s.metafemhistory_image}
-        src={mainscreen}
+        src={require("../../../assets/nft/metafemhistory/mainscreen.png")}
         alt="MetaFemHistory"
       />
       <div className={s.about}>
@@ -52,15 +46,30 @@ export const MetaFemHistory = () => {
         </div>
       </div>
       <div className={s.image_wrapper}>
-        <img src={i1} alt="MetaFemHistory" />
-        <img src={i2} alt="MetaFemHistory" />
+        <img
+          src={require("../../../assets/nft/metafemhistory/i1.png")}
+          alt="MetaFemHistory"
+        />
+        <img
+          src={require("../../../assets/nft/metafemhistory/i2.png")}
+          alt="MetaFemHistory"
+        />
       </div>
       <div className={s.image_wrapper}>
-        <img src={i3} alt="MetaFemHistory" />
-        <img src={i4} alt="MetaFemHistory" />
+        <img
+          src={require("../../../assets/nft/metafemhistory/i3.png")}
+          alt="MetaFemHistory"
+        />
+        <img
+          src={require("../../../assets/nft/metafemhistory/i4.png")}
+          alt="MetaFemHistory"
+        />
       </div>
       <div className={s.image_wrapper}>
-        <img src={i5} alt="MetaFemHistory" />
+        <img
+          src={require("../../../assets/nft/metafemhistory/i5.png")}
+          alt="MetaFemHistory"
+        />
       </div>
     </section>
   );

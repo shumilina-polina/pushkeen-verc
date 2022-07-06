@@ -1,13 +1,16 @@
 import { useTranslation } from "react-i18next";
 import s from "./BrodilkaKurortnyy.module.scss";
-// import mainscreen from "../../../assets/projects/brodilkakurortnyy/mainscreen.png";
 
 export const BrodilkaKurortnyy = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.kurortnyy}>
-      {/* <img className={s.kurortnyy_image} src={mainscreen} alt="Brodilka Kurortnyy" /> */}
+      <img
+        className={s.kurortnyy_image}
+        src={require("../../../assets/projects/brodilkakurortnyy/mainscreen.png")}
+        alt="Brodilka Kurortnyy"
+      />
       <div className={s.about}>
         <div className={s.about_title}>
           <h2 className={s.about_title_name}>
@@ -34,7 +37,11 @@ export const BrodilkaKurortnyy = () => {
           {t("project.list.brodilkakurortnyy.buttons.2")}
         </div>
       </div>
-      {/* <img className={s.kurortnyy_image_1} src={i1} alt="Brodilka Kurortnyy" /> */}
+      <img
+        className={s.kurortnyy_image_1}
+        src={require("../../../assets/projects/brodilkakurortnyy/image1.png")}
+        alt="Brodilka Kurortnyy"
+      />
       <div className={s.task}>
         <div className={s.task_wrapper}>
           <h3 className={s.task_title}>
@@ -64,10 +71,32 @@ export const BrodilkaKurortnyy = () => {
           </span>
         </div>
       </div>
-      {/* <img className={s.kurortnyy_image_2} src={i2} alt="Brodilka Kurortnyy" /> */}
+      <img
+        className={s.kurortnyy_image_2}
+        src={require("../../../assets/projects/brodilkakurortnyy/image2.png")}
+        alt="Brodilka Kurortnyy"
+      />
       <p className={s.desc}>{t("project.list.brodilkakurortnyy.desc")}</p>
-      {/* <img className={s.kurortnyy_image_3} src={i3} alt="Brodilka Kurortnyy" /> */}
-      {/* <img className={s.kurortnyy_image_4} src={i4} alt="Brodilka Kurortnyy" /> */}
+      <img
+        className={s.kurortnyy_image_3}
+        src={require("../../../assets/projects/brodilkakurortnyy/image3.png")}
+        alt="Brodilka Kurortnyy"
+      />
+      <img
+        className={s.kurortnyy_image_4}
+        src={require("../../../assets/projects/brodilkakurortnyy/image4.png")}
+        alt="Brodilka Kurortnyy"
+      />
+      <img
+        className={s.kurortnyy_image_5}
+        src={require("../../../assets/projects/brodilkakurortnyy/image5.png")}
+        alt="Brodilka Kurortnyy"
+      />
+      <img
+        className={s.kurortnyy_image_6}
+        src={require("../../../assets/projects/brodilkakurortnyy/image6.png")}
+        alt="Brodilka Kurortnyy"
+      />
     </section>
   );
 };

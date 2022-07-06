@@ -3,6 +3,7 @@ import { ButtonDownload } from "../../../shared/components/ButtonDownload/Button
 import s from "./MyViborg.module.scss";
 import mainscreen from "../../../assets/projects/myviborg/mainscreen.png";
 import phones from "../../../assets/projects/myviborg/phones.png";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export const MyViborg = () => {
   const { t } = useTranslation();
@@ -75,12 +76,14 @@ export const MyViborg = () => {
         </div>
       </div>
       <div className={s.video_wrapper}>
-        <video autoPlay loop preload="metadata" muted>
-          <source
-            src={require("../../../assets/projects/myviborg/appvideo.mp4")}
-            type="video/mp4"
-          />
-        </video>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/projects/myviborg/appvideo.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
       </div>
     </section>
   );

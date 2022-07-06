@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import s from "./NewNames.module.scss";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
-import mainscreen from "../../../assets/nft/newnames/mainscreen.png";
+import s from "./NewNames.module.scss";
 
 export const NewNames = () => {
   const { t } = useTranslation();
@@ -10,7 +10,7 @@ export const NewNames = () => {
     <section className={s.newnames}>
       <img
         className={s.newnames_image}
-        src={mainscreen}
+        src={require("../../../assets/nft/newnames/mainscreen.png")}
         alt="New Names In Fashion"
       />
       <div className={s.about}>
@@ -43,12 +43,14 @@ export const NewNames = () => {
         </div>
       </div>
       <div className={s.video_wrapper}>
-        <video autoPlay loop preload="metadata" muted>
-          <source
-            src={require("../../../assets/nft/newnames/video.mp4")}
-            type="video/mp4"
-          />
-        </video>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/nft/newnames/video.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
       </div>
     </section>
   );

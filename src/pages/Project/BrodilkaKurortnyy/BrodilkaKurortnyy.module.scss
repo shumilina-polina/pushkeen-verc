@@ -179,14 +179,26 @@
     }
   }
   .kurortnyy_image_1,
+  .kurortnyy_image_2,
   .kurortnyy_image_3,
-  .kurortnyy_image_4
-   {
+  .kurortnyy_image_4,
+  .kurortnyy_image_5,
+  .kurortnyy_image_6 {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .kurortnyy_image_1,
+  .kurortnyy_image_3 {
     margin-bottom: 56px;
   }
   .kurortnyy_image_2,
   .desc {
     margin-bottom: 96px;
+  }
+  .kurortnyy_image_4,
+  .kurortnyy_image_5,
+  .kurortnyy_image_6 {
+    margin-bottom: 32px;
   }
   .desc {
     font-family: "Mulish";

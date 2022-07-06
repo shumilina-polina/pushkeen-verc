@@ -84,8 +84,11 @@
         color: #999999;
       }
     }
-
-    .rings {
+    .rings_wrapper {
+      & span,
+      .rings {
+        width: 100%;
+      }
       width: 800px;
       position: absolute;
       top: 90px;
@@ -399,8 +402,7 @@
           line-height: 23px;
         }
       }
-
-      .rings {
+      .rings_wrapper {
         width: 470px;
         position: absolute;
         top: 30px;
@@ -556,7 +558,7 @@
         }
       }
 
-      .rings {
+      .rings_wrapper {
         width: 350px;
         top: 0px;
         right: unset;

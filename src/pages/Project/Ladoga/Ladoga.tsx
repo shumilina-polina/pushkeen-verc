@@ -4,6 +4,7 @@ import mainscreen from "../../../assets/projects/ladoga/mainscreen.png";
 import phones from "../../../assets/projects/ladoga/phones.png";
 
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export const Ladoga = () => {
   const { t } = useTranslation();
@@ -83,12 +84,14 @@ export const Ladoga = () => {
         </div>
       </div>
       <div className={s.video_wrapper}>
-        <video autoPlay loop preload="metadata" muted>
-          <source
-            src={require("../../../assets/projects/ladoga/appvideo.mp4")}
-            type="video/mp4"
-          />
-        </video>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/projects/ladoga/appvideo.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
       </div>
       <div className={s.results}>
         <h3 className={s.results_title}>

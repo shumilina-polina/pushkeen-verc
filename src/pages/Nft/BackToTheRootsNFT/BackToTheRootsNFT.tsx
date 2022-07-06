@@ -1,8 +1,5 @@
 import { useTranslation } from "react-i18next";
 import s from "./BackToTheRootsNFT.module.scss";
-import mainscreen from "../../../assets/nft/btrNft/mainscreen.png";
-import image1 from "../../../assets/nft/btrNft/image1.png";
-import image2 from "../../../assets/nft/btrNft/image2.png";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
 
 export const BackToTheRootsNFT = () => {
@@ -12,7 +9,7 @@ export const BackToTheRootsNFT = () => {
     <section className={s.btrNft}>
       <img
         className={s.btrNft_image}
-        src={mainscreen}
+        src={require("../../../assets/nft/btrNft/mainscreen.png")}
         alt="Back To The Roots NFT"
       />
       <div className={s.about}>
@@ -44,12 +41,12 @@ export const BackToTheRootsNFT = () => {
       </div>
       <img
         className={s.btrNft_image1}
-        src={image1}
+        src={require("../../../assets/nft/btrNft/image1.png")}
         alt="Back To The Roots NFT"
       />
       <img
         className={s.btrNft_image2}
-        src={image2}
+        src={require("../../../assets/nft/btrNft/image2.png")}
         alt="Back To The Roots NFT"
       />
     </section>

@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
-import s from "./BackToTheRoots.module.scss";
-import mainscreen from "../../../assets/projects/backtotheroots/mainscreen.png";
-import landing from "../../../assets/projects/backtotheroots/landing.png";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import s from "./BackToTheRoots.module.scss";
 
 export const BackToTheRoots = () => {
   const { t } = useTranslation();
@@ -11,7 +9,7 @@ export const BackToTheRoots = () => {
     <section className={s.backtotheroots}>
       <img
         className={s.backtotheroots_image}
-        src={mainscreen}
+        src={require("../../../assets/projects/backtotheroots/mainscreen.png")}
         alt="Back To The Roots"
       />
       <div className={s.about}>
@@ -39,7 +37,7 @@ export const BackToTheRoots = () => {
       </div>
       <img
         className={s.landing_image}
-        src={landing}
+        src={require("../../../assets/projects/backtotheroots/landing.png")}
         alt="Back To The Roots Landing"
       />
     </section>

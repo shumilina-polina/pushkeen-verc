@@ -1,18 +1,18 @@
 import { useTranslation } from "react-i18next";
-import s from "./DirtyDrops.module.scss";
-import mainscreen from "../../../assets/nft/dirtydrops/mainscreen.png";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
-import i1 from "../../../assets/nft/dirtydrops/image1.png";
-import i2 from "../../../assets/nft/dirtydrops/image2.png";
-import i3 from "../../../assets/nft/dirtydrops/image3.png";
-import i4 from "../../../assets/nft/dirtydrops/image4.png";
+import s from "./DirtyDrops.module.scss";
 
 export const DirtyDrops = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.dirtydrops}>
-      <img className={s.dirtydrops_image} src={mainscreen} alt="Dirty Drops" />
+      <img
+        className={s.dirtydrops_image}
+        src={require("../../../assets/nft/dirtydrops/mainscreen.png")}
+        alt="Dirty Drops"
+      />
       <div className={s.about}>
         <div className={s.about_title}>
           <h2 className={s.about_title_name}>
@@ -43,25 +43,45 @@ export const DirtyDrops = () => {
         </div>
       </div>
       <div className={s.video_wrapper}>
-        <video autoPlay loop preload="metadata" muted>
-          <source
-            src={require("../../../assets/nft/dirtydrops/video1.mp4")}
-            type="video/mp4"
-          />
-        </video>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/nft/dirtydrops/video1.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
       </div>
-      <img className={s.dirtydrops_image_bottom} src={i1} alt="Dirty Drops" />
-      <img className={s.dirtydrops_image_bottom} src={i2} alt="Dirty Drops" />
+      <img
+        className={s.dirtydrops_image_bottom}
+        src={require("../../../assets/nft/dirtydrops/image1.png")}
+        alt="Dirty Drops"
+      />
+      <img
+        className={s.dirtydrops_image_bottom}
+        src={require("../../../assets/nft/dirtydrops/image2.png")}
+        alt="Dirty Drops"
+      />
       <div className={s.video_wrapper}>
-        <video autoPlay loop preload="metadata" muted>
-          <source
-            src={require("../../../assets/nft/dirtydrops/video2.mp4")}
-            type="video/mp4"
-          />
-        </video>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/nft/dirtydrops/video2.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
       </div>
-      <img className={s.dirtydrops_image_bottom} src={i3} alt="Dirty Drops" />
-      <img className={s.dirtydrops_image_bottom} src={i4} alt="Dirty Drops" />
+      <img
+        className={s.dirtydrops_image_bottom}
+        src={require("../../../assets/nft/dirtydrops/image3.png")}
+        alt="Dirty Drops"
+      />
+      <img
+        className={s.dirtydrops_image_bottom}
+        src={require("../../../assets/nft/dirtydrops/image4.png")}
+        alt="Dirty Drops"
+      />
     </section>
   );
 };
