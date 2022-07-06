@@ -35,7 +35,7 @@ export const MetaFemHistory = () => {
         <a
           href="https://www.binance.com/en/nft/profile/pushkeen-nft-19ed89b1d934c88c25769ca0173a8886"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload
             text={t("project.list.nft_list.metafemhistory.buttons.1")}

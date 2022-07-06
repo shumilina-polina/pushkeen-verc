@@ -30,10 +30,10 @@ export const MyViborg = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <a href="https://onelink.to/yc3eak" target="_blank" rel="noopener">
+        <a href="https://onelink.to/yc3eak" target="_blank" rel="noreferrer">
           <ButtonDownload text={t("project.list.myviborg.buttons.1")} />
         </a>
-        <a href="https://onelink.to/yc3eak" target="_blank" rel="noopener">
+        <a href="https://onelink.to/yc3eak" target="_blank" rel="noreferrer">
           <ButtonDownload text={t("project.list.myviborg.buttons.2")} />
         </a>
         <div className={s.app}>{t("project.list.myviborg.buttons.3")}</div>

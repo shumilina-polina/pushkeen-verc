@@ -38,14 +38,14 @@ export const Ladoga = () => {
         <a
           href="https://apps.apple.com/ru/app/%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F-%D0%BB%D0%B0%D0%B4%D0%BE%D0%B3%D0%B0/id1618416317"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload text={t("project.list.ladoga.buttons.1")} />
         </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.pushkeen.novayaladoga&hl=ru&gl=US"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload text={t("project.list.ladoga.buttons.2")} />
         </a>

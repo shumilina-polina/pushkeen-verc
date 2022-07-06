@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { Project } from "../../types/types";
 
 export const projectsList: Project[] = [
@@ -39,9 +38,9 @@ export const projectsList: Project[] = [
   },
   {
     id: 5,
-    imageURL: "projects/putevoditel/logo.png",
-    name: "myMoscow",
-    content_locales: "putevoditel",
+    imageURL: "projects/guidekur/logo.png",
+    name: "kurortnyyGuide",
+    content_locales: "guidekur",
     tag_count: 1,
   },
   {
@@ -63,7 +62,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/geniusloci/logo.png",
     name: "geniusLociMemo",
     content_locales: "geniusloci",
-    tag_count: 1,
+    tag_count: 2,
   },
   {
     id: 9,

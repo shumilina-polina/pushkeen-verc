@@ -112,10 +112,17 @@
           text-overflow: ellipsis;
           margin-bottom: 30px;
 
+          &:hover {
+            &::placeholder {
+              font-size: 25px;
+              opacity: 1;
+              transition: font-size 0.3s ease;
+            }
+          }
           &::placeholder {
+            transition: font-size 0.3s ease;
             color: $placeholder;
-            opacity: 1;
-            transition: opacity 0.3s ease;
+            opacity: 0.9;
           }
           &:focus {
             &::placeholder {
@@ -154,13 +161,20 @@
 
         &::placeholder {
           color: #969696;
-          opacity: 1;
-          transition: opacity 0.3s ease;
+          opacity: 0.9;
+          transition: opacity 0.3s ease, font-size 0.3s ease;
         }
         &:focus {
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
           &::placeholder {
             opacity: 0;
+          }
+        }
+        &:hover {
+          &::placeholder {
+            font-size: 25px;
+            opacity: 1;
+            transition: font-size 0.3s ease;
           }
         }
       }

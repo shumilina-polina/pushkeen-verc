@@ -31,7 +31,7 @@ export const BackToTheRoots = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <a href="http://btr.pushkeen.ru/" target="_blank" rel="noopener">
+        <a href="http://btr.pushkeen.ru/" target="_blank" rel="noreferrer">
           <ButtonDownload text={t("project.list.backtotheroots.buttons.1")} />
         </a>
       </div>

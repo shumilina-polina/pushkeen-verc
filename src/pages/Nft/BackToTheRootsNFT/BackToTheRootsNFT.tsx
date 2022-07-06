@@ -31,7 +31,7 @@ export const BackToTheRootsNFT = () => {
         <a
           href="https://opensea.io/collection/back-tothe-roots"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload text={t("project.list.nft_list.btrNft.buttons.1")} />
         </a>

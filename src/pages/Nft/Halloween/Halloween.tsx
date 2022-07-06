@@ -32,7 +32,7 @@ export const Halloween = () => {
         <a
           href="https://www.binance.com/en/nft/collection/pushkeen-522004967883681792?orderBy=list_time&orderType=-1&isBack=1&id=522004967883681792&order=list_time%40-1"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload
             text={t("project.list.nft_list.halloween.buttons.1")}

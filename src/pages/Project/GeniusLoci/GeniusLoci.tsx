@@ -41,8 +41,8 @@ export const GeniusLoci = () => {
         </div>
       </div>
       <div className={s.buttons}>
-        <ButtonDownload text={t("project.list.geniusloci.buttons.1")} />
-        <div className={s.game}>{t("project.list.geniusloci.buttons.2")}</div>
+        <div className={s.game}>{t("project.list.geniusloci.buttons.1")}</div>
+        <div className={s.design}>{t("project.list.geniusloci.buttons.2")}</div>
       </div>
 
       <div className={s.image_wrapper_1}>

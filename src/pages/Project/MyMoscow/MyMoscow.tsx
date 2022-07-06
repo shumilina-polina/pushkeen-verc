@@ -38,7 +38,7 @@ export const MyMoscow = () => {
         <a
           href="http://xn--b1ambccbkbqcb8ad.xn--p1ai/"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload text={t("project.list.mymoscow.buttons.1")} />
         </a>

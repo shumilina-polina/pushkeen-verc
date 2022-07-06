@@ -39,7 +39,11 @@ const Header = () => {
       <div className="container">
         <div className={s.wrapper}>
           <div className={s.burger}>
-            <span className={s.burger_title}>Pushkeen</span>
+            <span className={s.burger_title}>
+              <CustomLink className="link" to="/">
+                Pushkeen
+              </CustomLink>
+            </span>
             <button
               className={
                 s.burger_button + (isBurgerOpen ? " " + "burger_active" : "")

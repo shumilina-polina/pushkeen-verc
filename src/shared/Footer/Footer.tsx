@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { useTranslation } from "react-i18next";
 import s from "./Footer.module.scss";
 import vk from "../../assets/svg/social/vk.svg";
@@ -26,7 +25,7 @@ const Footer = () => {
                 <a
                   href="https://vk.com/pushkeenru"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <img src={vk} alt="vkontakte" />
                 </a>
@@ -35,7 +34,7 @@ const Footer = () => {
                 <a
                   href="https://instagram.com/pushkeen.ru"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <img src={instagram} alt="instagram" />
                 </a>
@@ -44,7 +43,7 @@ const Footer = () => {
                 <a
                   href="https://twitter.com/pushkeen_nft?s=21&t=Xm7fVl18n8q-EBGiO1GX1g"
                   target="_blank"
-                  rel="noopener"
+                  rel="noreferrer"
                 >
                   <img src={twitter} alt="twitter" />
                 </a>
@@ -56,7 +55,7 @@ const Footer = () => {
               <a
                 href="https://yandex.ru/maps/-/CCUNE-uU2B"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 {t("footer.address_1")}
                 <br />

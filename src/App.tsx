@@ -12,6 +12,7 @@ import { BrodilkaKurortnyy } from "./pages/Project/BrodilkaKurortnyy/BrodilkaKur
 import { BrodilkaMoscow } from "./pages/Project/BrodilkaMoscow/BrodilkaMoscow";
 import { BrodilkaViborg } from "./pages/Project/BrodilkaViborg/BrodilkaViborg";
 import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
+import { GuideKur } from "./pages/Project/GuideKur/GuideKur";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
 import { MyViborg } from "./pages/Project/MyViborg/MyViborg";
@@ -122,8 +123,19 @@ function App() {
             <Route
               path="questKurortnyy"
               element={
-                <Project locales_page="projects" locales_title="brodilkakurortnyy">
+                <Project
+                  locales_page="projects"
+                  locales_title="brodilkakurortnyy"
+                >
                   <BrodilkaKurortnyy />
+                </Project>
+              }
+            />
+            <Route
+              path="kurortnyyGuide"
+              element={
+                <Project locales_page="projects" locales_title="guidekur">
+                  <GuideKur />
                 </Project>
               }
             />

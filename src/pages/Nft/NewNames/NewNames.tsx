@@ -32,7 +32,7 @@ export const NewNames = () => {
         <a
           href="https://www.sobaka.ru/fashion/heroes/149984"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
         >
           <ButtonDownload
             text={t("project.list.nft_list.newnames.buttons.1")}

@@ -1,7 +1,8 @@
 @import "../../../styles/variables.scss";
 
-.geniusloci {
-  .geniusloci_image {
+.guide {
+  .guide_image,
+  .guide_image_2 {
     margin-bottom: 58px;
     max-width: 100%;
     object-fit: contain;
@@ -11,9 +12,10 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 33px;
 
     &_title {
-      width: 45%;
+      width: 50%;
       padding-bottom: 30px;
       position: relative;
 
@@ -62,14 +64,12 @@
     }
   }
   .buttons {
-    max-width: 50%;
-    margin-bottom: 296px;
-    margin-top: -200px;
-    .game {
-      margin-right: 10px;
+    max-width: 45%;
+    margin-bottom: 96px;
+    & button {
+      margin-bottom: 10px;
     }
-    .game,
-    .design {
+    .app {
       font-family: "IBM Plex Mono";
       font-style: normal;
       font-weight: 500;
@@ -85,34 +85,6 @@
       padding: 13px 20px;
     }
   }
-
-  .image_wrapper_1,
-  .image_wrapper_2 {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    & img {
-      object-fit: contain;
-    }
-  }
-  .image_wrapper_1 {
-    margin-bottom: 86px;
-  }
-  .image_wrapper_2 {
-    margin-bottom: 74px;
-  }
-
-  .description {
-    margin: 0 auto 86px;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 31px;
-    color: $projects_text;
-    max-width: 80%;
-  }
-
   .task {
     width: 100%;
     margin-bottom: 96px;
@@ -123,7 +95,7 @@
     padding-right: 40px;
 
     &_wrapper {
-      max-width: 77%;
+      max-width: 80%;
       .task_title,
       .point_title {
         font-family: "IBM Plex Mono";
@@ -134,12 +106,13 @@
         margin-bottom: 27px;
       }
       .task_text {
+        max-width: 70%;
         font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 31px;
-        margin-bottom: 56px;
+        margin-bottom: 72px;
       }
 
       .point_text {
@@ -159,68 +132,99 @@
             background-color: #0f4cea;
             width: 20px;
             height: 20px;
-            top: 5px;
+            top: 7px;
             left: 0;
           }
         }
       }
     }
+    &_date {
+      position: relative;
+
+      .number {
+        display: block;
+        padding: 16px 35px;
+        background: rgba(119, 182, 255, 0.3);
+        border-radius: 100px;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+        color: #1858fb;
+        width: min-content;
+      }
+      .month,
+      .label {
+        position: absolute;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+      }
+      .month {
+        right: -40px;
+        bottom: 40%;
+        transform: translateY(50%);
+        font-size: 32px;
+        line-height: 42px;
+      }
+      .label {
+        bottom: -10px;
+        right: -20px;
+        font-size: 20px;
+        line-height: 26px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .video_wrapper {
+    margin-bottom: 50px;
+    text-align: center;
+    & img {
+      object-fit: contain;
+      max-width: 100%;
+    }
+    // & video {
+    //   object-fit: contain;
+    //   max-width: 100%;
+    // }
   }
 }
 
 //-------MEDIA-------
 
 @media (max-width: 1400px) {
-  .geniusloci {
+  .guide {
     .about {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       &_title {
+        padding-bottom: 100px;
+        &_name {
+          font-size: 50px;
+          line-height: 65px;
+          margin-bottom: 30px;
+        }
         &::after {
           width: 350px;
         }
       }
       &_content {
         width: 50%;
-        line-height: 25px;
-        &_label {
-          font-size: 18px;
-        }
+        line-height: 31px;
       }
     }
     .buttons {
-      margin-top: 0;
-      max-width: 100%;
       margin-bottom: 90px;
-    }
-    .image_wrapper_1,
-    .image_wrapper_2 {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      flex-direction: column;
-      & img {
-        &:first-child {
-          margin-bottom: 10px;
-        }
-        object-fit: contain;
+      .game {
+        margin-bottom: 10px;
       }
-    }
-
-    .description {
-      margin: 0 auto 86px;
-      font-family: "Mulish";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 31px;
-      color: $projects_text;
-      max-width: 80%;
     }
   }
 }
 @media (max-width: 770px) {
-  .geniusloci {
-    .geniusloci_image {
+  .guide {
+    .guide_image {
       margin-bottom: 40px;
     }
     .about {
@@ -235,6 +239,7 @@
         &_name {
           font-size: 45px;
           line-height: 60px;
+          margin-bottom: 10px;
         }
         &_label {
           font-size: 14px;
@@ -257,17 +262,19 @@
       }
     }
     .buttons {
+      max-width: 100%;
+      margin-top: 0;
       margin-bottom: 70px;
-      .game,
-      .design {
+      & button {
+        &::after {
+          right: 30px;
+        }
+      }
+
+      .app {
         width: 100%;
         text-align: center;
       }
-    }
-    .description {
-      font-size: 22px;
-      line-height: 28px;
-      max-width: 95%;
     }
     .task {
       align-items: flex-start;
@@ -276,19 +283,26 @@
       padding-right: 0;
       &_wrapper {
         max-width: 100%;
+        .task_text {
+          max-width: 100%;
+        }
         .point_text {
-          font-size: 20px;
-          margin-bottom: 0px;
-          word-wrap: break-word;
+          max-width: 100%;
+          margin-bottom: 40px;
           & li {
-            padding-left: 23px;
+            word-wrap: break-word;
+            font-size: 22px;
             &::before {
               width: 15px;
               height: 15px;
-              top: 7px;
+              top: 10px;
             }
           }
         }
+      }
+      &_date {
+        margin-right: 35px;
+        align-self: flex-end;
       }
     }
   }
