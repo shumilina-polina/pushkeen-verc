@@ -46,14 +46,14 @@ export const PublicArt = () => {
           <a
             href="https://apps.apple.com/ru/app/public-art/id1517650290"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <ButtonDownload text={t("project.list.publicart.buttons.1")} />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=ru.pushkeen.publicart"
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <ButtonDownload text={t("project.list.publicart.buttons.2")} />
           </a>
