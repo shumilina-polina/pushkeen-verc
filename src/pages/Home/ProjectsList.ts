@@ -74,9 +74,9 @@ export const projectsList: Project[] = [
   },
   {
     id: 10,
-    imageURL: "projects/brodilkakurortniy/logo.png",
-    name: "myMoscow",
-    content_locales: "brodilkakurortniy",
+    imageURL: "projects/brodilkakurortnyy/logo.png",
+    name: "questKurortnyy",
+    content_locales: "brodilkakurortnyy",
     tag_count: 1,
   },
   // {
