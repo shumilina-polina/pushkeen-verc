@@ -5,7 +5,7 @@ export const projectsList: Project[] = [
   {
     id: 0,
     imageURL: "projects/brodilkaviborg/logo.png",
-    name: "myMoscow",
+    name: "questViborg",
     content_locales: "brodilkaviborg",
     tag_count: 1,
   },

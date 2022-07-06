@@ -1,0 +1,296 @@
+@import "../../../styles/variables.scss";
+
+.viborg {
+  .viborg_image {
+    margin-bottom: 58px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .about {
+    color: $projects_text;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 33px;
+
+    &_title {
+      width: 45%;
+      padding-bottom: 30px;
+      position: relative;
+
+      &_name {
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      &_label {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 544px;
+        border-bottom: 1px solid $text-dark;
+        bottom: 0;
+      }
+    }
+    &_content {
+      width: 50%;
+      line-height: 31px;
+      &_name {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "IBM Plex Mono";
+        font-size: 28px;
+        margin-bottom: 27px;
+      }
+      &_label {
+        font-style: normal;
+        font-weight: 400;
+        font-family: "Mulish";
+        font-size: 24px;
+      }
+    }
+  }
+  .buttons {
+    max-width: 45%;
+    margin-bottom: 96px;
+    .game {
+      margin-right: 10px;
+    }
+
+    .game,
+    .ar {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $projects_text;
+      border: 1px solid $projects_text;
+      background-color: transparent;
+      border-radius: 100px;
+      display: inline-block;
+      padding: 13px 20px;
+    }
+  }
+  .task {
+    width: 100%;
+    margin-bottom: 96px;
+    color: $projects_text;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 40px;
+
+    &_wrapper {
+      max-width: 55%;
+      .task_title,
+      .point_title {
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 31px;
+        margin-bottom: 27px;
+      }
+      .task_text {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 72px;
+      }
+
+      .point_text {
+        & li {
+          font-family: "IBM Plex Mono";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 31px;
+          position: relative;
+          padding-left: 32px;
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            border-radius: 100px;
+            background-color: #0f4cea;
+            width: 20px;
+            height: 20px;
+            top: 5px;
+            left: 0;
+          }
+        }
+      }
+    }
+    &_date {
+      position: relative;
+
+      .number {
+        display: block;
+        padding: 16px 35px;
+        background: rgba(119, 182, 255, 0.3);
+        border-radius: 100px;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+        color: #1858fb;
+        width: min-content;
+      }
+      .month,
+      .label {
+        position: absolute;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+      }
+      .month {
+        right: -40px;
+        bottom: 40%;
+        transform: translateY(50%);
+        font-size: 32px;
+        line-height: 42px;
+      }
+      .label {
+        bottom: -10px;
+        right: -20px;
+        font-size: 20px;
+        line-height: 26px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .viborg_image_1,
+  .viborg_image_3 {
+    margin-bottom: 56px;
+  }
+  .viborg_image_2 {
+    margin-bottom: 24px;
+  }
+}
+
+//-------MEDIA-------
+
+@media (max-width: 1400px) {
+  .viborg {
+    .about {
+      margin-bottom: 20px;
+      &_title {
+        padding-bottom: 100px;
+        &_name {
+          font-size: 50px;
+          line-height: 65px;
+          margin-bottom: 30px;
+        }
+        &::after {
+          width: 350px;
+        }
+      }
+      &_content {
+        width: 50%;
+        line-height: 31px;
+      }
+    }
+    .buttons {
+      margin-bottom: 90px;
+      .game {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .viborg {
+    .viborg_image {
+      margin-bottom: 40px;
+    }
+    .about {
+      margin-bottom: 40px;
+      flex-direction: column;
+
+      &_title {
+        width: 100%;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+
+        &_name {
+          font-size: 45px;
+          line-height: 60px;
+          margin-bottom: 10px;
+        }
+        &_label {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+      &_content {
+        width: 100%;
+        &_name {
+          font-size: 23px;
+          margin-bottom: 20px;
+        }
+        &_label {
+          font-size: 20px;
+        }
+      }
+    }
+    .buttons {
+      max-width: 100%;
+      margin-top: 0;
+      margin-bottom: 70px;
+
+      .game,
+      .ar {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .task {
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-right: 0;
+      &_wrapper {
+        max-width: 100%;
+        .point_text {
+          margin-bottom: 40px;
+          & li {
+            word-wrap: break-word;
+            font-size: 22px;
+            &::before {
+              width: 15px;
+              height: 15px;
+              top: 10px;
+            }
+          }
+        }
+      }
+      &_date {
+        margin-right: 35px;
+        align-self: flex-end;
+      }
+    }
+  }
+}

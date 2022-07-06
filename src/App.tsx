@@ -8,6 +8,7 @@ import { NewCityArtist } from "./pages/Nft/NewCityArtist/NewCityArtist";
 import { NewNames } from "./pages/Nft/NewNames/NewNames";
 import { Nft } from "./pages/Nft/Nft";
 import { BackToTheRoots } from "./pages/Project/BackToTheRoots/BackToTheRoots";
+import { BrodilkaViborg } from "./pages/Project/BrodilkaViborg/BrodilkaViborg";
 import { GeniusLoci } from "./pages/Project/GeniusLoci/GeniusLoci";
 import { Ladoga } from "./pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "./pages/Project/MyMoscow/MyMoscow";
@@ -97,6 +98,14 @@ function App() {
               element={
                 <Project locales_page="projects" locales_title="backtotheroots">
                   <BackToTheRoots />
+                </Project>
+              }
+            />
+            <Route
+              path="questViborg"
+              element={
+                <Project locales_page="projects" locales_title="brodilkaviborg">
+                  <BrodilkaViborg />
                 </Project>
               }
             />
