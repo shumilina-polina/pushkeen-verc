@@ -63,8 +63,8 @@
   }
   .buttons {
     max-width: 45%;
-    margin-bottom: 33px;
-    margin-top: 33px;
+    margin-bottom: 109px;
+    margin-top: -100px;
     & button {
       margin-bottom: 10px;
     }
@@ -88,6 +88,136 @@
       padding: 13px 20px;
     }
   }
+  .desc {
+    max-width: 50%;
+    margin-bottom: 133px;
+    &_title,
+    &_text {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 31px;
+      color: $projects_text;
+    }
+    &_title {
+      font-family: "IBM Plex Mono";
+      font-size: 28px;
+      margin-bottom: 27px;
+    }
+    &_text {
+      font-family: "Mulish";
+      font-size: 24px;
+    }
+  }
+  .content {
+    margin-bottom: 93px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .mission {
+      max-width: 45%;
+      &_title {
+        margin-bottom: 27px;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 31px;
+        color: $projects_text;
+      }
+      &_text {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        color: $projects_text;
+      }
+    }
+    .direction {
+      max-width: 55%;
+      &_title {
+        margin-bottom: 28px;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 31px;
+        color: $projects_text;
+      }
+      &_text {
+        & li {
+          font-family: "IBM Plex Mono";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 31px;
+          position: relative;
+          padding-left: 32px;
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            border-radius: 100px;
+            background-color: #0f4cea;
+            width: 20px;
+            height: 20px;
+            top: 7px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .img_wrapper_1,
+  .img_wrapper_2,
+  .img_wrapper_3,
+  .img_wrapper_4 {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  .img_wrapper_1 {
+    margin-bottom: 96px;
+  }
+  .img_wrapper_2 {
+    margin-bottom: 56px;
+  }
+  .img_wrapper_3,
+  .img_wrapper_4 {
+    margin-bottom: 93px;
+  }
+
+  //---shared---
+  .circle {
+    width: 17px;
+    height: 17px;
+    background: #1858fb;
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: 8px;
+    padding-top: 15px;
+  }
+  .img_label {
+    position: absolute;
+    top: -16px;
+    transform: translateY(-100%);
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $projects_text;
+  }
+  .image {
+    object-fit: contain;
+    width: 100%;
+  }
 }
 
 //-------MEDIA-------
@@ -97,6 +227,7 @@
     .about {
       margin-bottom: 20px;
       &_title {
+        padding-bottom: 50px;
         &::after {
           width: 350px;
         }
@@ -104,15 +235,35 @@
       &_content {
         width: 50%;
         line-height: 31px;
+        &_label {
+          font-size: 20px;
+        }
       }
     }
     .buttons {
-      max-width: 100%;
+      max-width: 70%;
       margin-bottom: 90px;
       margin-top: 0;
       .app,
       .game {
         margin-right: 10px;
+      }
+    }
+    .desc {
+      max-width: 100%;
+      margin-bottom: 100px;
+    }
+    .content {
+      margin-bottom: 100px;
+      flex-direction: column;
+      .mission {
+        max-width: 100%;
+        &_text {
+          margin-bottom: 60px;
+        }
+      }
+      .direction {
+        max-width: 100%;
       }
     }
   }
@@ -157,11 +308,31 @@
     }
     .buttons {
       margin-bottom: 70px;
+      max-width: 100%;
+      & button {
+        &::after {
+          right: 9%;
+        }
+      }
+      .app {
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
       .app,
       .game {
         width: 100%;
         text-align: center;
       }
+    }
+    .img_wrapper_1 {
+      margin-bottom: 60px;
+    }
+    .img_wrapper_2 {
+      margin-bottom: 40px;
+    }
+    .img_wrapper_3,
+    .img_wrapper_4 {
+      margin-bottom: 57px;
     }
   }
 }
