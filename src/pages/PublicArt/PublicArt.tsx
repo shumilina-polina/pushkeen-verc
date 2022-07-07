@@ -4,7 +4,7 @@ import { ButtonDownload } from "../../shared/components/ButtonDownload/ButtonDow
 import { Project } from "../Project/Project";
 import s from "./PublicArt.module.scss";
 import mainscreen from "../../assets/projects/publicart/mainscreen.png";
-// import image_1 from "../../assets/projects/publicart/image1.png";
+import image_1 from "../../assets/projects/publicart/image1.png";
 import image_2 from "../../assets/projects/publicart/image2.png";
 import image_3 from "../../assets/projects/publicart/image3.png";
 import image_4 from "../../assets/projects/publicart/image4.png";
@@ -61,11 +61,11 @@ export const PublicArt = () => {
           <div className={s.game}>{t("project.list.publicart.buttons.4")}</div>
         </div>
         <div className={s.img_wrapper_1}>
-          {/* <img
+          <img
             className={s.image}
             src={image_1}
             alt="Public Art Screens"
-          /> */}
+          />
           <div className={s.img_label}>
             <span>{t("project.list.publicart.image_labels.app")}</span>
             <div className={s.circle}></div>
