@@ -30,7 +30,7 @@ export const DirtyDrops = () => {
       </div>
       <div className={s.buttons}>
         <a
-          href="https://www.binance.com/en/nft/collection/proboynick-545307944658112512?orderBy=list_time&orderType=-1&isBack=1&id=545307944658112512&order=list_time%40-1"
+          href="https://www.binance.com/ru/nft/profile/pushkeen-nft-19ed89b1d934c88c25769ca0173a8886"
           target="_blank"
           rel="noreferrer"
         >

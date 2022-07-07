@@ -33,7 +33,7 @@ export const MetaFemHistory = () => {
       </div>
       <div className={s.buttons}>
         <a
-          href="https://www.binance.com/en/nft/profile/pushkeen-nft-19ed89b1d934c88c25769ca0173a8886"
+          href="https://www.binance.com/ru/nft/collection/pushkeen-nft-537978379567890432?orderBy=list_time&orderType=-1&isBack=1&id=537978379567890432&order=list_time%40-1"
           target="_blank"
           rel="noreferrer"
         >

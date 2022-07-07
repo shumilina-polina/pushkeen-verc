@@ -61,13 +61,16 @@
             transition: box-shadow 0.3s ease, transform 0.3s ease;
           }
         }
-        .label {
-          display: block;
+        .label_1,
+        .label_2 {
           font-family: "Mulish";
           font-weight: 400;
           font-size: 20px;
           line-height: 26px;
           color: $text-dark;
+        }
+        .label_2 {
+          text-decoration: underline;
         }
       }
     }

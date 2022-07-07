@@ -21,7 +21,14 @@ export const Content = ({
           <button form="contactForm" type="submit" className={s.button}>
             {t("main.contact.button")}
           </button>
-          <span className={s.label}>{t("main.contact.button_label")}</span>
+          <a
+            href="https://docs.google.com/document/d/1EBRNYnK-V1LIHChnC508tPV9-8Wqj6hEZYxGK9eZ3Z4/edit"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className={s.label_1}>{t("main.contact.button_label_1")}</span>
+            <span className={s.label_2}>{t("main.contact.button_label_2")}</span>
+          </a>
         </div>
       </div>
       <form onSubmit={sendEmail} className={s.form} id="contactForm">

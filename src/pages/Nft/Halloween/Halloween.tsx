@@ -30,7 +30,7 @@ export const Halloween = () => {
       </div>
       <div className={s.buttons}>
         <a
-          href="https://www.binance.com/en/nft/collection/pushkeen-522004967883681792?orderBy=list_time&orderType=-1&isBack=1&id=522004967883681792&order=list_time%40-1"
+          href="https://www.binance.com/ru/nft/collection/PushKeen?orderBy=list_time&orderType=-1&isBack=1&id=522004967883681792&order=list_time%40-1"
           target="_blank"
           rel="noreferrer"
         >
