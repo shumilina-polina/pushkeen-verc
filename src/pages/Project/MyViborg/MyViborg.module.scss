@@ -193,10 +193,12 @@
     }
   }
   .video_wrapper {
+    // height: 787px;
     margin-bottom: 131px;
     & video {
       object-fit: contain;
       max-width: 100%;
+      width: 100%;
     }
   }
 }
