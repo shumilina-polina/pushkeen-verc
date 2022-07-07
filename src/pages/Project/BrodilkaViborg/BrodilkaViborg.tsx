@@ -1,13 +1,16 @@
 import { useTranslation } from "react-i18next";
 import s from "./BrodilkaViborg.module.scss";
-import mainscreen from "../../../assets/projects/brodilkaviborg/mainscreen.png";
 
 export const BrodilkaViborg = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.viborg}>
-      <img className={s.viborg_image} src={mainscreen} alt="Brodilka Viborg" />
+      <img
+        className={s.viborg_image}
+        src={require("../../../assets/projects/brodilkaviborg/mainscreen.png")}
+        alt="Brodilka Viborg"
+      />
       <div className={s.about}>
         <div className={s.about_title}>
           <h2 className={s.about_title_name}>
@@ -32,7 +35,11 @@ export const BrodilkaViborg = () => {
         </div>
         <div className={s.ar}>{t("project.list.brodilkaviborg.buttons.2")}</div>
       </div>
-      {/* <img className={s.viborg_image_1} src={i1} alt="Brodilka Viborg" /> */}
+      <img
+        className={s.viborg_image_1}
+        src={require("../../../assets/projects/brodilkaviborg/image1.png")}
+        alt="Brodilka Viborg"
+      />
       <div className={s.task}>
         <div className={s.task_wrapper}>
           <h3 className={s.task_title}>
@@ -62,8 +69,21 @@ export const BrodilkaViborg = () => {
           </span>
         </div>
       </div>
-      {/* <img className={s.viborg_image_2} src={i2} alt="Brodilka Viborg" /> */}
-      {/* <img className={s.viborg_image_3} src={i3} alt="Brodilka Viborg" /> */}
+      <img
+        className={s.viborg_image_2}
+        src={require("../../../assets/projects/brodilkaviborg/image2.png")}
+        alt="Brodilka Viborg"
+      />
+      <img
+        className={s.viborg_image_3}
+        src={require("../../../assets/projects/brodilkaviborg/image3.png")}
+        alt="Brodilka Viborg"
+      />
+      <img
+        className={s.viborg_image_4}
+        src={require("../../../assets/projects/brodilkaviborg/image4.png")}
+        alt="Brodilka Viborg"
+      />
     </section>
   );
 };

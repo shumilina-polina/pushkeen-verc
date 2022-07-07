@@ -1,12 +1,7 @@
 import s from "./Home.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import i1 from "../../assets/svg/pairs/arrow_1.svg";
-import i2 from "../../assets/svg/pairs/square_2.svg";
-import i3 from "../../assets/svg/pairs/star_3.svg";
-import i4 from "../../assets/svg/pairs/triangle_4.svg";
-import i5 from "../../assets/svg/pairs/figure_5.svg";
-import i6 from "../../assets/svg/pairs/half_6.svg";
+import i1 from "../../assets/svg/circle.svg";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -116,20 +111,24 @@ export const Home = () => {
         <section className={s.pairs}>
           <h2 className={s.pairs_title}>{t("main.pairs.title")}</h2>
           <p className={s.pairs_content}>
+            <img src={i1} alt="1" />
             {t("main.pairs.list.1")}
             <img src={i1} alt="1" />
             {t("main.pairs.list.2")}
-            <img src={i2} alt="1" />
+            <img src={i1} alt="1" />
             {t("main.pairs.list.3")}
-            <img src={i3} alt="1" />
+            <img src={i1} alt="1" />
             {t("main.pairs.list.4")}
+            <img src={i1} alt="1" />
             {t("main.pairs.list.5")}
+            <img src={i1} alt="1" />
             {t("main.pairs.list.6")}
-            <img src={i4} alt="1" />
+            <br/>
+            <img src={i1} alt="1" />
             {t("main.pairs.list.7")}
-            <img src={i5} alt="1" />
+            <img src={i1} alt="1" />
             {t("main.pairs.list.8")}
-            <img src={i6} alt="1" />
+            <img src={i1} alt="1" />
             {t("main.pairs.list.9")}
           </p>
         </section>

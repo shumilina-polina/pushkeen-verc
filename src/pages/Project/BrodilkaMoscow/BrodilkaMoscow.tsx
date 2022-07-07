@@ -1,13 +1,16 @@
 import { useTranslation } from "react-i18next";
 import s from "./BrodilkaMoscow.module.scss";
-// import mainscreen from "../../../assets/projects/brodilkamoscow/mainscreen.png";
 
 export const BrodilkaMoscow = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.moscow}>
-      {/* <img className={s.moscow_image} src={mainscreen} alt="Brodilka Moscow" /> */}
+      <img
+        className={s.moscow_image}
+        src={require("../../../assets/projects/brodilkamoscow/mainscreen.png")}
+        alt="Brodilka Moscow"
+      />
       <div className={s.about}>
         <div className={s.about_title}>
           <h2 className={s.about_title_name}>
@@ -38,7 +41,11 @@ export const BrodilkaMoscow = () => {
         </div>
         <div className={s.ar}>{t("project.list.brodilkamoscow.buttons.2")}</div>
       </div>
-      {/* <img className={s.moscow_image_1} src={i1} alt="Brodilka Moscow" /> */}
+      <img
+        className={s.moscow_image_1}
+        src={require("../../../assets/projects/brodilkamoscow/image1.png")}
+        alt="Brodilka Moscow"
+      />
       <div className={s.task}>
         <div className={s.task_wrapper}>
           <h3 className={s.point_title}>
@@ -62,11 +69,22 @@ export const BrodilkaMoscow = () => {
           </span>
         </div>
       </div>
-      {/* <img className={s.moscow_image_2} src={i2} alt="Brodilka Moscow" /> */}
-      <p className={s.desc}>
-        {t("project.list.brodilkamoscow.desc")}
-      </p>
-      {/* <img className={s.moscow_image_3} src={i3} alt="Brodilka Moscow" /> */}
+      <img
+        className={s.moscow_image_2}
+        src={require("../../../assets/projects/brodilkamoscow/image2.png")}
+        alt="Brodilka Moscow"
+      />
+      <p className={s.desc}>{t("project.list.brodilkamoscow.desc")}</p>
+      <img
+        className={s.moscow_image_3}
+        src={require("../../../assets/projects/brodilkamoscow/image3.png")}
+        alt="Brodilka Moscow"
+      />
+      <img
+        className={s.moscow_image_4}
+        src={require("../../../assets/projects/brodilkamoscow/image4.png")}
+        alt="Brodilka Moscow"
+      />
     </section>
   );
 };

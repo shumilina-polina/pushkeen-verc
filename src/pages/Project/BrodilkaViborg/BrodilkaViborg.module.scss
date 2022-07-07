@@ -178,12 +178,17 @@
       }
     }
   }
-  .viborg_image_1,
-  .viborg_image_3 {
-    margin-bottom: 56px;
+  .viborg_image_1 {
+    margin-bottom: 46px;
+    max-width: 100%;
+    object-fit: contain;
   }
-  .viborg_image_2 {
+  .viborg_image_2,
+  .viborg_image_3,
+  .viborg_image_4 {
     margin-bottom: 24px;
+    max-width: 100%;
+    object-fit: contain;
   }
 }
 
