@@ -11,7 +11,7 @@ export const Cards = ({ list }: { list: Project[] }) => {
     <div className={s.cards}>
       {list.map((elem, index) => {
         if (currentLink === "" || currentLink === linkValue.NFT) {
-          if (index < 12) return <Card key={elem.id} {...elem} />;
+          if (index < 9) return <Card key={elem.id} {...elem} />;
         } else if (currentLink === linkValue.Projects)
           return <Card key={elem.id} {...elem} />;
       })}

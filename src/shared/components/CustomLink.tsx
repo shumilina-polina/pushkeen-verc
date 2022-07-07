@@ -7,7 +7,7 @@ const CustomLink = ({ children, to, ...props }: any) => {
     <Link
       to={to}
       style={{
-        opacity: match ? "0.3" : "1",
+        opacity: match ? "0.7" : "1",
       }}
       {...props}
     >

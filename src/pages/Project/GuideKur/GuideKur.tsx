@@ -78,16 +78,12 @@ export const GuideKur = () => {
       </div>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
-          {/* <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted>
             <source
               src={require("../../../assets/projects/guidekur/video.mp4")}
               type="video/mp4"
             />
-          </video> */}
-          <img
-            src={require("../../../assets/projects/guidekur/phone.png")}
-            alt="Guide Kurortnyy"
-          />
+          </video>
         </LazyLoadComponent>
       </div>
     </section>

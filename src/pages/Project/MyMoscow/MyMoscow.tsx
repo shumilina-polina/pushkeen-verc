@@ -71,7 +71,7 @@ export const MyMoscow = () => {
           </ul>
         </div>
         <div className={s.steps_date}>
-          <span className={s.number}>7</span>
+          <span className={s.number}>6</span>
           <span className={s.month}>
             {t("project.list.mymoscow.steps.month")}
           </span>

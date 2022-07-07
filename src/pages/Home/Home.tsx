@@ -62,7 +62,7 @@ export const Home = () => {
               className="link"
               to="/projects"
               style={
-                projectsList.length > 12
+                projectsList.length > 9
                   ? { display: "block" }
                   : { display: "none" }
               }
@@ -89,7 +89,6 @@ export const Home = () => {
                 <li>{t("main.activity.content.create.list.3")}</li>
                 <li>{t("main.activity.content.create.list.4")}</li>
                 <li>{t("main.activity.content.create.list.5")}</li>
-                <li>{t("main.activity.content.create.list.6")}</li>
               </ul>
             </div>
             <div className={s.buttons_wrapper}>
@@ -134,13 +133,14 @@ export const Home = () => {
             {t("main.pairs.list.3")}
             <img src={i3} alt="1" />
             {t("main.pairs.list.4")}
-            <br />
-            <img src={i4} alt="1" />
             {t("main.pairs.list.5")}
-            <img src={i5} alt="1" />
             {t("main.pairs.list.6")}
-            <img src={i6} alt="1" />
+            <img src={i4} alt="1" />
             {t("main.pairs.list.7")}
+            <img src={i5} alt="1" />
+            {t("main.pairs.list.8")}
+            <img src={i6} alt="1" />
+            {t("main.pairs.list.9")}
           </p>
         </section>
       </div>

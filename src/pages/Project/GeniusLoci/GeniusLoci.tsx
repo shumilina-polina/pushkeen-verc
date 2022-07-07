@@ -66,6 +66,15 @@ export const GeniusLoci = () => {
             <li>{t("project.list.geniusloci.steps.point.4")}</li>
           </ul>
         </div>
+        <div className={s.task_date}>
+          <span className={s.number}>5</span>
+          <span className={s.month}>
+            {t("project.list.geniusloci.steps.date.month")}
+          </span>
+          <span className={s.label}>
+            {t("project.list.geniusloci.steps.date.label")}
+          </span>
+        </div>
       </div>
     </section>
   );

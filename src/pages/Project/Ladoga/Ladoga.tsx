@@ -74,7 +74,7 @@ export const Ladoga = () => {
           <span className={s.step}>{t("project.list.ladoga.steps.text5")}</span>
         </div>
         <div className={s.steps_date}>
-          <span className={s.number}>6</span>
+          <span className={s.number}>3</span>
           <span className={s.month}>
             {t("project.list.ladoga.steps.month")}
           </span>

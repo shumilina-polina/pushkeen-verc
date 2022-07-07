@@ -53,7 +53,7 @@ export const BrodilkaMoscow = () => {
           </ul>
         </div>
         <div className={s.task_date}>
-          <span className={s.number}>?</span>
+          <span className={s.number}>5</span>
           <span className={s.month}>
             {t("project.list.brodilkamoscow.steps.date.month")}
           </span>

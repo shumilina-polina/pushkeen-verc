@@ -58,7 +58,7 @@ export const StreetArt = () => {
           </ul>
         </div>
         <div className={s.task_date}>
-          <span className={s.number}>6</span>
+          <span className={s.number}>2</span>
           <span className={s.month}>
             {t("project.list.streetart.steps.date.month")}
           </span>
