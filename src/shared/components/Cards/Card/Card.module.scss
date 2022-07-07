@@ -14,10 +14,10 @@
   &:hover,
   &:active,
   &:focus {
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    -o-transform: rotateX(180deg);
-    transform: rotateX(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
   }
 
   .front,
@@ -29,6 +29,12 @@
     backface-visibility: hidden;
   }
 
+  .front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
   .back {
     position: absolute;
     top: 0;
@@ -38,10 +44,10 @@
     padding: 12px 14px;
     background: #0f4cea;
     color: $text-light;
-    -webkit-transform: rotateX(180deg);
-    -moz-transform: rotateX(180deg);
-    -o-transform: rotateX(180deg);
-    transform: rotateX(180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 
     .link_wrapper {
       padding: 12px 14px 22px;

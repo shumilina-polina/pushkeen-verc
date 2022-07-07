@@ -10,10 +10,7 @@ import i6 from "../../assets/svg/pairs/half_6.svg";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import {
-  LazyLoadComponent,
-  LazyLoadImage,
-} from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -36,12 +33,6 @@ export const Home = () => {
                 *продвигаем культуру, внедряем инновации
               </span>
             </div>
-            {/* <LazyLoadComponent>
-              <img
-                className={s.rings}
-                src={require("../../assets/animate/ringswhite.gif")}
-                alt="rings"
-              /> */}
             <div className={s.rings_wrapper}>
               <LazyLoadImage
                 className={s.rings}
@@ -50,7 +41,6 @@ export const Home = () => {
                 effect="blur"
               />
             </div>
-            {/* </LazyLoadComponent> */}
           </div>
         </div>
       </section>

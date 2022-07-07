@@ -1,11 +1,9 @@
-import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { linkValue, Project } from "../../../types/types";
 import { Card } from "./Card/Card";
 import s from "./Cards.module.scss";
 
 export const Cards = ({ list }: { list: Project[] }) => {
-  const { t } = useTranslation();
   let currentLink = useParams()["*"];
   return (
     <div className={s.cards}>
