@@ -125,15 +125,17 @@ export const Home = () => {
             {t("main.pairs.list.3")}
             <img src={i1} alt="1" />
             {t("main.pairs.list.4")}
+            <br />
             <img src={i1} alt="1" />
             {t("main.pairs.list.5")}
+            <br />
             <img src={i1} alt="1" />
             {t("main.pairs.list.6")}
-            <br />
             <img src={i1} alt="1" />
             {t("main.pairs.list.7")}
             <img src={i1} alt="1" />
             {t("main.pairs.list.8")}
+            <br />
             <img src={i1} alt="1" />
             {t("main.pairs.list.9")}
           </p>
