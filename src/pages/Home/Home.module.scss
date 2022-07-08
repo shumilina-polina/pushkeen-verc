@@ -337,6 +337,7 @@
     background: $header;
     text-transform: uppercase;
     border-radius: 20px;
+    border: none;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 
     &:hover {

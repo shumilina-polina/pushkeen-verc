@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
 import s from "./GeniusLoci.module.scss";
 import mainscreen from "../../../assets/projects/geniusloci/mainscreen.png";
 import i1 from "../../../assets/projects/geniusloci/image_1.png";

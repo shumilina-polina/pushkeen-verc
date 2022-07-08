@@ -29,6 +29,12 @@ export const Home = () => {
               </span>
             </div>
             <div className={s.rings_wrapper}>
+              {/* <video className={s.rings} autoPlay loop preload="metadata" muted>
+                <source
+                  src={require("../../assets/animate/rings.webm")}
+                  type="video/webm"
+                />
+              </video> */}
               <LazyLoadImage
                 className={s.rings}
                 src={require("../../assets/animate/ringswhite_1.gif")}
@@ -123,7 +129,7 @@ export const Home = () => {
             {t("main.pairs.list.5")}
             <img src={i1} alt="1" />
             {t("main.pairs.list.6")}
-            <br/>
+            <br />
             <img src={i1} alt="1" />
             {t("main.pairs.list.7")}
             <img src={i1} alt="1" />

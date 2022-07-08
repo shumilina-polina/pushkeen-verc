@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import s from "./Footer.module.scss";
 import vk from "../../assets/svg/social/vk.svg";
-import instagram from "../../assets/svg/social/instagram.svg";
+import telegram from "../../assets/svg/social/telegram.svg";
 import twitter from "../../assets/svg/social/twitter.svg";
 
 const Footer = () => {
@@ -30,13 +30,13 @@ const Footer = () => {
                   <img src={vk} alt="vkontakte" />
                 </a>
               </li>
-              <li className={s.instagram}>
+              <li className={s.telegram}>
                 <a
-                  href="https://instagram.com/pushkeen.ru"
+                  href="https://t.me/pushkeenTG"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={instagram} alt="instagram" />
+                  <img src={telegram} alt="telegram" />
                 </a>
               </li>
               <li className={s.twitter}>
