@@ -4,11 +4,10 @@ import { ButtonDownload } from "../../../shared/components/ButtonDownload/Button
 import mainscreen from "../../../assets/projects/mymoscow/mainscreen.png";
 import logoimg from "../../../assets/projects/mymoscow/logoimg.png";
 import gameimg from "../../../assets/projects/mymoscow/image_create.png";
-import site_1 from "../../../assets/projects/mymoscow/image_site_1.png";
-import site_2 from "../../../assets/projects/mymoscow/image_site_2.png";
-import phone from "../../../assets/projects/mymoscow/phone.png";
+import site from "../../../assets/projects/mymoscow/site.png";
 import book_1 from "../../../assets/projects/mymoscow/book_1.png";
 import book_2 from "../../../assets/projects/mymoscow/book_2.png";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export const MyMoscow = () => {
   const { t } = useTranslation();
@@ -88,15 +87,21 @@ export const MyMoscow = () => {
         </div>
       </div>
       <div className={s.img_wrapper_3}>
-        <img className={s.image} src={site_1} alt="My Moscow Website" />
-        <img className={s.image} src={site_2} alt="My Moscow Website" />
+        <img className={s.image} src={site} alt="My Moscow Website" />
         <div className={s.img_label}>
           <span>{t("project.list.mymoscow.image_labels.site")}</span>
           <div className={s.circle}></div>
         </div>
       </div>
-      <div className={s.img_wrapper_4}>
-        <img className={s.image} src={phone} alt="My Moscow App" />
+      <div className={s.video_wrapper}>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/projects/mymoscow/video.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
         <div className={s.img_label}>
           <span>{t("project.list.mymoscow.image_labels.app")}</span>
           <div className={s.circle}></div>

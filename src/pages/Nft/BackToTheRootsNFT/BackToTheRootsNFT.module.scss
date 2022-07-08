@@ -95,10 +95,37 @@
   }
   .video_wrapper {
     margin-bottom: 96px;
+    position: relative;
     & video {
       object-fit: contain;
       max-width: 100%;
     }
+  }
+  .circle {
+    width: 17px;
+    height: 17px;
+    background: #1858fb;
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: 8px;
+    padding-top: 15px;
+  }
+  .img_label {
+    position: absolute;
+    top: -16px;
+    transform: translateY(-100%);
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $projects_text;
   }
 }
 
@@ -183,7 +210,7 @@
     .btrNft_image2 {
       margin-bottom: 40px;
     }
-    .desc{
+    .desc {
       max-width: 100%;
       margin-bottom: 50px;
     }

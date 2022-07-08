@@ -20,7 +20,7 @@ export const Home = () => {
           <div className={s.wrapper_slogan}>
             <div className={s.slogan}>
               <p className={s.slogan_text}>
-                <span className={s.arrow}>Pushing culture</span>
+                <span className={s.arrow}>Push in culture</span>
                 <br />
                 <span className={s.star}>keen on techology</span>
               </p>

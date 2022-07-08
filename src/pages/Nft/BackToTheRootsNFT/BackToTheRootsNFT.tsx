@@ -70,6 +70,10 @@ export const BackToTheRootsNFT = () => {
             />
           </video>
         </LazyLoadComponent>
+        <div className={s.img_label}>
+          <span>{t("project.list.nft_list.btrNft.image_labels.token1")}</span>
+          <div className={s.circle}></div>
+        </div>
       </div>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
@@ -80,6 +84,10 @@ export const BackToTheRootsNFT = () => {
             />
           </video>
         </LazyLoadComponent>
+        <div className={s.img_label}>
+          <span>{t("project.list.nft_list.btrNft.image_labels.token2")}</span>
+          <div className={s.circle}></div>
+        </div>
       </div>
       <p className={s.desc}>{t("project.list.nft_list.btrNft.desc_2")}</p>
     </section>
