@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import s from "./BackToTheRootsNFT.module.scss";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export const BackToTheRootsNFT = () => {
   const { t } = useTranslation();
@@ -35,8 +36,18 @@ export const BackToTheRootsNFT = () => {
         >
           <ButtonDownload text={t("project.list.nft_list.btrNft.buttons.1")} />
         </a>
+        <a href="http://btr.pushkeen.ru/" target="_blank" rel="noreferrer">
+          <ButtonDownload text={t("project.list.nft_list.btrNft.buttons.2")} />
+        </a>
+        <a
+          href="https://www.gq.ru/entertainment/posmotrite-na-masshtabnyj-strit-art-performans-v-gorah-severnoj-osetii-alanii"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <ButtonDownload text={t("project.list.nft_list.btrNft.buttons.3")} />
+        </a>
         <div className={s.button_2}>
-          {t("project.list.nft_list.btrNft.buttons.2")}
+          {t("project.list.nft_list.btrNft.buttons.4")}
         </div>
       </div>
       <img
@@ -44,11 +55,33 @@ export const BackToTheRootsNFT = () => {
         src={require("../../../assets/nft/btrNft/image1.png")}
         alt="Back To The Roots NFT"
       />
-      <img
-        className={s.btrNft_image2}
-        src={require("../../../assets/nft/btrNft/image2.png")}
-        alt="Back To The Roots NFT"
-      />
+      <p className={s.desc}>
+        {t("project.list.nft_list.btrNft.desc_1_1")}
+        <br />
+        <br />
+        {t("project.list.nft_list.btrNft.desc_1_2")}
+      </p>
+      <div className={s.video_wrapper}>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/nft/btrNft/video1.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
+      </div>
+      <div className={s.video_wrapper}>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/nft/btrNft/video2.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
+      </div>
+      <p className={s.desc}>{t("project.list.nft_list.btrNft.desc_2")}</p>
     </section>
   );
 };

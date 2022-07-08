@@ -57,7 +57,11 @@
   }
   .buttons {
     max-width: 50%;
-    margin-bottom: 96px;
+    margin-bottom: 150px;
+    margin-top: -190px;
+    & button {
+      margin-bottom: 10px;
+    }
     .button_2 {
       font-family: "IBM Plex Mono";
       font-style: normal;
@@ -78,6 +82,24 @@
   .btrNft_image2 {
     margin-bottom: 96px;
   }
+  .desc {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: $projects_text;
+    margin: 0 auto 96px;
+    max-width: 80%;
+  }
+  .video_wrapper {
+    margin-bottom: 96px;
+    & video {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
 }
 
 //-------MEDIA-------
@@ -96,13 +118,16 @@
         }
       }
       &_content {
+        &_label {
+          font-size: 19px;
+        }
         width: 50%;
-        line-height: 31px;
+        line-height: 25px;
       }
     }
     .buttons {
-      margin-top: -190px;
-      margin-bottom: 200px;
+      margin-top: -250px;
+      margin-bottom: 130px;
     }
   }
 }
@@ -148,10 +173,22 @@
         width: 100%;
         text-align: center;
       }
+      & button {
+        &::after {
+          right: 50px;
+        }
+      }
     }
     .btrNft_image1,
     .btrNft_image2 {
       margin-bottom: 40px;
+    }
+    .desc{
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+    .video_wrapper {
+      margin-bottom: 50px;
     }
   }
 }

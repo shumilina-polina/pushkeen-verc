@@ -56,6 +56,9 @@ export const Halloween = () => {
               type="video/mp4"
             />
           </video>
+          <p className={s.desc}>
+            {t("project.list.nft_list.halloween.desc")}
+          </p>
           <video autoPlay loop preload="metadata" muted>
             <source
               src={require("../../../assets/nft/halloween/video3.mp4")}

@@ -62,6 +62,12 @@ export const DirtyDrops = () => {
         src={require("../../../assets/nft/dirtydrops/image2.png")}
         alt="Dirty Drops"
       />
+      <p className={s.desc}>
+        {t("project.list.nft_list.dirtydrops.desc_1")}
+        <br/>
+        <br/>
+        {t("project.list.nft_list.dirtydrops.desc_2")}
+      </p>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>

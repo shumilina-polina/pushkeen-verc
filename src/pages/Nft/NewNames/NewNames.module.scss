@@ -57,6 +57,7 @@
   .buttons {
     max-width: 50%;
     margin-bottom: 96px;
+    margin-top: -50px;
     .button_2 {
       font-family: "IBM Plex Mono";
       font-style: normal;
@@ -98,13 +99,16 @@
         }
       }
       &_content {
+        &_label {
+          font-size: 18px;
+        }
         width: 50%;
         line-height: 31px;
       }
     }
     .buttons {
-      margin-top: -70px;
-      margin-bottom: 80px;
+      margin-top: -105px;
+      margin-bottom: 100px;
       & button {
         margin-bottom: 10px;
       }

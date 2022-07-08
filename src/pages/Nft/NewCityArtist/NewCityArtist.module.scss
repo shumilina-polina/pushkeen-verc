@@ -56,8 +56,8 @@
   }
   .buttons {
     max-width: 50%;
-    margin-bottom: 220px;
-    margin-top: -210px;
+    margin-bottom: 160px;
+    margin-top: -140px;
     .button_1 {
       font-family: "IBM Plex Mono";
       font-style: normal;
@@ -74,31 +74,74 @@
       padding: 13px 20px;
     }
   }
-  .desc {
-    margin: 0 auto 86px;
+  .desc,
+  .desc_2 {
+    margin: 0 auto 96px;
     font-family: "Mulish";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
     color: $projects_text;
+  }
+  .desc_2 {
     max-width: 80%;
     text-align: center;
   }
-  .video_wrapper_1 {
+  .car_image {
     margin-bottom: 96px;
+    max-width: 100%;
+    object-fit: contain;
   }
   .video_wrapper_2,
   .video_wrapper_3,
-  .desc {
+  .video_wrapper_4 {
+    margin-bottom: 96px;
+  }
+  .video_wrapper_1 {
     margin-bottom: 56px;
   }
   .video_wrapper_1,
   .video_wrapper_2,
+  .video_wrapper_4,
   .video_wrapper_3 {
     & video {
       object-fit: contain;
       max-width: 100%;
+    }
+  }
+  .point_title {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 31px;
+    margin-bottom: 27px;
+  }
+
+  .point_text {
+    max-width: 50%;
+    margin-bottom: 56px;
+
+    & li {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 31px;
+      position: relative;
+      padding-left: 32px;
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        border-radius: 100px;
+        background-color: #0f4cea;
+        width: 20px;
+        height: 20px;
+        top: 7px;
+        left: 0;
+      }
     }
   }
 }
@@ -119,19 +162,25 @@
         }
       }
       &_content {
+        &_label {
+          font-size: 20px;
+        }
         width: 50%;
         line-height: 31px;
       }
     }
     .buttons {
-      margin-top: -320px;
-      margin-bottom: 350px;
+      margin-top: -130px;
+      margin-bottom: 150px;
       & button {
         margin-bottom: 10px;
       }
     }
     .video_wrapper {
       margin-bottom: 30px;
+    }
+    .point_text {
+      max-width: 100%;
     }
   }
 }
@@ -179,11 +228,19 @@
       }
     }
     .video_wrapper_1 {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
+    .desc {
+      margin-bottom: 50px;
+    }
+    .desc_2 {
+      max-width: 100%;
+    }
+    .car_image,
+    .desc_2,
     .video_wrapper_2,
     .video_wrapper_3,
-    .desc {
+    .video_wrapper_4 {
       margin-bottom: 20px;
     }
     .desc {

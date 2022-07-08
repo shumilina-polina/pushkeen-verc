@@ -55,8 +55,8 @@
   }
   .buttons {
     max-width: 50%;
-    margin-top: -50px;
-    margin-bottom: 96px;
+    margin-top: -140px;
+    margin-bottom: 160px;
     .button_2 {
       font-family: "IBM Plex Mono";
       font-style: normal;
@@ -85,6 +85,17 @@
     max-width: 100%;
     object-fit: contain;
   }
+  .desc {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: $projects_text;
+    max-width: 80%;
+    margin: 0 auto 96px;
+  }
 }
 
 //-------MEDIA-------
@@ -104,12 +115,15 @@
       }
       &_content {
         width: 50%;
-        line-height: 31px;
+        line-height: 25px;
+        &_label {
+          font-size: 20px;
+        }
       }
     }
     .buttons {
-      margin-top: -180px;
-      margin-bottom: 150px;
+      margin-top: -210px;
+      margin-bottom: 190px;
     }
     .video_wrapper {
       margin-bottom: 50px;
@@ -165,6 +179,11 @@
     .video_wrapper,
     .dirtydrops_image_bottom {
       margin-bottom: 20px;
+    }
+    .desc {
+      font-size: 20px;
+      max-width: 100%;
+      margin: 0 auto 50px;
     }
   }
 }

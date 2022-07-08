@@ -32,6 +32,7 @@ export const NewCityArtist = () => {
           {t("project.list.nft_list.newcity.buttons.1")}
         </div>
       </div>
+      <p className={s.desc}>{t("project.list.nft_list.newcity.desc")}</p>
       <div className={s.video_wrapper_1}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
@@ -42,6 +43,19 @@ export const NewCityArtist = () => {
           </video>
         </LazyLoadComponent>
       </div>
+      <h3 className={s.point_title}>
+        {t("project.list.nft_list.newcityartist.steps.point.title")}
+      </h3>
+      <ul className={s.point_text}>
+        <li>{t("project.list.nft_list.newcityartist.steps.point.1")}</li>
+        <li>{t("project.list.nft_list.newcityartist.steps.point.2")}</li>
+        <li>{t("project.list.nft_list.newcityartist.steps.point.3")}</li>
+      </ul>
+      <img
+        className={s.car_image}
+        src={require("../../../assets/nft/newcityartist/car.png")}
+        alt="New City Artist"
+      />
       <div className={s.video_wrapper_2}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
@@ -52,12 +66,22 @@ export const NewCityArtist = () => {
           </video>
         </LazyLoadComponent>
       </div>
-      <p className={s.desc}>{t("project.list.nft_list.newcity.desc")}</p>
+      <p className={s.desc_2}>{t("project.list.nft_list.newcity.desc_2")}</p>
       <div className={s.video_wrapper_3}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
               src={require("../../../assets/nft/newcityartist/video3.mp4")}
+              type="video/mp4"
+            />
+          </video>
+        </LazyLoadComponent>
+      </div>
+      <div className={s.video_wrapper_4}>
+        <LazyLoadComponent>
+          <video autoPlay loop preload="metadata" muted>
+            <source
+              src={require("../../../assets/nft/newcityartist/video4.mp4")}
               type="video/mp4"
             />
           </video>
