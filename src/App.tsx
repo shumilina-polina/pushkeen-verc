@@ -7,6 +7,8 @@ import { MetaFemHistory } from "./pages/Nft/MetaFemHistory/MetaFemHistory";
 import { NewCityArtist } from "./pages/Nft/NewCityArtist/NewCityArtist";
 import { NewNames } from "./pages/Nft/NewNames/NewNames";
 import { Nft } from "./pages/Nft/Nft";
+import { PageNotFound } from "./pages/PageNotFound/PageNotFound";
+import { Policy } from "./pages/Policy/Policy";
 import { BackToTheRoots } from "./pages/Project/BackToTheRoots/BackToTheRoots";
 import { BrodilkaKurortnyy } from "./pages/Project/BrodilkaKurortnyy/BrodilkaKurortnyy";
 import { BrodilkaMoscow } from "./pages/Project/BrodilkaMoscow/BrodilkaMoscow";
@@ -24,7 +26,6 @@ import { Contact } from "./shared/Contact/Contact";
 import CursorProvider from "./shared/CursorProvider/CursorProvider";
 import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
-import { PageNotFound } from "./shared/PageNotFound/PageNotFound";
 
 function App() {
   return (
@@ -193,6 +194,8 @@ function App() {
             />
             {/* --------NOT FOUND--------- */}
             <Route path="*" element={<PageNotFound />} />
+            {/* --------PRIVACY POLICY--------- */}
+            <Route path="privacy" element={<Policy />} />
           </Routes>
         </div>
         <Footer />

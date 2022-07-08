@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import s from "./Contact.module.scss";
 import emailjs from "@emailjs/browser";
 import { useCallback, useState } from "react";
@@ -6,8 +5,6 @@ import { Content } from "./Content";
 import { SubmitMessage } from "./SubmitMessage";
 
 export const Contact = () => {
-  const { t } = useTranslation();
-
   const [submitMessage, setSubmitMessage] = useState<boolean>(false);
 
   const renderContent = useCallback(() => {

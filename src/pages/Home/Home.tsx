@@ -31,7 +31,7 @@ export const Home = () => {
             <div className={s.rings_wrapper}>
               <LazyLoadImage
                 className={s.rings}
-                src={require("../../assets/animate/ringswhite.gif")}
+                src={require("../../assets/animate/ringswhite_1.gif")}
                 alt="rings"
                 effect="blur"
               />

@@ -52,6 +52,10 @@
       font-size: 48px;
       line-height: 62px;
       text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
     }
     .content {
       & li {

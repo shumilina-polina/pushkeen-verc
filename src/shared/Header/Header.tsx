@@ -96,7 +96,7 @@ const Header = () => {
                     ? " " + s.lang_active
                     : "")
                 }
-                onClick={() => changeLanguage("en")}
+                // onClick={() => changeLanguage("en")}
               >
                 en
               </button>
@@ -155,7 +155,7 @@ const Header = () => {
                     : "")
                 }
                 onClick={() => {
-                  changeLanguage("en");
+                  // changeLanguage("en");
                   toggleBurder(false);
                 }}
               >

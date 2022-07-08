@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+.policy {
+  padding-top: 50px;
+  text-align: left;
+  margin-bottom: 50px;
+  .title {
+    margin-bottom: 20px;
+    font-family: "IBM Plex Mono";
+    font-style: bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .text {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: $projects_text;
+  }
+}
+
+@media (max-width: 770px) {
+  .policy {
+    padding-top: 20px;
+    .text {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}

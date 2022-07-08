@@ -23,18 +23,4 @@ i18n
     },
   });
 
-// i18n
-//   .use(LanguageDetector)
-//   .use(initReactI18next)
-//   .init({
-//     fallbackLng: "en",
-//     detection: {
-//       order: ["queryString", "cookie"],
-//       caches: ["cookie"],
-//     },
-//     interpolation: {
-//       escapeValue: false,
-//     },
-//   });
-
 export default i18n;
