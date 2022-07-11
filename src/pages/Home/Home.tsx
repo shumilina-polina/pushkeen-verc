@@ -37,7 +37,10 @@ export const Home = () => {
               </video> */}
               <LazyLoadImage
                 className={s.rings}
-                src={require("../../assets/animate/ringswhite_1.gif")}
+                src={
+                  "https://media1.giphy.com/media/2r7WYYYrppXtblpGqW/giphy.gif?cid=790b761164198e00bdf211a5dc1f97b9b0aa0bddafb4d4b5&rid=giphy.gif&ct=s"
+                }
+                // src={require("../../assets/animate/ringswhite_1.gif")}
                 alt="rings"
                 effect="blur"
               />
