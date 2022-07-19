@@ -22,25 +22,18 @@ export const Home = () => {
               <p className={s.slogan_text}>
                 <span className={s.arrow}>Push in culture</span>
                 <br />
-                <span className={s.star}>keen on techology</span>
+                <span className={s.star}>keen on technology</span>
               </p>
               <span className={s.slogan_desc}>
                 *продвигаем культуру, внедряем инновации
               </span>
             </div>
             <div className={s.rings_wrapper}>
-              {/* <video className={s.rings} autoPlay loop preload="metadata" muted>
-                <source
-                  src={require("../../assets/animate/rings.webm")}
-                  type="video/webm"
-                />
-              </video> */}
               <LazyLoadImage
                 className={s.rings}
                 src={
                   "https://media1.giphy.com/media/2r7WYYYrppXtblpGqW/giphy.gif?cid=790b761164198e00bdf211a5dc1f97b9b0aa0bddafb4d4b5&rid=giphy.gif&ct=s"
                 }
-                // src={require("../../assets/animate/ringswhite_1.gif")}
                 alt="rings"
                 effect="blur"
               />

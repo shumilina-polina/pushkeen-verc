@@ -115,6 +115,14 @@ export const MyMoscow = () => {
           <div className={s.circle}></div>
         </div>
       </div>
+      <div className={s.result_content}>
+        <h3 className={s.result_content_name}>
+          {t("project.list.mymoscow.result.title")}
+        </h3>
+        <span className={s.result_content_label}>
+          {t("project.list.mymoscow.result.text")}
+        </span>
+      </div>
     </section>
   );
 };

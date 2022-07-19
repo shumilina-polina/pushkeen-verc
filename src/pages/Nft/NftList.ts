@@ -43,4 +43,11 @@ export const nftList: Project[] = [
     content_locales: "nft_list.halloween",
     tag_count: 1,
   },
+  {
+    id: 6,
+    imageURL: "nft/newnames/logo.png",
+    name: "nft/newEastTechAwards",
+    content_locales: "nft_list.neweast",
+    tag_count: 1,
+  },
 ];

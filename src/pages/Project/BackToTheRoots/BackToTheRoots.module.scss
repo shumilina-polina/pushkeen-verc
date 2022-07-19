@@ -1,8 +1,7 @@
 @import "../../../styles/variables.scss";
 
 .backtotheroots {
-  .backtotheroots_image,
-  .landing_image {
+  .backtotheroots_image {
     margin-bottom: 58px;
     max-width: 100%;
     object-fit: contain;
@@ -64,13 +63,122 @@
     }
   }
   .buttons {
-    margin-bottom: 100px;
+    margin-bottom: 77px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     & button {
       margin-bottom: 10px;
     }
+  }
+  .steps {
+    padding-right: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 96px;
+
+    &_text {
+      width: 50%;
+      & .title,
+      .text,
+      .result,
+      .result_text {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31px;
+        color: $projects_text;
+      }
+      & .title,
+      .result {
+        font-family: "IBM Plex Mono";
+        font-size: 28px;
+        margin-bottom: 28px;
+      }
+      .text {
+        margin-bottom: 56px;
+      }
+    }
+    &_date {
+      align-self: flex-start;
+      margin-right: 40px;
+      position: relative;
+
+      .number {
+        display: block;
+        padding: 16px 35px;
+        background: rgba(119, 182, 255, 0.3);
+        border-radius: 100px;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 79px;
+        text-transform: uppercase;
+        color: #1858fb;
+        width: min-content;
+      }
+      .month,
+      .label {
+        position: absolute;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+      }
+      .month {
+        right: -40px;
+        bottom: 40%;
+        transform: translateY(50%);
+        font-size: 32px;
+        line-height: 42px;
+      }
+      .label {
+        bottom: -10px;
+        right: -20px;
+        font-size: 20px;
+        line-height: 26px;
+        white-space: nowrap;
+      }
+    }
+  }
+  .img_wrapper {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 58px;
+
+    & .landing_image {
+      object-fit: contain;
+      max-width: 100%;
+    }
+  }
+  .circle {
+    width: 17px;
+    height: 17px;
+    background: #1858fb;
+    border-radius: 50px;
+    display: inline-block;
+    margin-left: 8px;
+    padding-top: 15px;
+  }
+  .img_label {
+    position: absolute;
+    top: -16px;
+    transform: translateY(-100%);
+    right: 0;
+    display: flex;
+    align-items: center;
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $projects_text;
   }
 }
 
@@ -141,12 +249,28 @@
       }
     }
     .buttons {
-      & button{
-        &::after{
+      & button {
+        &::after {
           right: 30px;
         }
       }
       margin-bottom: 70px;
+    }
+    .steps {
+      padding-right: 0px;
+      margin-bottom: 110px;
+      flex-direction: column;
+
+      &_text {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      &_date {
+      align-self: flex-end;
+      margin-right: 40px;
+      position: relative;
+
+    }
     }
   }
 }

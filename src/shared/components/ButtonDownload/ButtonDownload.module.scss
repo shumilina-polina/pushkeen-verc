@@ -46,6 +46,13 @@
 
 @media (max-width: 770px) {
   .button {
+    background-color: #1858fb;
+    color: #fff;
+    border-color: #1858fb;
+    &::after {
+      background-image: url("../../../assets/projects/arrow-white.svg");
+    }
+    color: #fff;
     width: 100%;
     text-align: center;
     margin-bottom: 10px;

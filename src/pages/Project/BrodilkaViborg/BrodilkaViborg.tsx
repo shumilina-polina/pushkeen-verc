@@ -84,6 +84,14 @@ export const BrodilkaViborg = () => {
         src={require("../../../assets/projects/brodilkaviborg/image4.png")}
         alt="Brodilka Viborg"
       />
+      <div className={s.result_content}>
+        <h3 className={s.result_content_name}>
+          {t("project.list.brodilkaviborg.result.title")}
+        </h3>
+        <span className={s.result_content_label}>
+          {t("project.list.brodilkaviborg.result.text")}
+        </span>
+      </div>
     </section>
   );
 };

@@ -5,6 +5,7 @@ import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
 import { Halloween } from "./pages/Nft/Halloween/Halloween";
 import { MetaFemHistory } from "./pages/Nft/MetaFemHistory/MetaFemHistory";
 import { NewCityArtist } from "./pages/Nft/NewCityArtist/NewCityArtist";
+import { NewEast } from "./pages/Nft/NewEast/NewEast";
 import { NewNames } from "./pages/Nft/NewNames/NewNames";
 import { Nft } from "./pages/Nft/Nft";
 import { PageNotFound } from "./pages/PageNotFound/PageNotFound";
@@ -189,6 +190,14 @@ function App() {
               element={
                 <Project locales_page="nft" locales_title="nft_list.newcity">
                   <NewCityArtist />
+                </Project>
+              }
+            />
+            <Route
+              path="nft/newEastTechAwards"
+              element={
+                <Project locales_page="nft" locales_title="nft_list.neweast">
+                  <NewEast />
                 </Project>
               }
             />

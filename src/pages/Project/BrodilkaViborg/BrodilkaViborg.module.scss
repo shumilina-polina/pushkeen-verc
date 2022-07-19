@@ -6,6 +6,24 @@
     max-width: 100%;
     object-fit: contain;
   }
+  .result_content {
+    width: 50%;
+    line-height: 31px;
+    margin-bottom: 53px;
+    &_name {
+      font-style: normal;
+      font-weight: 400;
+      font-family: "IBM Plex Mono";
+      font-size: 28px;
+      margin-bottom: 27px;
+    }
+    &_label {
+      font-style: normal;
+      font-weight: 400;
+      font-family: "Mulish";
+      font-size: 24px;
+    }
+  }
   .about {
     color: $projects_text;
     display: flex;
@@ -184,9 +202,14 @@
     object-fit: contain;
   }
   .viborg_image_2,
-  .viborg_image_3,
-  .viborg_image_4 {
+  .viborg_image_3 {
     margin-bottom: 24px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .viborg_image_4 {
+    margin-bottom: 72px;
     max-width: 100%;
     object-fit: contain;
   }
@@ -227,6 +250,9 @@
   .viborg {
     .viborg_image {
       margin-bottom: 40px;
+    }
+    .result_content {
+      width: 100%;
     }
     .about {
       margin-bottom: 40px;
