@@ -1,7 +1,6 @@
 import s from "./Home.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import i1 from "../../assets/svg/circle.svg";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -112,29 +111,44 @@ export const Home = () => {
         </section>
         <section className={s.pairs}>
           <h2 className={s.pairs_title}>{t("main.pairs.title")}</h2>
-          <p className={s.pairs_content}>
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.1")}
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.2")}
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.3")}
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.4")}
-            <br />
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.5")}
-            <br />
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.6")}
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.7")}
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.8")}
-            <br />
-            <img src={i1} alt="1" />
-            {t("main.pairs.list.9")}
-          </p>
+          <div className={s.pairs_grid}>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/rosatom.png")}
+                alt="Ros Atom"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/lenfilm.png")}
+                alt="Ros Atom"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/maxim.png")}
+                alt="Ros Atom"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/bentley.png")}
+                alt="Ros Atom"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/sobaka.png")}
+                alt="Ros Atom"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/dnevnik.png")}
+                alt="Ros Atom"
+              />
+            </div>
+          </div>
         </section>
       </div>
     </>

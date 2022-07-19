@@ -291,26 +291,43 @@
   margin-bottom: 102px;
   padding-bottom: 100px;
 
-  &_title,
-  &_content {
+  &_title {
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
     color: $text-dark;
-  }
-
-  &_title {
-    margin-bottom: 50px;
+    margin-bottom: 96px;
     font-size: 69px;
     text-transform: uppercase;
   }
-  &_content {
-    font-size: 45px;
 
-    & img {
-      margin-right: 10px;
-      margin-bottom: 5px;
+  &_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    align-items: stretch;
+    row-gap: 100px;
+
+    &_card {
+      display: flex;
+      min-height: 207px;
+      align-items: center;
+      justify-content: center;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: filter 0.4s;
+      &:hover {
+        transition: filter 0.4s;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+      & img {
+        object-fit: contain;
+        max-width: 100%;
+      }
     }
   }
 }
@@ -492,23 +509,15 @@
     margin-bottom: 80px;
     padding-bottom: 80px;
 
-    &_title,
-    &_content {
-      line-height: 40px;
-    }
-
     &_title {
+      line-height: 40px;
       margin-bottom: 50px;
       font-size: 50px;
     }
-    &_content {
-      font-size: 38px;
 
-      & img {
-        margin-right: 5px;
-        width: 25px;
-        height: 25px;
-      }
+    &_grid {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 50px;
     }
   }
 }
@@ -756,14 +765,21 @@
       font-size: 38px;
       line-height: 79px;
     }
-    &_content {
-      font-size: 25px;
-      line-height: 38px;
+    &_grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
 
-      & img {
-        width: 20px;
-        height: 20px;
-        margin-right: 1px;
+      &_card {
+        display: flex;
+        min-height: 200px;
+        align-items: center;
+        justify-content: center;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        transition: none;
+        &:hover {
+          transition: none;
+        }
       }
     }
   }

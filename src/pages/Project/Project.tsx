@@ -31,16 +31,16 @@ export const Project = (props: Props) => {
           <ul className={s.breadcrumb}>
             <CustomLink className="link" to="/">
               <li className={s.pushkeen}>{t("project.breadcrumb.main")}</li>
-            </CustomLink>{" "}
-            /{" "}
+            </CustomLink>
+            &nbsp;&nbsp;/&nbsp;&nbsp;
             <CustomLink className="link" to={"/" + props.locales_page}>
               <li className={s.projects}>
                 {props.locales_page === "nft"
                   ? "NFT"
                   : t("project.breadcrumb.projects")}
               </li>
-            </CustomLink>{" "}
-            /{" "}
+            </CustomLink>
+            &nbsp;&nbsp;/&nbsp;&nbsp;
             <li className={s.title}>
               {t("project.list." + props.locales_title + ".title")}
             </li>
