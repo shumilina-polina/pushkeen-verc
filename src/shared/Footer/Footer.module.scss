@@ -136,6 +136,7 @@
   .wrapper {
     padding: 43px 0px 63px 15px;
     height: auto;
+    max-height: calc(100vh - 306px);
   }
 
   .social {
