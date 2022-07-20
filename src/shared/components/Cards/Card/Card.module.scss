@@ -1,157 +1,31 @@
 @import "../../../../styles/variables.scss";
 
-.card {
-  height: 100%;
-  position: relative;
-  &:hover {
-    .front {
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      transform: scale(0);
-      opacity: 0;
-    }
-    .back {
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      transform: scale(1.05);
-      z-index: 10;
-      opacity: 1;
-    }
-  }
-
-  .front {
-    opacity: 1;
-    display: block;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-
-  .back {
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 12px 14px;
-    background: #0f4cea;
-    color: $text-light;
-
-    .link_wrapper {
-      padding: 12px 14px 22px;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-direction: column;
-    }
-
-    .title {
-      font-family: "IBM Plex Mono";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 48px;
-      line-height: 62px;
-      text-transform: uppercase;
-      &:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-    }
-    .content {
-      & li {
-        text-transform: uppercase;
-        font-family: "IBM Plex Mono";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 26px;
-        color: #ffffff;
-        margin-bottom: 5px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-//------MEDIA------
-
-@media (max-width: 1440px) {
-  .card {
-    .back {
-      .title {
-        font-size: 28px;
-        line-height: 40px;
-      }
-      .content {
-        & li {
-          font-size: 15px;
-          line-height: 20px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 770px) {
-  .card {
-    .back {
-      .title {
-        font-size: 16px;
-        line-height: 20px;
-      }
-      .content {
-        & li {
-          font-size: 9px;
-          line-height: 13px;
-        }
-      }
-    }
-  }
-}
-
 // .card {
-//   perspective: 1000;
 //   height: 100%;
-//   -webkit-transition: -webkit-transform 0.6s;
-//   -moz-transition: -moz-transform 0.6s;
-//   -o-transition: -o-transform 0.6s;
-//   transition: transform 0.6s;
-//   -webkit-transform-style: preserve-3d;
-//   -moz-transform-style: preserve-3d;
-//   -o-transform-style: preserve-3d;
-//   transform-style: preserve-3d;
-
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     -webkit-transform: rotateY(180deg);
-//     -moz-transform: rotateY(180deg);
-//     -o-transform: rotateY(180deg);
-//     transform: rotateY(180deg);
-//   }
-
-//   .front,
-//   .back {
-//     display: block;
-//     -webkit-backface-visibility: hidden;
-//     -moz-backface-visibility: hidden;
-//     -o-backface-visibility: hidden;
-//     backface-visibility: hidden;
+//   position: relative;
+//   &:hover {
+//     .front {
+//       transition: opacity 0.5s ease, transform 0.5s ease;
+//       transform: scale(0);
+//       opacity: 0;
+//     }
+//     .back {
+//       transition: opacity 0.5s ease, transform 0.5s ease;
+//       transform: scale(1.05);
+//       z-index: 10;
+//       opacity: 1;
+//     }
 //   }
 
 //   .front {
-//     z-index: 2;
-//     -webkit-transform: rotateY(0deg);
-//     transform: rotateY(0deg);
+//     opacity: 1;
+//     display: block;
+//     transition: opacity 0.5s ease, transform 0.5s ease;
 //   }
 
 //   .back {
+//     transition: opacity 0.5s ease, transform 0.5s ease;
+//     opacity: 0;
 //     position: absolute;
 //     top: 0;
 //     right: 0;
@@ -160,10 +34,6 @@
 //     padding: 12px 14px;
 //     background: #0f4cea;
 //     color: $text-light;
-//     -webkit-transform: rotateY(-180deg);
-//     -moz-transform: rotateY(-180deg);
-//     -o-transform: rotateY(-180deg);
-//     transform: rotateY(-180deg);
 
 //     .link_wrapper {
 //       padding: 12px 14px 22px;
@@ -182,6 +52,10 @@
 //       font-size: 48px;
 //       line-height: 62px;
 //       text-transform: uppercase;
+//       &:hover {
+//         text-decoration: underline;
+//         text-decoration-thickness: 2px;
+//       }
 //     }
 //     .content {
 //       & li {
@@ -205,7 +79,6 @@
 //     height: 100%;
 //   }
 // }
-
 // //------MEDIA------
 
 // @media (max-width: 1440px) {
@@ -241,3 +114,143 @@
 //     }
 //   }
 // }
+
+.card {
+  perspective: 1000;
+  transform-style: preserve-3d;
+  display: inline-block;
+  background-color: transparent;
+  width: 439px;
+  height: 443px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    .back {
+      transform: rotateY(0deg);
+    }
+    .front {
+      transform: rotateY(180deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+
+  .flipper {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    padding: 12px 14px;
+    background: #0f4cea;
+    color: $text-light;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+
+    .link_wrapper {
+      padding: 12px 14px 22px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .title {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 62px;
+      text-transform: uppercase;
+    }
+    .content {
+      & li {
+        text-transform: uppercase;
+        font-family: "IBM Plex Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+//------MEDIA------
+
+@media (max-width: 1440px) {
+  .card {
+    width: 255px;
+    height: 258px;
+    .back {
+      .title {
+        font-size: 28px;
+        line-height: 40px;
+      }
+      .content {
+        & li {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .card {
+    width: 172px;
+    height: 175px;
+    .back {
+      .title {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .content {
+        & li {
+          font-size: 9px;
+          line-height: 13px;
+        }
+      }
+    }
+  }
+}

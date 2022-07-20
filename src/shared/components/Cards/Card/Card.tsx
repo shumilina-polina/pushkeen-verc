@@ -12,38 +12,36 @@ export const Card = (props: Project) => {
   }
 
   return (
-    <>
-      <article>
-        <div className={s.card}>
-          <div className={s.front}>
-            <img
-              src={require(`../../../../assets/${props.imageURL}`)}
-              alt={props.name}
-            />
-          </div>
-          <div className={s.back}>
-            <Link className="link" to={"/" + props.name}>
-              <div className={s.link_wrapper}>
-                <h3 className={s.title}>
-                  {t("project.list." + props.content_locales + ".card.title")}
-                </h3>
-                <ul className={s.content}>
-                  {tagArray.map((elem) => (
-                    <li key={elem}>
-                      {t(
-                        "project.list." +
-                          props.content_locales +
-                          ".card.content_" +
-                          elem
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Link>
-          </div>
+    <div className={s.card}>
+      <div className={s.flipper}>
+        <div className={s.front}>
+          <img
+            src={require(`../../../../assets/${props.imageURL}`)}
+            alt={props.name}
+          />
         </div>
-      </article>
-    </>
+        <div className={s.back}>
+          <Link className="link" to={"/" + props.name}>
+            <div className={s.link_wrapper}>
+              <h3 className={s.title}>
+                {t("project.list." + props.content_locales + ".card.title")}
+              </h3>
+              <ul className={s.content}>
+                {tagArray.map((elem) => (
+                  <li key={elem}>
+                    {t(
+                      "project.list." +
+                        props.content_locales +
+                        ".card.content_" +
+                        elem
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };
