@@ -22,9 +22,18 @@ export const NewCityArtist = () => {
           <h3 className={s.about_content_name}>
             {t("project.list.nft_list.newcity.about.content.name")}
           </h3>
-          <span className={s.about_content_label}>
-            {t("project.list.nft_list.newcity.about.content.label")}
-          </span>
+          <p className={s.about_content_label}>
+            {t("project.list.nft_list.newcity.about.content.label_1")}
+            <a
+              className={s.about_content_label_link}
+              href="https://newcityartists.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t("project.list.nft_list.newcity.about.content.label_2")}
+            </a>
+            {t("project.list.nft_list.newcity.about.content.label_3")}
+          </p>
         </div>
       </div>
       <div className={s.buttons}>
@@ -32,7 +41,11 @@ export const NewCityArtist = () => {
           {t("project.list.nft_list.newcity.buttons.1")}
         </div>
       </div>
-      <p className={s.desc}>{t("project.list.nft_list.newcity.desc")}</p>
+      <p className={s.desc}>
+        {t("project.list.nft_list.newcity.desc_1")}
+        {t("project.list.nft_list.newcity.desc_2")}
+        {t("project.list.nft_list.newcity.desc_3")}
+      </p>
       <div className={s.video_wrapper_1}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
@@ -66,7 +79,7 @@ export const NewCityArtist = () => {
           </video>
         </LazyLoadComponent>
       </div>
-      <p className={s.desc_2}>{t("project.list.nft_list.newcity.desc_2")}</p>
+      <p className={s.desc_2}>{t("project.list.nft_list.newcity.desc_4")}</p>
       <div className={s.video_wrapper_3}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>

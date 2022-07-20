@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
+import { Merch } from "./pages/Merch/Merch";
 import { BackToTheRootsNFT } from "./pages/Nft/BackToTheRootsNFT/BackToTheRootsNFT";
 import { DirtyDrops } from "./pages/Nft/DirtyDrops/DirtyDrops";
 import { Halloween } from "./pages/Nft/Halloween/Halloween";
@@ -54,6 +55,7 @@ function App() {
               }
             />
             <Route path="publicart" element={<PublicArt />} />
+            <Route path="merch" element={<Merch />} />
             <Route path="projects" element={<ProjectsPage />} />
 
             {/* ------PROJECTS------- */}

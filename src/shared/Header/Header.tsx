@@ -65,6 +65,9 @@ const Header = () => {
               <CustomLink className="link" to="/publicart">
                 <li className={s.publicart}>{linkValue.PublicArt}</li>
               </CustomLink>
+              <CustomLink className="link" to="/merch">
+                <li className={s.merch}>{t("header.merch")}</li>
+              </CustomLink>
             </ul>
           </nav>
           <div className={s.wrapper_right}>
@@ -115,7 +118,7 @@ const Header = () => {
               to="/"
               onClick={() => toggleBurder(false)}
             >
-              <li className={s.burger_pushkeen}>{t("header")}</li>
+              <li className={s.burger_pushkeen}>{t("header.main")}</li>
             </CustomLink>
             <CustomLink
               className="link"
@@ -130,6 +133,13 @@ const Header = () => {
               onClick={() => toggleBurder(false)}
             >
               <li className={s.burger_publicart}>{linkValue.PublicArt}</li>
+            </CustomLink>
+            <CustomLink
+              className="link"
+              to="/merch"
+              onClick={() => toggleBurder(false)}
+            >
+              <li className={s.burger_merch}>{t("header.merch")}</li>
             </CustomLink>
             <li>
               <button

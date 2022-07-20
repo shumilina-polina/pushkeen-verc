@@ -44,7 +44,7 @@ export const Halloween = () => {
       </div>
       <LazyLoadComponent>
         <div className={s.video_wrapper}>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata">
             <source
               src={require("../../../assets/nft/halloween/video1.mp4")}
               type="video/mp4"
