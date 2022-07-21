@@ -5,6 +5,7 @@ import i1 from "../../../assets/projects/geniusloci/image_1.png";
 import i2 from "../../../assets/projects/geniusloci/image_2.png";
 import i3 from "../../../assets/projects/geniusloci/image_3.png";
 import i4 from "../../../assets/projects/geniusloci/image_4.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const GeniusLoci = () => {
   const { t } = useTranslation();
@@ -45,13 +46,13 @@ export const GeniusLoci = () => {
       </div>
 
       <div className={s.image_wrapper_1}>
-        <img src={i1} alt="Genius Loci Memo Game" />
-        <img src={i2} alt="Genius Loci Memo Game" />
+        <LazyLoadImage src={i1} alt="Genius Loci Memo Game" />
+        <LazyLoadImage src={i2} alt="Genius Loci Memo Game" />
       </div>
       <p className={s.description}>{t("project.list.geniusloci.desc")}</p>
       <div className={s.image_wrapper_2}>
-        <img src={i3} alt="Genius Loci Memo Game" />
-        <img src={i4} alt="Genius Loci Memo Game" />
+        <LazyLoadImage src={i3} alt="Genius Loci Memo Game" />
+        <LazyLoadImage src={i4} alt="Genius Loci Memo Game" />
       </div>
       <div className={s.task}>
         <div className={s.task_wrapper}>

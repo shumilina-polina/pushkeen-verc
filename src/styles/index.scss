@@ -48,6 +48,10 @@ ul {
   list-style-type: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 //--------- MEDIA ---------
 
 @media (max-width: 1400px) {
