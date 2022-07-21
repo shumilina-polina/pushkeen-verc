@@ -6,10 +6,10 @@ import s from "./Card.module.scss";
 export const Card = (props: Project) => {
   const { t } = useTranslation();
 
-  const tagArray = [];
-  for (let i = 0; i < props.tag_count; i++) {
-    tagArray.push(i);
-  }
+  // const tagArray = [];
+  // for (let i = 0; i < props.tag_count; i++) {
+  //   tagArray.push(i);
+  // }
 
   return (
     <div className={s.card}>
@@ -21,7 +21,8 @@ export const Card = (props: Project) => {
           />
         </div>
         <div className={s.back}>
-          <Link className="link" to={"/" + props.name}>
+          <span>card</span>
+          {/* <Link className="link" to={"/" + props.name}>
             <div className={s.link_wrapper}>
               <h3 className={s.title}>
                 {t("project.list." + props.content_locales + ".card.title")}
@@ -39,7 +40,7 @@ export const Card = (props: Project) => {
                 ))}
               </ul>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
