@@ -5,7 +5,7 @@ import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import rings from "../../assets/animate/rings.gif";
+import rings from "../../assets/animate/rings_1.gif";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -31,10 +31,10 @@ export const Home = () => {
             <div className={s.rings_wrapper}>
               <LazyLoadImage
                 className={s.rings}
-                src={
-                  "https://media1.giphy.com/media/2r7WYYYrppXtblpGqW/giphy.gif?cid=790b761164198e00bdf211a5dc1f97b9b0aa0bddafb4d4b5&rid=giphy.gif&ct=s"
-                }
-                // src={rings}
+                // src={
+                //   "https://media1.giphy.com/media/2r7WYYYrppXtblpGqW/giphy.gif?cid=790b761164198e00bdf211a5dc1f97b9b0aa0bddafb4d4b5&rid=giphy.gif&ct=s"
+                // }
+                src={rings}
                 alt="rings"
                 effect="blur"
               />
