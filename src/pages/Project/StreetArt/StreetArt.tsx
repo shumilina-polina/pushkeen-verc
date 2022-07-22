@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
 import s from "./StreetArt.module.scss";
 import mainscreen from "../../../assets/projects/streetart/mainscreen.png";
 import box from "../../../assets/projects/streetart/box.png";

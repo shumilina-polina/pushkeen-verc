@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import rings from "../../assets/animate/rings_1.gif";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Canvas } from "@react-three/fiber";
+import { Suspense, useCallback, useEffect, useMemo, useState } from "react";
+import { OrbitControls } from "@react-three/drei";
+import ModelRings from "../../assets/animate/glb/ModelRings";
+import MediaQuery from "react-responsive";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -29,7 +33,7 @@ export const Home = () => {
               </span>
             </div>
             <div className={s.rings_wrapper}>
-              <LazyLoadImage
+              {/* <LazyLoadImage
                 className={s.rings}
                 // src={
                 //   "https://media1.giphy.com/media/2r7WYYYrppXtblpGqW/giphy.gif?cid=790b761164198e00bdf211a5dc1f97b9b0aa0bddafb4d4b5&rid=giphy.gif&ct=s"
@@ -37,7 +41,70 @@ export const Home = () => {
                 src={rings}
                 alt="rings"
                 effect="blur"
-              />
+              /> */}
+              <MediaQuery minWidth={1400}>
+                <Canvas
+                  className={s.rings}
+                  camera={{
+                    zoom: 2.9,
+                    filmOffset: -1.8,
+                    position: [-0.4, -0.4, 1],
+                  }}
+                >
+                  <Suspense fallback={null}>
+                    <ambientLight />
+                    <directionalLight intensity={2} position={[0, 0, 50]} />
+                    <ModelRings />
+                    <OrbitControls
+                      enablePan={false}
+                      enableZoom={false}
+                      enableRotate={false}
+                    />
+                  </Suspense>
+                </Canvas>
+              </MediaQuery>
+              <MediaQuery minWidth={770} maxWidth={1400}>
+                <Canvas
+                  className={s.rings}
+                  camera={{
+                    zoom: 1.5,
+                    filmOffset: -3,
+                    position: [-0.4, -0.4, 1],
+                  }}
+                >
+                  <Suspense fallback={null}>
+                    <ambientLight />
+                    <directionalLight intensity={2} position={[0, 0, 50]} />
+                    <ModelRings />
+                    <OrbitControls
+                      enablePan={false}
+                      enableZoom={false}
+                      enableRotate={false}
+                    />
+                  </Suspense>
+                </Canvas>
+              </MediaQuery>
+              <MediaQuery maxWidth={770}>
+                <Canvas
+                  className={s.rings}
+                  camera={{
+                    zoom: 1.2,
+                    filmOffset: 2,
+                    position: [-0.4, -0.4, 1],
+                  }}
+                >
+                  <Suspense fallback={null}>
+                    <ambientLight />
+                    <directionalLight intensity={2} position={[0, 0, 50]} />
+                    <ModelRings />
+                    <OrbitControls
+                      enablePan={false}
+                      enableZoom={false}
+                      enableRotate={false}
+                    />
+                  </Suspense>
+                </Canvas>
+              </MediaQuery>
             </div>
           </div>
         </div>
