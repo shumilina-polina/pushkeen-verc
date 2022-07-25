@@ -65,6 +65,8 @@
   .buttons {
     max-width: 50%;
     margin-bottom: 96px;
+    margin-top: -70px;
+
     .button_1,
     .button_2 {
       font-family: "IBM Plex Mono";
@@ -99,7 +101,7 @@
 
   .task {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 96px;
     color: $projects_text;
     display: flex;
     align-items: flex-start;
@@ -107,7 +109,7 @@
     padding-right: 40px;
 
     &_wrapper {
-      max-width: 60%;
+      max-width: 75%;
       .task_title,
       .point_title {
         font-family: "IBM Plex Mono";
@@ -124,6 +126,7 @@
         font-size: 24px;
         line-height: 31px;
         margin-bottom: 56px;
+        max-width: 70%;
       }
 
       .point_text {
@@ -201,6 +204,28 @@
   &_image_2 {
     margin-bottom: 70px;
   }
+
+  .results {
+    margin-bottom: 50px;
+    width: 50%;
+    &_title,
+    &_text {
+      color: $projects_text;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 31px;
+    }
+
+    &_title {
+      font-family: "IBM Plex Mono";
+      font-size: 28px;
+      margin-bottom: 27px;
+    }
+    &_text {
+      font-family: "Mulish";
+      font-size: 24px;
+    }
+  }
 }
 
 //-------MEDIA-------
@@ -224,8 +249,12 @@
       }
     }
     .buttons {
-      max-width: 100%;
-      margin-bottom: 90px;
+      max-width: 50%;
+      margin-bottom: 120px;
+      margin-top: -200px;
+      & .button_1 {
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -269,6 +298,8 @@
     }
     .buttons {
       margin-bottom: 70px;
+      margin-top: 0;
+      max-width: 100%;
       .button_1,
       .button_2 {
         width: 100%;
@@ -284,6 +315,9 @@
       justify-content: space-between;
       flex-direction: column;
       padding-right: 0;
+      &_text {
+        max-width: 100%;
+      }
       &_wrapper {
         max-width: 100%;
         .point_text {
@@ -291,11 +325,17 @@
           margin-bottom: 40px;
           word-wrap: break-word;
         }
+        .task_text {
+          max-width: 100%;
+        }
       }
       &_date {
         margin-right: 35px;
         align-self: flex-end;
       }
+    }
+    .results{
+      width: 100%;
     }
   }
 }

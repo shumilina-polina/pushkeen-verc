@@ -1,10 +1,5 @@
 import { useTranslation } from "react-i18next";
 import s from "./GeniusLoci.module.scss";
-import mainscreen from "../../../assets/projects/geniusloci/mainscreen.png";
-import i1 from "../../../assets/projects/geniusloci/image_1.png";
-import i2 from "../../../assets/projects/geniusloci/image_2.png";
-import i3 from "../../../assets/projects/geniusloci/image_3.png";
-import i4 from "../../../assets/projects/geniusloci/image_4.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const GeniusLoci = () => {
@@ -14,7 +9,7 @@ export const GeniusLoci = () => {
     <section className={s.geniusloci}>
       <img
         className={s.geniusloci_image}
-        src={mainscreen}
+        src={require("../../../assets/projects/geniusloci/mainscreen.png")}
         alt="Genius Loci Memo"
       />
       <div className={s.about}>
@@ -46,14 +41,26 @@ export const GeniusLoci = () => {
       </div>
 
       <div className={s.image_wrapper_1}>
-        <LazyLoadImage src={i1} alt="Genius Loci Memo Game" />
-        <LazyLoadImage src={i2} alt="Genius Loci Memo Game" />
+        <LazyLoadImage
+          src={require("../../../assets/projects/geniusloci/image_1.png")}
+          alt="Genius Loci Memo Game"
+        />
+        <LazyLoadImage
+          src={require("../../../assets/projects/geniusloci/image_2.png")}
+          alt="Genius Loci Memo Game"
+        />
       </div>
       <p className={s.description}>{t("project.list.geniusloci.desc")}</p>
-      <div className={s.image_wrapper_2}>
-        <LazyLoadImage src={i3} alt="Genius Loci Memo Game" />
-        <LazyLoadImage src={i4} alt="Genius Loci Memo Game" />
-      </div>
+      <LazyLoadImage
+        className={s.image_3}
+        src={require("../../../assets/projects/geniusloci/image_3.png")}
+        alt="Genius Loci Memo Game"
+      />
+      <LazyLoadImage
+        className={s.image_4}
+        src={require("../../../assets/projects/geniusloci/image_4.png")}
+        alt="Genius Loci Memo Game"
+      />
       <div className={s.task}>
         <div className={s.task_wrapper}>
           <h3 className={s.point_title}>
@@ -64,6 +71,7 @@ export const GeniusLoci = () => {
             <li>{t("project.list.geniusloci.steps.point.2")}</li>
             <li>{t("project.list.geniusloci.steps.point.3")}</li>
             <li>{t("project.list.geniusloci.steps.point.4")}</li>
+            <li>{t("project.list.geniusloci.steps.point.5")}</li>
           </ul>
         </div>
         <div className={s.task_date}>
@@ -75,6 +83,19 @@ export const GeniusLoci = () => {
             {t("project.list.geniusloci.steps.date.label")}
           </span>
         </div>
+      </div>
+      <LazyLoadImage
+        className={s.image_5}
+        src={require("../../../assets/projects/geniusloci/image_5.png")}
+        alt="Genius Loci Memo Game"
+      />
+      <div className={s.results}>
+        <h3 className={s.results_title}>
+          {t("project.list.geniusloci.results.title")}
+        </h3>
+        <p className={s.results_text}>
+          {t("project.list.geniusloci.results.text")}
+        </p>
       </div>
     </section>
   );

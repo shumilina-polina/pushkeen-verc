@@ -25,6 +25,15 @@ export const Halloween = () => {
           </h3>
           <span className={s.about_content_label}>
             {t("project.list.nft_list.halloween.about.content.label")}
+            <a
+              className={s.about_content_label_link}
+              href="https://twitter.com/l1fep4ckage"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t("project.list.nft_list.halloween.about.content.label_1")}
+            </a>
+            {t("project.list.nft_list.halloween.about.content.label_2")}
           </span>
         </div>
       </div>
@@ -56,9 +65,7 @@ export const Halloween = () => {
               type="video/mp4"
             />
           </video>
-          <p className={s.desc}>
-            {t("project.list.nft_list.halloween.desc")}
-          </p>
+          <p className={s.desc}>{t("project.list.nft_list.halloween.desc")}</p>
           <video autoPlay loop preload="metadata" muted>
             <source
               src={require("../../../assets/nft/halloween/video3.mp4")}

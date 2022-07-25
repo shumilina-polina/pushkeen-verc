@@ -46,6 +46,12 @@ export const StreetArt = () => {
       </div>
       <div className={s.task}>
         <div className={s.task_wrapper}>
+          <h3 className={s.task_title}>
+            {t("project.list.streetart.steps.task.title")}
+          </h3>
+          <p className={s.task_text}>
+            {t("project.list.streetart.steps.task.text")}
+          </p>
           <h3 className={s.point_title}>
             {t("project.list.streetart.steps.point.title")}
           </h3>
@@ -54,6 +60,9 @@ export const StreetArt = () => {
             <li>{t("project.list.streetart.steps.point.2")}</li>
             <li>{t("project.list.streetart.steps.point.3")}</li>
             <li>{t("project.list.streetart.steps.point.4")}</li>
+            <li>{t("project.list.streetart.steps.point.5")}</li>
+            <li>{t("project.list.streetart.steps.point.6")}</li>
+            <li>{t("project.list.streetart.steps.point.7")}</li>
           </ul>
         </div>
         <div className={s.task_date}>
@@ -66,16 +75,16 @@ export const StreetArt = () => {
           </span>
         </div>
       </div>
-      <img
-        className={s.streetart_image_1}
-        src={i1}
-        alt="Street Art Memo"
-      />
-      <img
-        className={s.streetart_image_2}
-        src={i2}
-        alt="Street Art Memo"
-      />
+      <img className={s.streetart_image_1} src={i1} alt="Street Art Memo" />
+      <img className={s.streetart_image_2} src={i2} alt="Street Art Memo" />
+      <div className={s.results}>
+        <h3 className={s.results_title}>
+          {t("project.list.streetart.results.title")}
+        </h3>
+        <p className={s.results_text}>
+          {t("project.list.streetart.results.text")}
+        </p>
+      </div>
     </section>
   );
 };

@@ -50,12 +50,21 @@
         font-weight: 400;
         font-family: "Mulish";
         font-size: 24px;
+        &_link {
+          color: #1858fb;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+          }
+        }
       }
     }
   }
   .buttons {
     max-width: 50%;
-    margin-top: -50px;
+    margin-top: -65px;
     margin-bottom: 96px;
     .button_2 {
       font-family: "IBM Plex Mono";

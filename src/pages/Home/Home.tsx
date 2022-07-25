@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 import { Cards } from "../../shared/components/Cards/Cards";
 import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Canvas } from "@react-three/fiber";
-import { Suspense, useCallback, useEffect, useMemo, useState } from "react";
+import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import ModelRings from "../../assets/animate/glb/ModelRings";
 import MediaQuery from "react-responsive";
@@ -33,15 +32,6 @@ export const Home = () => {
               </span>
             </div>
             <div className={s.rings_wrapper}>
-              {/* <LazyLoadImage
-                className={s.rings}
-                // src={
-                //   "https://media1.giphy.com/media/2r7WYYYrppXtblpGqW/giphy.gif?cid=790b761164198e00bdf211a5dc1f97b9b0aa0bddafb4d4b5&rid=giphy.gif&ct=s"
-                // }
-                src={rings}
-                alt="rings"
-                effect="blur"
-              /> */}
               <MediaQuery minWidth={1400}>
                 <Canvas
                   className={s.rings}

@@ -93,6 +93,14 @@ export const MyViborg = () => {
           </video>
         </LazyLoadComponent>
       </div>
+      <div className={s.results}>
+        <h3 className={s.results_title}>
+          {t("project.list.myviborg.results.title")}
+        </h3>
+        <p className={s.results_text}>
+          {t("project.list.myviborg.results.text")}
+        </p>
+      </div>
     </section>
   );
 };
