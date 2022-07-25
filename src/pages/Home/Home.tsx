@@ -180,31 +180,46 @@ export const Home = () => {
             <div className={s.pairs_grid_card}>
               <img
                 src={require("../../assets/pairs/lenfilm.png")}
-                alt="Ros Atom"
+                alt="LenFilm"
               />
             </div>
             <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/maxim.png")}
-                alt="Ros Atom"
-              />
+              <img src={require("../../assets/pairs/maxim.png")} alt="Maxim" />
             </div>
             <div className={s.pairs_grid_card}>
               <img
                 src={require("../../assets/pairs/bentley.png")}
-                alt="Ros Atom"
+                alt="Bentley"
               />
             </div>
             <div className={s.pairs_grid_card}>
               <img
                 src={require("../../assets/pairs/sobaka.png")}
-                alt="Ros Atom"
+                alt="Sobaka"
               />
             </div>
             <div className={s.pairs_grid_card}>
               <img
                 src={require("../../assets/pairs/dnevnik.png")}
-                alt="Ros Atom"
+                alt="Spb Dnevnik Ru"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/gagagames.png")}
+                alt="GaGa Games"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/pravitelstvo.png")}
+                alt="SPB"
+              />
+            </div>
+            <div className={s.pairs_grid_card}>
+              <img
+                src={require("../../assets/pairs/planetariy.png")}
+                alt="Planetariy"
               />
             </div>
           </div>
