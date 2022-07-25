@@ -12,7 +12,6 @@ import MediaQuery from "react-responsive";
 
 export const Home = () => {
   const { t } = useTranslation();
-
   return (
     <>
       <section className={s.main}>
@@ -43,7 +42,8 @@ export const Home = () => {
                 >
                   <Suspense fallback={null}>
                     <ambientLight />
-                    <directionalLight intensity={2} position={[0, 0, 50]} />
+                    <directionalLight intensity={2} position={[-5, 15, 3]} />
+                    {/* <directionalLight intensity={2} position={[0, 0, 50]} /> */}
                     <ModelRings />
                     <OrbitControls
                       enablePan={false}
@@ -64,7 +64,7 @@ export const Home = () => {
                 >
                   <Suspense fallback={null}>
                     <ambientLight />
-                    <directionalLight intensity={2} position={[0, 0, 50]} />
+                    <directionalLight intensity={2} position={[-5, 15, 3]} />
                     <ModelRings />
                     <OrbitControls
                       enablePan={false}
@@ -85,7 +85,7 @@ export const Home = () => {
                 >
                   <Suspense fallback={null}>
                     <ambientLight />
-                    <directionalLight intensity={2} position={[0, 0, 50]} />
+                    <directionalLight intensity={2} position={[-5, 15, 3]} />
                     <ModelRings />
                     <OrbitControls
                       enablePan={false}
