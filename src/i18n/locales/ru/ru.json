@@ -760,5 +760,19 @@
         }
       }
     }
+  },
+  "merch": {
+    "main": {
+      "title": "Коллаборация",
+      "label": "NEW CITY ARTISTS x PUBLICART"
+    },
+    "card": {
+      "1": {
+        "title": "Футболка",
+        "label": "New City Artists x PublicARt",
+        "size": "Размеры:  M, L, XL",
+        "more": "Подробнее"
+      }
+    }
   }
 }
