@@ -151,11 +151,11 @@
           width: 38px;
           height: 38px;
           margin-right: 16px;
-          outline: 3px solid transparent;
-          transition: outline-color 0.3s;
+          box-shadow: 0 0 0 1px transparent, 0 0 0 4px transparent;
+          transition: box-shadow .3s;
           &:hover {
-            outline-color: #1858fb;
-            transition: outline-color 0.3s;
+            transition: box-shadow .3s;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 4px #1858fb;
           }
           &:focus {
             opacity: 1;

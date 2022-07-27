@@ -93,7 +93,7 @@ img {
         }
         &_black_active,
         &_white_active {
-          outline: 4px solid #1858fb;
+          box-shadow: 0 0 0 1px #fff, 0 0 0 4px #1858fb;
         }
       }
 
@@ -259,7 +259,7 @@ img {
 
           &_black_active,
           &_white_active {
-            outline: 2px solid #1858fb;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 4px #1858fb;
           }
         }
 

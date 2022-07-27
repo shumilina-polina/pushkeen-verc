@@ -59,8 +59,8 @@ export const Collab = () => {
                   }}
                   style={
                     color === "black"
-                      ? { outlineColor: "#1858fb" }
-                      : { outlineColor: "transparent" }
+                      ? { boxShadow: "0 0 0 1px #fff, 0 0 0 4px #1858fb" }
+                      : {}
                   }
                 ></button>
                 <button
@@ -71,8 +71,8 @@ export const Collab = () => {
                   className={s.color_buttons_white}
                   style={
                     color === "white"
-                      ? { outlineColor: "#1858fb" }
-                      : { outlineColor: "transparent" }
+                      ? { boxShadow: "0 0 0 1px #fff, 0 0 0 4px #1858fb" }
+                      : {}
                   }
                 ></button>
               </div>
