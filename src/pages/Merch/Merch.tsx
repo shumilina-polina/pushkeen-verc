@@ -9,56 +9,83 @@ export const Merch = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  localStorage.setItem("tshirt", "white");
+
   return (
-    <div className="container">
-      <section className={s.merch}>
-        <div className={s.main}>
-          
-          <h2 className={s.main_title}>{t("merch.main.title")}</h2>
-          <span className={s.main_label}>{t("merch.main.label")}</span>
-        </div>
-        <p className={s.title}>{t("merch.main.label")}</p>
-        <div className={s.grid}>
-          <Link className="link" to="/merch/nca_publicart">
-            <div className={s.card}>
-              <div className={s.card_wrapper}>
-                <img
-                  src={require("../../assets/merch/obj_1.png")}
-                  alt="first tshirt"
-                />
-                <div className={s.card_colors}>
-                  <button className={s.card_colors_black}></button>
-                  <button className={s.card_colors_white_active}></button>
+    <>
+      <div className="container">
+        <section className={s.merch}>
+          <div className={s.main}>
+            <h2 className={s.main_title}>{t("merch.main.title")}</h2>
+            <span className={s.main_label}>{t("merch.main.label")}</span>
+          </div>
+          <p className={s.title}>{t("merch.main.label")}</p>
+          <div className={s.grid}>
+            <Link
+              className="link"
+              to="/merch/nca_publicart"
+            >
+              <div
+                className={s.card}
+                onClick={() => {
+                  localStorage.setItem("tshirt", "white");
+                }}
+              >
+                <div className={s.card_wrapper}>
+                  <img
+                    src={require("../../assets/merch/obj_1.png")}
+                    alt="first tshirt"
+                  />
+                  <div className={s.card_colors}>
+                    <button className={s.card_colors_black}></button>
+                    <button className={s.card_colors_white_active}></button>
+                  </div>
+                  <h3 className={s.card_title}>{t("merch.card.1.title")}</h3>
+                  <span className={s.card_label}>
+                    {t("merch.card.1.label")}
+                  </span>
+                  <span className={s.card_size}>{t("merch.card.1.size")}</span>
+                  <span className={s.card_price}>2550₽</span>
                 </div>
-                <h3 className={s.card_title}>{t("merch.card.1.title")}</h3>
-                <span className={s.card_label}>{t("merch.card.1.label")}</span>
-                <span className={s.card_size}>{t("merch.card.1.size")}</span>
-                <span className={s.card_price}>2550₽</span>
+                <button className={s.card_more}>
+                  {t("merch.card.1.more")}
+                </button>
               </div>
-              <button className={s.card_more}>{t("merch.card.1.more")}</button>
-            </div>
-          </Link>
-          <Link className="link" to="/merch/nca_publicart">
-            <div className={s.card}>
-              <div className={s.card_wrapper}>
-                <img
-                  src={require("../../assets/merch/obj_2.png")}
-                  alt="second tshirt"
-                />
-                <div className={s.card_colors}>
-                  <button className={s.card_colors_black_active}></button>
-                  <button className={s.card_colors_white}></button>
+            </Link>
+            <Link
+              className="link"
+              to="/merch/nca_publicart"
+            >
+              <div
+                className={s.card}
+                onClick={() => {
+                  localStorage.setItem("tshirt", "black");
+                }}
+              >
+                <div className={s.card_wrapper}>
+                  <img
+                    src={require("../../assets/merch/obj_2.png")}
+                    alt="second tshirt"
+                  />
+                  <div className={s.card_colors}>
+                    <button className={s.card_colors_black_active}></button>
+                    <button className={s.card_colors_white}></button>
+                  </div>
+                  <h3 className={s.card_title}>{t("merch.card.1.title")}</h3>
+                  <span className={s.card_label}>
+                    {t("merch.card.1.label")}
+                  </span>
+                  <span className={s.card_size}>{t("merch.card.1.size")}</span>
+                  <span className={s.card_price}>2550₽</span>
                 </div>
-                <h3 className={s.card_title}>{t("merch.card.1.title")}</h3>
-                <span className={s.card_label}>{t("merch.card.1.label")}</span>
-                <span className={s.card_size}>{t("merch.card.1.size")}</span>
-                <span className={s.card_price}>2550₽</span>
+                <button className={s.card_more}>
+                  {t("merch.card.1.more")}
+                </button>
               </div>
-              <button className={s.card_more}>{t("merch.card.1.more")}</button>
-            </div>
-          </Link>
-        </div>
-      </section>
-    </div>
+            </Link>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };

@@ -1,0 +1,95 @@
+@import "../../../../styles/variables.scss";
+
+.slider {
+  position: relative;
+  &:hover {
+    .button_next,
+    .button_prev {
+      opacity: 1;
+      transition: opacity 0.3s, border-color 0.3s, background-color 0.3s;
+    }
+  }
+}
+
+.image_black,
+.image_white {
+  max-width: 100%;
+  width: 655px;
+  object-fit: cover;
+  height: 778px;
+  animation-name: opacityImage;
+  animation-duration: 0.1s;
+}
+.button_next,
+.button_prev {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 0.3s, border-color 0.3s, background-color 0.3s;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid #efefef;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+
+  & svg {
+    padding-top: 3px;
+    padding-right: 3px;
+  }
+  & path {
+    transition: fill 0.3s;
+    fill: $text-light;
+  }
+
+  &:hover {
+    background-color: $text-light;
+    border-color: $projects_text;
+    transition: opacity 0.3s, border-color 0.3s, background-color 0.3s;
+    & path {
+      transition: fill 0.3s;
+      fill: $projects_text;
+    }
+  }
+}
+
+.button_next {
+  transform: translateY(-50%);
+  left: 8px;
+}
+.button_prev {
+  right: 8px;
+  transform: translateY(-50%) scale(-1, 1);
+}
+
+//-------MEDIA-------
+
+@media (max-width: 1400px) {
+  .image_black,
+  .image_white {
+    height: 720px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 770px) {
+  .slider {
+    margin-bottom: 50px;
+  }
+  .image_black,
+  .image_white {
+    height: 520px;
+  }
+  .button_next,
+  .button_prev {
+    opacity: 1;
+    border: 2px solid $text-light;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border-color: $projects_text;
+
+    & path {
+      transition: fill 0.3s;
+      fill: $projects_text;
+    }
+  }
+}
