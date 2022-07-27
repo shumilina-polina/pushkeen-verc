@@ -7,8 +7,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
-import ModelRings from "../../assets/animate/glb/ModelRings";
 import MediaQuery from "react-responsive";
+import Model from "../../assets/animate/glb/Test_2";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -43,8 +43,7 @@ export const Home = () => {
                   <Suspense fallback={null}>
                     <ambientLight />
                     <directionalLight intensity={2} position={[-5, 15, 3]} />
-                    {/* <directionalLight intensity={2} position={[0, 0, 50]} /> */}
-                    <ModelRings />
+                    <Model />
                     <OrbitControls
                       enablePan={false}
                       enableZoom={false}
@@ -65,7 +64,7 @@ export const Home = () => {
                   <Suspense fallback={null}>
                     <ambientLight />
                     <directionalLight intensity={2} position={[-5, 15, 3]} />
-                    <ModelRings />
+                    <Model />
                     <OrbitControls
                       enablePan={false}
                       enableZoom={false}
@@ -86,7 +85,7 @@ export const Home = () => {
                   <Suspense fallback={null}>
                     <ambientLight />
                     <directionalLight intensity={2} position={[-5, 15, 3]} />
-                    <ModelRings />
+                    <Model />
                     <OrbitControls
                       enablePan={false}
                       enableZoom={false}
