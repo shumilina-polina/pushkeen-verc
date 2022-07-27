@@ -62,7 +62,7 @@ img {
         border-color: $projects_text;
 
         .card_more {
-          text-decoration: underline;
+          display: block;
         }
         .card_size {
           display: block;
@@ -145,6 +145,8 @@ img {
         border: none;
         outline: none;
         background-color: transparent;
+        text-decoration: underline;
+        display: none;
       }
     }
   }
