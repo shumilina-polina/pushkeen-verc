@@ -89,9 +89,10 @@
     }
   }
   .desc {
-    max-width: 50%;
+    max-width: 60%;
     margin-bottom: 133px;
     &_title,
+    &_list,
     &_text {
       font-style: normal;
       font-weight: 400;
@@ -103,7 +104,8 @@
       font-size: 28px;
       margin-bottom: 27px;
     }
-    &_text {
+    &_text,
+    &_list {
       font-family: "Mulish";
       font-size: 24px;
     }
@@ -134,7 +136,7 @@
       }
     }
     .direction {
-      max-width: 55%;
+      max-width: 50%;
       &_title {
         margin-bottom: 28px;
         font-family: "IBM Plex Mono";
@@ -185,6 +187,19 @@
   .img_wrapper_3,
   .img_wrapper_4 {
     margin-bottom: 93px;
+  }
+  .img_wrapper_4,
+  .img_wrapper_2 {
+    .img_link {
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    &:hover {
+      & .img_link {
+        opacity: 0.6;
+        transform: scale(1.05);
+        transition: opacity 0.3s, transform 0.3s;
+      }
+    }
   }
 
   //---shared---

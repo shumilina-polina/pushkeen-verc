@@ -88,10 +88,10 @@ export const GuideKur = () => {
       </div>
       <div className={s.result_content}>
         <h3 className={s.result_content_name}>
-          {t("project.list.mymoscow.result.title")}
+          {t("project.list.guidekur.result.title")}
         </h3>
         <span className={s.result_content_label}>
-          {t("project.list.mymoscow.result.text")}
+          {t("project.list.guidekur.result.text")}
         </span>
       </div>
     </section>

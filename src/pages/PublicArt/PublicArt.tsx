@@ -61,11 +61,7 @@ export const PublicArt = () => {
           <div className={s.game}>{t("project.list.publicart.buttons.4")}</div>
         </div>
         <div className={s.img_wrapper_1}>
-          <img
-            className={s.image}
-            src={image_1}
-            alt="Public Art Screens"
-          />
+          <img className={s.image} src={image_1} alt="Public Art Screens" />
           <div className={s.img_label}>
             <span>{t("project.list.publicart.image_labels.app")}</span>
             <div className={s.circle}></div>
@@ -76,12 +72,33 @@ export const PublicArt = () => {
             {t("project.list.publicart.desc.title")}
           </h3>
           <p className={s.desc_text}>{t("project.list.publicart.desc.text")}</p>
+          <br />
+          <span className={s.desc_text}>
+            {t("project.list.publicart.desc.text_1")}
+          </span>
+          <ul className={s.desc_list}>
+            <li>{t("project.list.publicart.desc.text_2")}</li>
+            <li>{t("project.list.publicart.desc.text_3")}</li>
+            <li>{t("project.list.publicart.desc.text_4")}</li>
+            <li>{t("project.list.publicart.desc.text_5")}</li>
+          </ul>
+          <br />
+          <span className={s.desc_text}>
+            {t("project.list.publicart.desc.text_6")}
+          </span>
         </div>
         <div className={s.img_wrapper_2}>
           <img className={s.image} src={image_2} alt="Public Art" />
           <div className={s.img_label}>
-            <span>{t("project.list.publicart.image_labels.street")}</span>
-            <div className={s.circle}></div>
+            <a
+              className={s.img_link}
+              href="/nft/backToTheRoots"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>{t("project.list.publicart.image_labels.street")}</span>
+              <div className={s.circle}></div>
+            </a>
           </div>
         </div>
         <div className={s.content}>
@@ -91,9 +108,6 @@ export const PublicArt = () => {
             </h3>
             <p className={s.mission_text}>
               {t("project.list.publicart.content.mission.text_1")}
-              <br />
-              <br />
-              {t("project.list.publicart.content.mission.text_2")}
             </p>
           </div>
           <div className={s.direction}>
@@ -105,6 +119,7 @@ export const PublicArt = () => {
               <li>{t("project.list.publicart.content.direction.text_2")}</li>
               <li>{t("project.list.publicart.content.direction.text_3")}</li>
               <li>{t("project.list.publicart.content.direction.text_4")}</li>
+              <li>{t("project.list.publicart.content.direction.text_5")}</li>
             </ul>
           </div>
         </div>
@@ -118,8 +133,15 @@ export const PublicArt = () => {
         <div className={s.img_wrapper_4}>
           <img className={s.image} src={image_4} alt="Public Art" />
           <div className={s.img_label}>
-            <span>{t("project.list.publicart.image_labels.box")}</span>
-            <div className={s.circle}></div>
+            <a
+              className={s.img_link}
+              href="/streetArtMemo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>{t("project.list.publicart.image_labels.box")}</span>
+              <div className={s.circle}></div>
+            </a>
           </div>
         </div>
       </section>

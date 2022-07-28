@@ -74,6 +74,7 @@ export const BrodilkaMoscow = () => {
         src={require("../../../assets/projects/brodilkamoscow/image2.png")}
         alt="Brodilka Moscow"
       />
+      <h3 className={s.desc_title}>{t("project.list.brodilkamoscow.desc_title")}</h3>
       <p className={s.desc}>{t("project.list.brodilkamoscow.desc")}</p>
       <img
         className={s.moscow_image_3}

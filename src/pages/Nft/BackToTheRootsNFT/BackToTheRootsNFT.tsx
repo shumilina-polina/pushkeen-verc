@@ -8,11 +8,18 @@ export const BackToTheRootsNFT = () => {
 
   return (
     <section className={s.btrNft}>
-      <img
-        className={s.btrNft_image}
-        src={require("../../../assets/nft/btrNft/mainscreen.png")}
-        alt="Back To The Roots NFT"
-      />
+      <div className={s.img_wrapper}>
+        <img
+          className={s.btrNft_image}
+          src={require("../../../assets/nft/btrNft/mainscreen.png")}
+          alt="Back To The Roots NFT"
+        />
+        <div className={s.img_label_1}>
+          <span>{t("project.list.nft_list.btrNft.image_labels.token3")}</span>
+          <div className={s.circle}></div>
+        </div>
+      </div>
+
       <div className={s.about}>
         <div className={s.about_title}>
           <h2 className={s.about_title_name}>

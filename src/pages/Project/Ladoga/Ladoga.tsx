@@ -60,18 +60,14 @@ export const Ladoga = () => {
       </div>
       <div className={s.steps}>
         <div className={s.steps_text}>
-          <span className={s.text0}>
-            {t("project.list.ladoga.steps.text0")}
-          </span>
-          <span className={s.step}>{t("project.list.ladoga.steps.text1")}</span>
-          <br />
-          <span className={s.step}>{t("project.list.ladoga.steps.text2")}</span>
-          <br />
-          <span className={s.step}>{t("project.list.ladoga.steps.text3")}</span>
-          <br />
-          <span className={s.step}>{t("project.list.ladoga.steps.text4")}</span>
-          <br />
-          <span className={s.step}>{t("project.list.ladoga.steps.text5")}</span>
+          <h3 className={s.text0}>{t("project.list.ladoga.steps.text0")}</h3>
+          <ul className={s.steps_list}>
+            <li>{t("project.list.ladoga.steps.text1")}</li>
+            <li>{t("project.list.ladoga.steps.text2")}</li>
+            <li>{t("project.list.ladoga.steps.text3")}</li>
+            <li>{t("project.list.ladoga.steps.text4")}</li>
+            <li>{t("project.list.ladoga.steps.text5")}</li>
+          </ul>
         </div>
         <div className={s.steps_date}>
           <span className={s.number}>3</span>

@@ -106,20 +106,38 @@
     margin-bottom: 72px;
 
     &_text {
-      width: 50%;
+      width: 60%;
       display: flex;
       flex-direction: column;
-      font-family: "Mulish";
+      font-family: "IBM Plex Mono";
       font-style: normal;
       font-weight: 400;
       line-height: 31px;
       color: $projects_text;
       .text0 {
+        font-style: normal;
+        font-weight: 400;
         font-size: 28px;
         margin-bottom: 27px;
       }
-      .step {
+      .steps_list li {
+        word-wrap: break-word;
+
         font-size: 24px;
+        position: relative;
+        padding-left: 32px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          border-radius: 100px;
+          background-color: #0f4cea;
+          width: 20px;
+          height: 20px;
+          top: 9px;
+          left: 0;
+        }
       }
     }
     &_date {
@@ -317,7 +335,7 @@
     .buttons {
       margin-bottom: 70px;
       & button {
-        &::after{
+        &::after {
           right: 30px;
         }
       }

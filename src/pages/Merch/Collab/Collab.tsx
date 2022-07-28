@@ -112,11 +112,6 @@ export const Collab = () => {
           <br />
           <br />
           <p className={s.collection_text}>
-            {t("merch.collab.collection.text_3")}
-          </p>
-          <br />
-          <br />
-          <p className={s.collection_text}>
             {t("merch.collab.collection.text_4")}
           </p>
           <br />

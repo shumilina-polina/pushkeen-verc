@@ -63,8 +63,8 @@
   }
   .buttons {
     max-width: 45%;
-    margin-bottom: 96px;
-    margin-top: -45px;
+    margin-bottom: 60px;
+    margin-top: 30px;
     & button {
       margin-bottom: 10px;
     }
@@ -241,8 +241,9 @@
       }
     }
     .buttons {
-      margin-bottom: 90px;
-      margin-top: -100px;
+      max-width: 60%;
+      margin-bottom: 40px;
+      margin-top: 30px;
       .app {
         margin-right: 10px;
       }
@@ -290,7 +291,7 @@
     .buttons {
       max-width: 100%;
       margin-top: 0;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
       & button {
         &::after {
           right: 30px;
@@ -300,6 +301,7 @@
       .game {
         width: 100%;
         text-align: center;
+        margin-bottom: 10px;
       }
     }
     .task {

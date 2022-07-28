@@ -52,7 +52,7 @@ export const Home = () => {
                   </Suspense>
                 </Canvas>
               </MediaQuery>
-              <MediaQuery minWidth={770} maxWidth={1400}>
+              <MediaQuery minWidth={770} maxWidth={1401}>
                 <Canvas
                   className={s.rings}
                   camera={{
