@@ -21,10 +21,7 @@ export const Merch = () => {
           </div>
           <p className={s.title}>{t("merch.main.label")}</p>
           <div className={s.grid}>
-            <Link
-              className="link"
-              to="/merch/nca_publicart"
-            >
+            <Link className="link" to="/merch/nca_publicart">
               <div
                 className={s.card}
                 onClick={() => {
@@ -45,17 +42,14 @@ export const Merch = () => {
                     {t("merch.card.1.label")}
                   </span>
                   <span className={s.card_size}>{t("merch.card.1.size")}</span>
-                  <span className={s.card_price}>2550₽</span>
+                  <span className={s.card_price}>255O₽</span>
                 </div>
                 <button className={s.card_more}>
                   {t("merch.card.1.more")}
                 </button>
               </div>
             </Link>
-            <Link
-              className="link"
-              to="/merch/nca_publicart"
-            >
+            <Link className="link" to="/merch/nca_publicart">
               <div
                 className={s.card}
                 onClick={() => {
@@ -76,7 +70,7 @@ export const Merch = () => {
                     {t("merch.card.1.label")}
                   </span>
                   <span className={s.card_size}>{t("merch.card.1.size")}</span>
-                  <span className={s.card_price}>2550₽</span>
+                  <span className={s.card_price}>255O₽</span>
                 </div>
                 <button className={s.card_more}>
                   {t("merch.card.1.more")}

@@ -10,6 +10,7 @@ import { OrbitControls } from "@react-three/drei";
 import MediaQuery from "react-responsive";
 import Model from "../../assets/animate/glb/Test_2";
 import { DropdownMenu } from "../../shared/components/DropdownMenu/DropdownMenu";
+import PairsSlider from "../../shared/components/PairsSlider/PairsSlider";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -127,59 +128,7 @@ export const Home = () => {
         </section>
         <section className={s.pairs}>
           <h2 className={s.pairs_title}>{t("main.pairs.title")}</h2>
-          <div className={s.pairs_grid}>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/rosatom.png")}
-                alt="Ros Atom"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/lenfilm.png")}
-                alt="LenFilm"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img src={require("../../assets/pairs/maxim.png")} alt="Maxim" />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/bentley.png")}
-                alt="Bentley"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/sobaka.png")}
-                alt="Sobaka"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/dnevnik.png")}
-                alt="Spb Dnevnik Ru"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/gagagames.png")}
-                alt="GaGa Games"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/pravitelstvo.png")}
-                alt="SPB"
-              />
-            </div>
-            <div className={s.pairs_grid_card}>
-              <img
-                src={require("../../assets/pairs/planetariy.png")}
-                alt="Planetariy"
-              />
-            </div>
-          </div>
+          <PairsSlider />
         </section>
       </div>
     </>
