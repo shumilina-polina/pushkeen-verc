@@ -101,7 +101,7 @@
 }
 
 .activity {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
   &_title {
     font-family: "IBM Plex Mono";
@@ -121,24 +121,13 @@
     font-size: 25px;
     line-height: 32px;
     color: $text-dark;
-    margin-bottom: 38px;
+    margin-bottom: 72px;
   }
 
   &_wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
-    .create_title,
-    .develop_title,
-    .reality_title {
-      font-family: "IBM Plex Mono";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 39px;
-      line-height: 48px;
-      color: $text-dark;
-    }
 
     .top {
       font-size: 47px;
@@ -153,135 +142,6 @@
         top: 2px;
         width: 25px;
         height: 25px;
-      }
-    }
-    .bottom {
-      font-size: 24px;
-    }
-
-    .develop_button,
-    .reality_button {
-      border-radius: 1000px;
-      background: inherit;
-      text-transform: inherit;
-      font-family: "IBM Plex Mono";
-      font-style: normal;
-      font-weight: 400;
-      line-height: 28px;
-      text-transform: uppercase;
-      color: $text-dark;
-      text-align: left;
-      border: 0px;
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: translateY(-5px);
-        transition: transform 0.3s ease;
-
-        .top {
-          &::after {
-            content: "";
-            background: url("../../assets/svg/arrow-black_hover.svg");
-          }
-        }
-      }
-      &:focus {
-        opacity: 0.6;
-      }
-    }
-
-    .create {
-      max-width: 300px;
-      &_title {
-        margin-bottom: 35px;
-      }
-      &_list {
-        li {
-          position: relative;
-          padding-left: 20px;
-          font-family: "Mulish";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 26px;
-          line-height: 41px;
-
-          color: #000000;
-          &::before {
-            content: "";
-            position: absolute;
-            list-style-type: disc;
-            display: list-item;
-            width: 1px;
-            top: 0;
-            left: 0;
-          }
-        }
-      }
-    }
-
-    .buttons_wrapper {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      .develop {
-        margin-right: 94px;
-        &_title {
-          margin-bottom: 44px;
-        }
-        &_button {
-          padding: 81px 22px;
-          position: relative;
-
-          &::before {
-            content: "";
-            z-index: -1;
-            background: url("../../assets/svg/circle_button.svg");
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 227px;
-            height: 227px;
-            transition: background-image 0.3s, color 0.3s;
-          }
-
-          &:hover {
-            color: $text-light;
-            &::before {
-              transition: background-image 0.3s, color 0.3s;
-              background-image: url("../../assets/svg/circle_button_hover.svg");
-            }
-          }
-        }
-      }
-      .reality {
-        &_title {
-          margin-bottom: 17px;
-        }
-        &_button {
-          padding: 112px 75px 91px 58px;
-          position: relative;
-          &::before {
-            content: "";
-            background-image: url("../../assets/svg/star_button.svg");
-            position: absolute;
-            z-index: -1;
-            top: 50%;
-            left: calc(50% + 10px);
-            transform: translate(-50%, -50%);
-            width: 261px;
-            height: 268px;
-            transition: background-image 0.3s, color 0.3s;
-          }
-
-          &:hover {
-            color: $text-light;
-            &::before {
-              transition: background-image 0.3s, color 0.3s;
-              background-image: url("../../assets/svg/star_button_hover.svg");
-            }
-          }
-        }
       }
     }
   }
@@ -451,53 +311,6 @@
       line-height: 28px;
       margin-bottom: 33px;
     }
-
-    &_wrapper {
-      .create_title,
-      .develop_title,
-      .reality_title {
-        font-size: 22px;
-        line-height: 40px;
-      }
-
-      .top {
-        font-size: 40px;
-        &::after {
-          right: -30px;
-        }
-      }
-      .bottom {
-        font-size: 20px;
-      }
-
-      .create {
-        &_title {
-          margin-bottom: 30px;
-        }
-        &_list {
-          li {
-            padding-left: 15px;
-            font-size: 22px;
-            line-height: 36px;
-          }
-        }
-      }
-
-      .buttons_wrapper {
-        .develop {
-          margin-right: 60px;
-          &_title {
-            margin-bottom: 40px;
-          }
-        }
-        .reality {
-          width: min-content;
-          &_title {
-            white-space: nowrap;
-          }
-        }
-      }
-    }
   }
 
   .pairs {
@@ -603,7 +416,7 @@
   }
 
   .activity {
-    margin-bottom: 161px;
+    margin-bottom: 40px;
 
     &_title {
       font-size: 38px;
@@ -614,137 +427,7 @@
     &_desc {
       font-size: 17px;
       line-height: 24px;
-      margin-bottom: 47px;
-    }
-
-    &_wrapper {
-      align-items: flex-start;
-      flex-direction: column;
-      justify-content: flex-start;
-      width: min-content;
-
-      .create_title,
-      .develop_title,
-      .reality_title {
-        font-size: 26px;
-      }
-
-      .top {
-        font-size: 33px;
-
-        &::after {
-          background: url("../../assets/svg/mobile/arrow-white.svg") no-repeat;
-          transform: translateY(50%);
-          right: -20px;
-          top: 0px;
-          width: 18px;
-          height: 18px;
-        }
-      }
-      .bottom {
-        font-size: 20px;
-      }
-
-      .develop_button,
-      .reality_button {
-        color: $text-light;
-        transition: none;
-        border-radius: 100px;
-
-        &:hover {
-          .top {
-            &::after {
-              content: "";
-              background: url("../../assets/svg/mobile/arrow-white.svg  ");
-            }
-          }
-        }
-      }
-
-      .create {
-        margin-bottom: 49px;
-
-        &_title {
-          margin-bottom: 2px;
-        }
-        &_list {
-          li {
-            white-space: nowrap;
-            padding-left: 15px;
-            font-size: 18px;
-            line-height: 29px;
-          }
-        }
-      }
-
-      .buttons_wrapper {
-        position: relative;
-        .develop {
-          width: 150px;
-          margin-right: 0px;
-          &_title {
-            margin-bottom: 10px;
-          }
-          &_button {
-            padding: 40px 0 40px 40px;
-
-            &::before {
-              content: "";
-              background: url("../../assets/svg/mobile/circle_button_hover.svg");
-              top: 0;
-              left: 0;
-              transform: none;
-              transition: none;
-              width: 174px;
-              height: 174px;
-            }
-
-            &:hover {
-              &::before {
-                background-image: url("../../assets/svg/mobile/circle_button_hover.svg");
-              }
-            }
-          }
-        }
-        .reality {
-          position: absolute;
-          bottom: -40px;
-          left: 150px;
-          display: flex;
-          align-items: center;
-          flex-direction: column-reverse;
-          &_title {
-            position: absolute;
-            bottom: -60px;
-            right: -60px;
-            white-space: nowrap;
-            margin-bottom: 0px;
-            margin-top: 20px;
-          }
-          &_button {
-            padding: 80px 0 40px 55px;
-
-            &::before {
-              content: "";
-              background-image: url("../../assets/svg/mobile/star_button_hover.svg");
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              transform: none;
-              transition: none;
-              width: 199px;
-              height: 204px;
-            }
-
-            &:hover {
-              &::before {
-                background-image: url("../../assets/svg/mobile/star_button_hover.svg");
-              }
-            }
-          }
-        }
-      }
+      margin-bottom: 28px;
     }
   }
 

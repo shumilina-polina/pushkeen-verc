@@ -1,0 +1,110 @@
+@import "../../../styles/variables.scss";
+
+.menu {
+  &_item {
+    border-bottom: 1px solid #a9a9a9;
+    padding: 40px 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    .title {
+      font-family: "IBM Plex Mono";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: $projects_text;
+      transition: color 0.3s;
+      &:hover {
+        color: #1858fb;
+        transition: color 0.3s;
+      }
+    }
+    .list {
+      margin-top: 24px;
+      display: none;
+
+      & li {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32px;
+        color: $projects_text;
+      }
+      &_active {
+        display: block;
+        animation: showList 1s ease forwards;
+      }
+    }
+  }
+}
+
+@keyframes showList {
+  0% {
+    transform: scaleY(0.1);
+  }
+  40% {
+    transform: scaleY(1.04);
+  }
+  70% {
+    transform: scaleY(0.98);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+//--------- MEDIA ---------
+
+@media (max-width: 1400px) {
+  .menu {
+    &_item {
+      padding: 30px 0;
+      .title {
+        font-size: 33px;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .menu {
+    &_item {
+      margin-bottom: 20px;
+      border-bottom: none;
+      padding: 0;
+      .title {
+        font-size: 26px;
+        line-height: 30px;
+        color: #1858fb;
+        margin-bottom: 4px;
+      }
+      .list {
+        margin-top: 0px;
+        display: block;
+
+        & li {
+          font-size: 17px;
+          line-height: 24px;
+          position: relative;
+          padding-left: 12px;
+          &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            border-radius: 100px;
+            background-color: $projects_text;
+            width: 6px;
+            height: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

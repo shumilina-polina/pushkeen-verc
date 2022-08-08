@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import { OrbitControls } from "@react-three/drei";
 import MediaQuery from "react-responsive";
 import Model from "../../assets/animate/glb/Test_2";
+import { DropdownMenu } from "../../shared/components/DropdownMenu/DropdownMenu";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -122,50 +123,7 @@ export const Home = () => {
         <section className={s.activity}>
           <h2 className={s.activity_title}>{t("main.activity.title")}</h2>
           <p className={s.activity_desc}>{t("main.activity.description")}</p>
-          <div className={s.activity_wrapper}>
-            <div className={s.create}>
-              <h3 className={s.create_title}>
-                {t("main.activity.content.create.title")}
-              </h3>
-              <ul className={s.create_list}>
-                <li>{t("main.activity.content.create.list.1")}</li>
-                <li>{t("main.activity.content.create.list.2")}</li>
-                <li>{t("main.activity.content.create.list.3")}</li>
-                <li>{t("main.activity.content.create.list.4")}</li>
-                <li>{t("main.activity.content.create.list.5")}</li>
-              </ul>
-            </div>
-            <div className={s.buttons_wrapper}>
-              <div className={s.develop}>
-                <h3 className={s.develop_title}>
-                  {t("main.activity.content.develop")}
-                </h3>
-                <Link className="link" to="/publicart">
-                  <button className={s.develop_button}>
-                    <span className={s.top}>push</span>
-                    <br />
-                    <span className={s.bottom}>
-                      {t("main.activity.content.in")} public art
-                    </span>
-                  </button>
-                </Link>
-              </div>
-              <div className={s.reality}>
-                <h3 className={s.reality_title}>
-                  {t("main.activity.content.reality")}
-                </h3>
-                <Link className="link" to="/nft">
-                  <button className={s.reality_button}>
-                    <span className={s.top}>push</span>
-                    <br />
-                    <span className={s.bottom}>
-                      {t("main.activity.content.in")} nft
-                    </span>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
+          <DropdownMenu />
         </section>
         <section className={s.pairs}>
           <h2 className={s.pairs_title}>{t("main.pairs.title")}</h2>
