@@ -191,6 +191,17 @@
       }
     }
   }
+
+  .bentley {
+    background-image: url(../../assets/pairs/bentley_def.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.2s ease;
+    &:hover {
+      background-image: url(../../assets/pairs/bentley.png);
+      transition: background-image 0.2s ease;
+    }
+  }
 }
 
 .projects {

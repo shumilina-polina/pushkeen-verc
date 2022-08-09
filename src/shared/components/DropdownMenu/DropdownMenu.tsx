@@ -19,7 +19,7 @@ export const DropdownMenu = () => {
             <h3
               className={s.title}
               onClick={() => {
-                setList(indexList + 1);
+                list === indexList + 1 ? setList(0) : setList(indexList + 1);
               }}
               style={list === indexList + 1 ? { color: "#1858fb" } : {}}
             >
