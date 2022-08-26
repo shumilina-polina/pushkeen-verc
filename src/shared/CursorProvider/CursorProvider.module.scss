@@ -4,7 +4,8 @@
   background: #77b6ff;
   -webkit-mix-blend-mode: hard-light;
   mix-blend-mode: hard-light;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
   z-index: 999999;
   transform: translate(-50%, -50%);
   border-radius: 50%;

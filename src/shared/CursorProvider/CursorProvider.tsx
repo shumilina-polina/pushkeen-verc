@@ -10,7 +10,9 @@ const CursorProvider = ({ children }: any) => {
   const [cursor, setCursor] = useState<boolean>(false);
 
   const onMouseMove = (event: any) => {
-    const { pageX: x, pageY: y } = event;
+    const { pageX, pageY } = event;
+    const x = pageX;
+    const y = pageY - window.scrollY;
     setMousePosition({ x, y });
   };
 

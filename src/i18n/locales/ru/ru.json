@@ -691,7 +691,7 @@
         },
         "newcityartist": {
           "card": {
-            "title": "New City Artist",
+            "title": "New City Driver",
             "content_0": "nft"
           },
           "title": "MetaFemHistory",
@@ -763,13 +763,13 @@
         },
         "newcity": {
           "card": {
-            "title": "new city artist",
+            "title": "new city driver",
             "content_0": "nft"
           },
-          "title": "New City Artist",
+          "title": "New City Driver",
           "about": {
             "title": {
-              "name": "new city artist"
+              "name": "new city driver"
             },
             "content": {
               "name": "О проекте:",

@@ -10,7 +10,7 @@ export const NewCityArtist = () => {
       <img
         className={s.newcity_image}
         src={require("../../../assets/nft/newcityartist/mainscreen.png")}
-        alt="New City Artist"
+        alt="New City Driver"
       />
       <div className={s.about}>
         <div className={s.about_title}>
@@ -67,7 +67,7 @@ export const NewCityArtist = () => {
       <img
         className={s.car_image}
         src={require("../../../assets/nft/newcityartist/car.png")}
-        alt="New City Artist"
+        alt="New City Driver"
       />
       <div className={s.video_wrapper_2}>
         <LazyLoadComponent>
