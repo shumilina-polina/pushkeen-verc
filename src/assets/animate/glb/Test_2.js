@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations, PerspectiveCamera } from "@react-three/drei";
 import mod from "./test_2.glb";
 

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import s from "./Merch.module.scss";
@@ -13,6 +14,10 @@ export const Merch = () => {
 
   return (
     <>
+      <Helmet>
+        <title>PushKeen - Merch</title>
+        <meta name="description" content="Helmet application" />
+      </Helmet>
       <div className="container">
         <section className={s.merch}>
           <div className={s.main}>

@@ -6,7 +6,6 @@ import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import { OrbitControls } from "@react-three/drei";
 import MediaQuery from "react-responsive";
 import Model from "../../assets/animate/glb/Test_2";
 import { DropdownMenu } from "../../shared/components/DropdownMenu/DropdownMenu";
@@ -46,11 +45,6 @@ export const Home = () => {
                     <ambientLight />
                     <directionalLight intensity={2} position={[-5, 15, 3]} />
                     <Model />
-                    <OrbitControls
-                      enablePan={false}
-                      enableZoom={false}
-                      enableRotate={false}
-                    />
                   </Suspense>
                 </Canvas>
               </MediaQuery>
@@ -67,11 +61,6 @@ export const Home = () => {
                     <ambientLight />
                     <directionalLight intensity={2} position={[-5, 15, 3]} />
                     <Model />
-                    <OrbitControls
-                      enablePan={false}
-                      enableZoom={false}
-                      enableRotate={false}
-                    />
                   </Suspense>
                 </Canvas>
               </MediaQuery>
@@ -88,11 +77,6 @@ export const Home = () => {
                     <ambientLight />
                     <directionalLight intensity={2} position={[-5, 15, 3]} />
                     <Model />
-                    <OrbitControls
-                      enablePan={false}
-                      enableZoom={false}
-                      enableRotate={false}
-                    />
                   </Suspense>
                 </Canvas>
               </MediaQuery>
