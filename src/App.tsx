@@ -198,7 +198,7 @@ function App() {
               }
             />
             <Route
-              path="nft/newCityArtist"
+              path="nft/newCityDriver"
               element={
                 <Project locales_page="nft" locales_title="nft_list.newcity">
                   <NewCityArtist />

@@ -14,8 +14,8 @@
     margin-bottom: 33px;
 
     &_title {
-      width: 50%;
-      padding-bottom: 30px;
+      width: 40%;
+      padding-bottom: 10px;
       position: relative;
 
       &_name {
@@ -66,7 +66,7 @@
   .buttons {
     max-width: 50%;
     margin-bottom: 160px;
-    margin-top: -140px;
+    margin-top: -80px;
     .button_1 {
       font-family: "IBM Plex Mono";
       font-style: normal;
@@ -179,8 +179,8 @@
       }
     }
     .buttons {
-      margin-top: -170px;
-      margin-bottom: 150px;
+      margin-top: -200px;
+      margin-bottom: 190px;
       & button {
         margin-bottom: 10px;
       }
@@ -231,7 +231,7 @@
       max-width: 100%;
       margin-bottom: 40px;
       margin-top: 0;
-      .button_2 {
+      .button_1 {
         width: 100%;
         text-align: center;
       }
