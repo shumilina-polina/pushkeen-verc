@@ -7,14 +7,22 @@ import gameimg from "../../../assets/projects/mymoscow/image_create.png";
 import site from "../../../assets/projects/mymoscow/site.png";
 import book_1 from "../../../assets/projects/mymoscow/book_1.png";
 import book_2 from "../../../assets/projects/mymoscow/book_2.png";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 
 export const MyMoscow = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.mymoscow}>
-      <img className={s.mymoscow_image} src={mainscreen} alt="My Moscow" />
+      <LazyLoadImage
+        effect="blur"
+        className={s.mymoscow_image}
+        src={mainscreen}
+        alt="My Moscow"
+      />
       <div className={s.tasks}>
         <div className={s.tasks_title}>
           <h2 className={s.tasks_title_name}>
@@ -48,7 +56,12 @@ export const MyMoscow = () => {
         <div className={s.button_6}>{t("project.list.mymoscow.buttons.6")}</div>
       </div>
       <div className={s.img_wrapper_1}>
-        <img className={s.image} src={logoimg} alt="My Moscow" />
+        <LazyLoadImage
+          effect="blur"
+          className={s.image}
+          src={logoimg}
+          alt="My Moscow"
+        />
         <div className={s.img_label}>
           <span>{t("project.list.mymoscow.image_labels.logo")}</span>
           <div className={s.circle}></div>

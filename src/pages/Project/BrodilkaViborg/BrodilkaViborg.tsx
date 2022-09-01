@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import s from "./BrodilkaViborg.module.scss";
 
 export const BrodilkaViborg = () => {
@@ -6,7 +7,8 @@ export const BrodilkaViborg = () => {
 
   return (
     <section className={s.viborg}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.viborg_image}
         src={require("../../../assets/projects/brodilkaviborg/mainscreen.png")}
         alt="Brodilka Viborg"

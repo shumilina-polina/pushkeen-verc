@@ -1,5 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
 import s from "./GuideKur.module.scss";
 
@@ -8,7 +11,8 @@ export const GuideKur = () => {
 
   return (
     <section className={s.guide}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.guide_image}
         src={require("../../../assets/projects/guidekur/mainscreen.png")}
         alt="Guide Kurortnyy"

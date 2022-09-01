@@ -8,6 +8,7 @@ import image_1 from "../../assets/projects/publicart/image1.png";
 import image_2 from "../../assets/projects/publicart/image2.png";
 import image_3 from "../../assets/projects/publicart/image3.png";
 import image_4 from "../../assets/projects/publicart/image4.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const PublicArt = () => {
   const { t } = useTranslation();
@@ -18,7 +19,12 @@ export const PublicArt = () => {
   return (
     <Project locales_page="projects" locales_title="publicart">
       <section className={s.publicart}>
-        <img className={s.publicart_image} src={mainscreen} alt="Public Art" />
+        <LazyLoadImage
+          effect="blur"
+          className={s.publicart_image}
+          src={mainscreen}
+          alt="Public Art"
+        />
         <div className={s.about}>
           <div className={s.about_title}>
             <h2 className={s.about_title_name}>

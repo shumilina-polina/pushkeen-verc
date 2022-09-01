@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import s from "./BrodilkaMoscow.module.scss";
 
 export const BrodilkaMoscow = () => {
@@ -6,7 +7,8 @@ export const BrodilkaMoscow = () => {
 
   return (
     <section className={s.moscow}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.moscow_image}
         src={require("../../../assets/projects/brodilkamoscow/mainscreen.png")}
         alt="Brodilka Moscow"
@@ -74,7 +76,9 @@ export const BrodilkaMoscow = () => {
         src={require("../../../assets/projects/brodilkamoscow/image2.png")}
         alt="Brodilka Moscow"
       />
-      <h3 className={s.desc_title}>{t("project.list.brodilkamoscow.desc_title")}</h3>
+      <h3 className={s.desc_title}>
+        {t("project.list.brodilkamoscow.desc_title")}
+      </h3>
       <p className={s.desc}>{t("project.list.brodilkamoscow.desc")}</p>
       <img
         className={s.moscow_image_3}

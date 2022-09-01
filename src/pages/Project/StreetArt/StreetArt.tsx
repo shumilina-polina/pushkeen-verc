@@ -4,16 +4,18 @@ import mainscreen from "../../../assets/projects/streetart/mainscreen.png";
 import box from "../../../assets/projects/streetart/box.png";
 import i1 from "../../../assets/projects/streetart/image1.png";
 import i2 from "../../../assets/projects/streetart/image2.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const StreetArt = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.streetart}>
-      <img
-        className={s.streetart_image}
-        src={mainscreen}
+      <LazyLoadImage
         alt="Street Art Memo"
+        effect="blur"
+        src={mainscreen}
+        className={s.streetart_image}
       />
       <div className={s.about}>
         <div className={s.about_title}>

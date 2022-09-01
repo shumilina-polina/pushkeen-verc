@@ -7,7 +7,8 @@ export const GeniusLoci = () => {
 
   return (
     <section className={s.geniusloci}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.geniusloci_image}
         src={require("../../../assets/projects/geniusloci/mainscreen.png")}
         alt="Genius Loci Memo"

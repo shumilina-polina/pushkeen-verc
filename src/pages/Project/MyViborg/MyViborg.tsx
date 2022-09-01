@@ -3,14 +3,22 @@ import { ButtonDownload } from "../../../shared/components/ButtonDownload/Button
 import s from "./MyViborg.module.scss";
 import mainscreen from "../../../assets/projects/myviborg/mainscreen.png";
 import phones from "../../../assets/projects/myviborg/phones.png";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 
 export const MyViborg = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.viborg}>
-      <img className={s.viborg_image} src={mainscreen} alt="My Viborg" />
+      <LazyLoadImage
+        className={s.viborg_image}
+        alt="My Viborg"
+        effect="blur"
+        src={mainscreen}
+      />
       <div className={s.about}>
         <div className={s.about_title}>
           <h2 className={s.about_title_name}>
@@ -48,11 +56,7 @@ export const MyViborg = () => {
         <div className={s.game}>{t("project.list.myviborg.buttons.4")}</div>
       </div>
       <div className={s.phones_wrapper}>
-        <img
-          className={s.phones_image}
-          src={phones}
-          alt="My Viborg App Screens"
-        />
+        <LazyLoadImage alt="My Viborg App Screens" effect="blur" src={phones} />
       </div>
       <div className={s.task}>
         <div className={s.task_wrapper}>
