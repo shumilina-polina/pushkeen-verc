@@ -50,7 +50,7 @@ const Header = () => {
               }
               onClick={toggleBurgerMode}
             >
-              <img src={burger} alt="menu" />
+              <img src={burger} alt="burger menu" />
             </button>
           </div>
 
@@ -62,7 +62,7 @@ const Header = () => {
               <CustomLink className="link" to="/nft">
                 <li className={s.nft}>{linkValue.NFT}</li>
               </CustomLink>
-              <CustomLink className="link" to="/publicart">
+              <CustomLink className="link" to="/projects/publicart">
                 <li className={s.publicart}>{linkValue.PublicArt}</li>
               </CustomLink>
               <CustomLink className="link" to="/merch">
@@ -129,7 +129,7 @@ const Header = () => {
             </CustomLink>
             <CustomLink
               className="link"
-              to="/publicart"
+              to="/projects/publicart"
               onClick={() => toggleBurder(false)}
             >
               <li className={s.burger_publicart}>{linkValue.PublicArt}</li>

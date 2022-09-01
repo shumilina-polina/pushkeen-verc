@@ -135,7 +135,7 @@ export const PublicArt = () => {
           <div className={s.img_label}>
             <a
               className={s.img_link}
-              href="/streetArtMemo"
+              href="/projects/streetArtMemo"
               target="_blank"
               rel="noreferrer"
             >

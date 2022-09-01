@@ -27,7 +27,7 @@ export const Card = (props: Project) => {
               />
             </div>
             <div className={saf.back}>
-              <Link className="link" to={"/" + props.name}>
+              <Link className="link" to={"/projects/" + props.name}>
                 <div className={saf.link_wrapper}>
                   <h3 className={saf.title}>
                     {t("project.list." + props.content_locales + ".card.title")}
@@ -61,7 +61,7 @@ export const Card = (props: Project) => {
               />
             </div>
             <div className={s.back}>
-              <Link className="link" to={"/" + props.name}>
+              <Link className="link" to={"/projects/" + props.name}>
                 <div className={s.link_wrapper}>
                   <h3 className={s.title}>
                     {t("project.list." + props.content_locales + ".card.title")}
