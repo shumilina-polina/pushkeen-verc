@@ -1,40 +1,77 @@
-import cn from "classnames";
-import { useState } from "react";
+import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import MediaQuery from "react-responsive";
 import s from "./DropdownMenu.module.scss";
 
 export const DropdownMenu = () => {
   const { t } = useTranslation();
-  let active = cn(s.list, s.list_active);
-  const [list, setList] = useState<number>(0);
   return (
-    <div className={s.menu}>
+    <div>
       {[4, 2, 6, 3, 3].map((countInList, indexList) => {
         return (
-          <div
-            key={indexList}
-            className={s.menu_item}
-            style={list === indexList + 1 ? { borderColor: "#1858fb" } : {}}
-          >
-            <h3
-              className={s.title}
-              onClick={() => {
-                list === indexList + 1 ? setList(0) : setList(indexList + 1);
-              }}
-              style={list === indexList + 1 ? { color: "#1858fb" } : {}}
-            >
-              {t(`main.activity.lists.list_${indexList + 1}.title`)}
-            </h3>
-            <ul className={list === indexList + 1 ? active : s.list}>
-              {Array.from({ length: countInList }).map((_, num) => {
-                return (
-                  <li key={num}>
-                    {t(`main.activity.lists.list_${indexList + 1}.${num + 1}`)}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          <>
+            <MediaQuery minWidth={771}>
+              <Accordion
+                className={s.accordion}
+                onClick={(e) => {
+                  const elem = e.currentTarget;
+                  elem.setAttribute(
+                    "style",
+                    elem.classList.contains("Mui-expanded")
+                      ? "border-bottom: 1px solid #a9a9a9 !important"
+                      : "border-bottom: 1px solid #1858fb !important"
+                  );
+                }}
+              >
+                <AccordionSummary className={s.summary}>
+                  <h3 className={s.title}>
+                    {t(`main.activity.lists.list_${indexList + 1}.title`)}
+                  </h3>
+                </AccordionSummary>
+                <AccordionDetails className={s.details}>
+                  <ul>
+                    {Array.from({ length: countInList }).map((_, num) => {
+                      return (
+                        <li key={num}>
+                          {t(
+                            `main.activity.lists.list_${indexList + 1}.${
+                              num + 1
+                            }`
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </AccordionDetails>
+              </Accordion>
+            </MediaQuery>
+            <MediaQuery maxWidth={770}>
+              <div className={s.menu}>
+                <Accordion className={s.accordion} expanded={true}>
+                  <AccordionSummary className={s.summary}>
+                    <h3 className={s.title}>
+                      {t(`main.activity.lists.list_${indexList + 1}.title`)}
+                    </h3>
+                  </AccordionSummary>
+                  <AccordionDetails className={s.details}>
+                    <ul>
+                      {Array.from({ length: countInList }).map((_, num) => {
+                        return (
+                          <li key={num}>
+                            {t(
+                              `main.activity.lists.list_${indexList + 1}.${
+                                num + 1
+                              }`
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </AccordionDetails>
+                </Accordion>
+              </div>
+            </MediaQuery>
+          </>
         );
       })}
     </div>

@@ -19,9 +19,9 @@
 
   &:hover {
     transform: translateY(-3px);
-    background-color: #1858fb;
+    background-color: $text-blue;
     color: #fff;
-    border-color: #1858fb;
+    border-color: $text-blue;
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
     &::after {
       transition: background-image 0.3s ease;
@@ -46,9 +46,9 @@
 
 @media (max-width: 770px) {
   .button {
-    background-color: #1858fb;
+    background-color: $text-blue;
     color: #fff;
-    border-color: #1858fb;
+    border-color: $text-blue;
     &::after {
       background-image: url("../../../assets/projects/arrow-white.svg");
     }

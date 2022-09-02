@@ -2,7 +2,6 @@ import s from "./Home.module.scss";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Cards } from "shared/components/Cards/Cards";
-import { projectsList } from "./ProjectsList";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
@@ -10,6 +9,7 @@ import MediaQuery from "react-responsive";
 import Model from "assets/animate/glb/Test_2";
 import { DropdownMenu } from "shared/components/DropdownMenu/DropdownMenu";
 import PairsSlider from "shared/components/PairsSlider/PairsSlider";
+import { projectsList } from "shared/constants/lists";
 
 export const Home = () => {
   const { t } = useTranslation();

@@ -152,7 +152,7 @@
         font-size: 68px;
         line-height: 79px;
         text-transform: uppercase;
-        color: #1858fb;
+        color: $text-blue;
         width: min-content;
       }
       .month,
@@ -325,7 +325,7 @@
         align-self: flex-end;
       }
     }
-    .desc{
+    .desc {
       max-width: 100%;
     }
   }

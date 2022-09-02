@@ -214,7 +214,7 @@
         font-size: 68px;
         line-height: 79px;
         text-transform: uppercase;
-        color: #1858fb;
+        color: $text-blue;
         width: min-content;
       }
       .month,
@@ -244,7 +244,7 @@
   .circle {
     width: 17px;
     height: 17px;
-    background: #1858fb;
+    background: $text-blue;
     border-radius: 50px;
     display: inline-block;
     margin-left: 8px;
@@ -331,7 +331,7 @@
           font-size: 68px;
           line-height: 79px;
           text-transform: uppercase;
-          color: #1858fb;
+          color: $text-blue;
           width: min-content;
         }
         .month,

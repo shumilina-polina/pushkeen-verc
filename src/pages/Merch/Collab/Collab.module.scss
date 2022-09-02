@@ -133,7 +133,7 @@
           //   }
           .button_active {
             color: $text-light;
-            background: #1858fb;
+            background: $text-blue;
           }
         }
       }
@@ -152,10 +152,10 @@
           height: 38px;
           margin-right: 16px;
           box-shadow: 0 0 0 1px transparent, 0 0 0 4px transparent;
-          transition: box-shadow .3s;
+          transition: box-shadow 0.3s;
           &:hover {
-            transition: box-shadow .3s;
-            box-shadow: 0 0 0 1px #fff, 0 0 0 4px #1858fb;
+            transition: box-shadow 0.3s;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 4px $text-blue;
           }
           &:focus {
             opacity: 1;
@@ -185,7 +185,7 @@
       }
 
       .button {
-        background: #1858fb;
+        background: $text-blue;
         border: none;
         border-radius: 100px;
         margin-bottom: 20px;

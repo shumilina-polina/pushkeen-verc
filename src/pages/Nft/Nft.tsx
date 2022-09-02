@@ -13,7 +13,7 @@ import { NewCityArtist } from "./NewCityArtist/NewCityArtist";
 import { NewEast } from "./NewEast/NewEast";
 import { NewNames } from "./NewNames/NewNames";
 import s from "./Nft.module.scss";
-import { nftList } from "./NftList";
+import { nftList } from "shared/constants/lists";
 
 export const Nft = () => {
   const { t } = useTranslation();

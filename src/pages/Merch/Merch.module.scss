@@ -93,7 +93,7 @@ img {
         }
         &_black_active,
         &_white_active {
-          box-shadow: 0 0 0 1px #fff, 0 0 0 4px #1858fb;
+          box-shadow: 0 0 0 1px #fff, 0 0 0 4px $text-blue;
         }
       }
 
@@ -135,7 +135,7 @@ img {
         display: block;
       }
       &_more {
-        color: #1858fb;
+        color: $text-blue;
         font-family: "IBM Plex Mono";
         font-style: normal;
         font-weight: 500;
@@ -261,7 +261,7 @@ img {
 
           &_black_active,
           &_white_active {
-            box-shadow: 0 0 0 1px #fff, 0 0 0 4px #1858fb;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 4px $text-blue;
           }
         }
 
