@@ -8,7 +8,7 @@ export const BrodilkaKurortnyy = () => {
     <section className={s.kurortnyy}>
       <img
         className={s.kurortnyy_image}
-        src={require("../../../assets/projects/brodilkakurortnyy/mainscreen.png")}
+        src={require("assets/projects/brodilkakurortnyy/mainscreen.png")}
         alt="Brodilka Kurortnyy"
       />
       <div className={s.about}>
@@ -39,7 +39,7 @@ export const BrodilkaKurortnyy = () => {
       </div>
       <img
         className={s.kurortnyy_image_1}
-        src={require("../../../assets/projects/brodilkakurortnyy/image1.png")}
+        src={require("assets/projects/brodilkakurortnyy/image1.png")}
         alt="Brodilka Kurortnyy"
       />
       <div className={s.task}>
@@ -73,29 +73,29 @@ export const BrodilkaKurortnyy = () => {
       </div>
       <img
         className={s.kurortnyy_image_2}
-        src={require("../../../assets/projects/brodilkakurortnyy/image2.png")}
+        src={require("assets/projects/brodilkakurortnyy/image2.png")}
         alt="Brodilka Kurortnyy"
       />
       <p className={s.desc_result}>{t("project.list.brodilkakurortnyy.result")}</p>
       <p className={s.desc}>{t("project.list.brodilkakurortnyy.desc")}</p>
       <img
         className={s.kurortnyy_image_3}
-        src={require("../../../assets/projects/brodilkakurortnyy/image3.png")}
+        src={require("assets/projects/brodilkakurortnyy/image3.png")}
         alt="Brodilka Kurortnyy"
       />
       <img
         className={s.kurortnyy_image_4}
-        src={require("../../../assets/projects/brodilkakurortnyy/image4.png")}
+        src={require("assets/projects/brodilkakurortnyy/image4.png")}
         alt="Brodilka Kurortnyy"
       />
       <img
         className={s.kurortnyy_image_5}
-        src={require("../../../assets/projects/brodilkakurortnyy/image5.png")}
+        src={require("assets/projects/brodilkakurortnyy/image5.png")}
         alt="Brodilka Kurortnyy"
       />
       <img
         className={s.kurortnyy_image_6}
-        src={require("../../../assets/projects/brodilkakurortnyy/image6.png")}
+        src={require("assets/projects/brodilkakurortnyy/image6.png")}
         alt="Brodilka Kurortnyy"
       />
     </section>

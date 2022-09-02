@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { linkValue, Project } from "../../../types/types";
+import { linkValue, Project } from "types/types";
 import { Card } from "./Card/Card";
 import s from "./Cards.module.scss";
 

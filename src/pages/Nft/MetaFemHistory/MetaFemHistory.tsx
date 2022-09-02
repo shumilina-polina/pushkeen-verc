@@ -1,15 +1,17 @@
 import { useTranslation } from "react-i18next";
 import s from "./MetaFemHistory.module.scss";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const MetaFemHistory = () => {
   const { t } = useTranslation();
 
   return (
     <section className={s.metafemhistory}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.metafemhistory_image}
-        src={require("../../../assets/nft/metafemhistory/mainscreen.png")}
+        src={require("assets/nft/metafemhistory/mainscreen.png")}
         alt="MetaFemHistory"
       />
       <div className={s.about}>
@@ -47,27 +49,27 @@ export const MetaFemHistory = () => {
       </div>
       <div className={s.image_wrapper}>
         <img
-          src={require("../../../assets/nft/metafemhistory/i1.png")}
+          src={require("assets/nft/metafemhistory/i1.png")}
           alt="MetaFemHistory"
         />
         <img
-          src={require("../../../assets/nft/metafemhistory/i2.png")}
-          alt="MetaFemHistory"
-        />
-      </div>
-      <div className={s.image_wrapper}>
-        <img
-          src={require("../../../assets/nft/metafemhistory/i3.png")}
-          alt="MetaFemHistory"
-        />
-        <img
-          src={require("../../../assets/nft/metafemhistory/i4.png")}
+          src={require("assets/nft/metafemhistory/i2.png")}
           alt="MetaFemHistory"
         />
       </div>
       <div className={s.image_wrapper}>
         <img
-          src={require("../../../assets/nft/metafemhistory/i5.png")}
+          src={require("assets/nft/metafemhistory/i3.png")}
+          alt="MetaFemHistory"
+        />
+        <img
+          src={require("assets/nft/metafemhistory/i4.png")}
+          alt="MetaFemHistory"
+        />
+      </div>
+      <div className={s.image_wrapper}>
+        <img
+          src={require("assets/nft/metafemhistory/i5.png")}
           alt="MetaFemHistory"
         />
       </div>

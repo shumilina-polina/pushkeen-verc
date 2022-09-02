@@ -1,6 +1,6 @@
 import { useState } from "react";
 import s from "./ArrowUp.module.scss";
-import i from '../../../assets/svg/arrow_up.svg'
+import i from 'assets/svg/arrow_up.svg'
 
 export const ArrowUp = () => {
   const [isVisible, setVisible] = useState<boolean>(false);

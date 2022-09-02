@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import s from "./NewEast.module.scss";
 
 export const NewEast = () => {
@@ -8,9 +8,10 @@ export const NewEast = () => {
 
   return (
     <section className={s.neweast}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.neweast_image}
-        src={require("../../../assets/nft/neweast/mainscreen.png")}
+        src={require("assets/nft/neweast/mainscreen.png")}
         alt="New Names In Fashion"
       />
       <div className={s.about}>
@@ -44,7 +45,7 @@ export const NewEast = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/neweast/video.mp4")}
+              src={require("assets/nft/neweast/video.mp4")}
               type="video/mp4"
             />
           </video>

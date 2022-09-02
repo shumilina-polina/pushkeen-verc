@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { ButtonDownload } from "../../shared/components/ButtonDownload/ButtonDownload";
-import { Project } from "../Project/Project";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
+import { Project } from "pages/Project/Project";
 import s from "./PublicArt.module.scss";
-import mainscreen from "../../assets/projects/publicart/mainscreen.png";
-import image_1 from "../../assets/projects/publicart/image1.png";
-import image_2 from "../../assets/projects/publicart/image2.png";
-import image_3 from "../../assets/projects/publicart/image3.png";
-import image_4 from "../../assets/projects/publicart/image4.png";
+import mainscreen from "assets/projects/publicart/mainscreen.png";
+import image_1 from "assets/projects/publicart/image1.png";
+import image_2 from "assets/projects/publicart/image2.png";
+import image_3 from "assets/projects/publicart/image3.png";
+import image_4 from "assets/projects/publicart/image4.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const PublicArt = () => {

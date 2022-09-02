@@ -1,6 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 import s from "./Halloween.module.scss";
 
 export const Halloween = () => {
@@ -8,9 +11,10 @@ export const Halloween = () => {
 
   return (
     <section className={s.halloween}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.halloween_image}
-        src={require("../../../assets/nft/halloween/mainscreen.png")}
+        src={require("assets/nft/halloween/mainscreen.png")}
         alt="Halloween"
       />
       <div className={s.about}>
@@ -55,39 +59,39 @@ export const Halloween = () => {
         <div className={s.video_wrapper}>
           <video autoPlay loop preload="metadata">
             <source
-              src={require("../../../assets/nft/halloween/video1.mp4")}
+              src={require("assets/nft/halloween/video1.mp4")}
               type="video/mp4"
             />
           </video>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/halloween/video2.mp4")}
+              src={require("assets/nft/halloween/video2.mp4")}
               type="video/mp4"
             />
           </video>
           <p className={s.desc}>{t("project.list.nft_list.halloween.desc")}</p>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/halloween/video3.mp4")}
+              src={require("assets/nft/halloween/video3.mp4")}
               type="video/mp4"
             />
           </video>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/halloween/video4.mp4")}
+              src={require("assets/nft/halloween/video4.mp4")}
               type="video/mp4"
             />
           </video>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/halloween/video5.mp4")}
+              src={require("assets/nft/halloween/video5.mp4")}
               type="video/mp4"
             />
           </video>
 
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/halloween/video6.mp4")}
+              src={require("assets/nft/halloween/video6.mp4")}
               type="video/mp4"
             />
           </video>

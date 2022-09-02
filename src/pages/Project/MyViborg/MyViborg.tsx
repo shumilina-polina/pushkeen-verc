@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import s from "./MyViborg.module.scss";
-import mainscreen from "../../../assets/projects/myviborg/mainscreen.png";
-import phones from "../../../assets/projects/myviborg/phones.png";
+import mainscreen from "assets/projects/myviborg/mainscreen.png";
+import phones from "assets/projects/myviborg/phones.png";
 import {
   LazyLoadComponent,
   LazyLoadImage,
@@ -91,7 +91,7 @@ export const MyViborg = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/projects/myviborg/appvideo.mp4")}
+              src={require("assets/projects/myviborg/appvideo.mp4")}
               type="video/mp4"
             />
           </video>

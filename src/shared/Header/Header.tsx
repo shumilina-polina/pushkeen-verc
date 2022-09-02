@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { linkValue } from "../../types/types";
-import { CustomLink } from "../components/CustomLink";
+import { linkValue } from "types/types";
+import { CustomLink } from "shared/components/CustomLink";
 import s from "./Header.module.scss";
-import burger from "../../assets/svg/mobile/burger.svg";
-import "../../styles/index.scss";
+import burger from "assets/svg/mobile/burger.svg";
+import "styles/index.scss";
 
 const Header = () => {
   const [isBurgerOpen, toggleBurder] = useState<boolean>(false);

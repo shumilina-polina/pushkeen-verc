@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
-import { Cards } from "../../shared/components/Cards/Cards";
-import { CustomLink } from "../../shared/components/CustomLink";
-import { Contact } from "../../shared/Contact/Contact";
-import { Project } from "../Project/Project";
+import { Cards } from "shared/components/Cards/Cards";
+import { CustomLink } from "shared/components/CustomLink";
+import { Contact } from "shared/Contact/Contact";
+import { Project } from "pages/Project/Project";
 import { BackToTheRootsNFT } from "./BackToTheRootsNFT/BackToTheRootsNFT";
 import { DirtyDrops } from "./DirtyDrops/DirtyDrops";
 import { Halloween } from "./Halloween/Halloween";

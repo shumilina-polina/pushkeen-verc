@@ -1,16 +1,16 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import rosatom from "../../../assets/pairs/rosatom.png";
-import lenfilm from "../../../assets/pairs/lenfilm.png";
-import maxim from "../../../assets/pairs/maxim.png";
-import bentley_image from "../../../assets/pairs/bentley.png";
-import sobaka from "../../../assets/pairs/sobaka.png";
-import dnevnik from "../../../assets/pairs/dnevnik.png";
-import gagagames from "../../../assets/pairs/gagagames.png";
-import pravitelstvo from "../../../assets/pairs/pravitelstvo.png";
-import planetariy from "../../../assets/pairs/planetariy.png";
+import rosatom from "assets/pairs/rosatom.png";
+import lenfilm from "assets/pairs/lenfilm.png";
+import maxim from "assets/pairs/maxim.png";
+import bentley_image from "assets/pairs/bentley.png";
+import sobaka from "assets/pairs/sobaka.png";
+import dnevnik from "assets/pairs/dnevnik.png";
+import gagagames from "assets/pairs/gagagames.png";
+import pravitelstvo from "assets/pairs/pravitelstvo.png";
+import planetariy from "assets/pairs/planetariy.png";
 import cn from "classnames";
 
-import home from "../../../pages/Home/Home.module.scss";
+import home from "pages/Home/Home.module.scss";
 import s from "./PairsSlider.module.scss";
 
 import "swiper/css";

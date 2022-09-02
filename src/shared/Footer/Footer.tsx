@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import s from "./Footer.module.scss";
-import vk from "../../assets/svg/social/vk.svg";
-import telegram from "../../assets/svg/social/telegram.svg";
-import twitter from "../../assets/svg/social/twitter.svg";
+import vk from "assets/svg/social/vk.svg";
+import telegram from "assets/svg/social/telegram.svg";
+import twitter from "assets/svg/social/twitter.svg";
 
 const Footer = () => {
   const { t } = useTranslation();

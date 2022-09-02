@@ -10,7 +10,7 @@ export const BrodilkaMoscow = () => {
       <LazyLoadImage
         effect="blur"
         className={s.moscow_image}
-        src={require("../../../assets/projects/brodilkamoscow/mainscreen.png")}
+        src={require("assets/projects/brodilkamoscow/mainscreen.png")}
         alt="Brodilka Moscow"
       />
       <div className={s.about}>
@@ -45,7 +45,7 @@ export const BrodilkaMoscow = () => {
       </div>
       <img
         className={s.moscow_image_1}
-        src={require("../../../assets/projects/brodilkamoscow/image1.png")}
+        src={require("assets/projects/brodilkamoscow/image1.png")}
         alt="Brodilka Moscow"
       />
       <div className={s.task}>
@@ -73,7 +73,7 @@ export const BrodilkaMoscow = () => {
       </div>
       <img
         className={s.moscow_image_2}
-        src={require("../../../assets/projects/brodilkamoscow/image2.png")}
+        src={require("assets/projects/brodilkamoscow/image2.png")}
         alt="Brodilka Moscow"
       />
       <h3 className={s.desc_title}>
@@ -82,12 +82,12 @@ export const BrodilkaMoscow = () => {
       <p className={s.desc}>{t("project.list.brodilkamoscow.desc")}</p>
       <img
         className={s.moscow_image_3}
-        src={require("../../../assets/projects/brodilkamoscow/image3.png")}
+        src={require("assets/projects/brodilkamoscow/image3.png")}
         alt="Brodilka Moscow"
       />
       <img
         className={s.moscow_image_4}
-        src={require("../../../assets/projects/brodilkamoscow/image4.png")}
+        src={require("assets/projects/brodilkamoscow/image4.png")}
         alt="Brodilka Moscow"
       />
     </section>

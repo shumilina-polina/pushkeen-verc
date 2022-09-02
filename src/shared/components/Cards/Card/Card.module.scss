@@ -24,6 +24,9 @@
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
     }
+    .title {
+      animation: card 0.6s linear;
+    }
   }
 
   .flipper {
@@ -81,6 +84,8 @@
       font-size: 48px;
       line-height: 62px;
       text-transform: uppercase;
+      will-change: transform;
+      text-decoration: underline;
     }
     .content {
       & li {
@@ -97,6 +102,16 @@
         }
       }
     }
+  }
+}
+
+@keyframes card {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 

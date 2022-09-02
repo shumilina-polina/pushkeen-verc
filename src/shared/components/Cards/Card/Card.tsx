@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
-import { Project } from "../../../../types/types";
+import { Project } from "types/types";
 import s from "./Card.module.scss";
 import saf from "./CardSafari.module.scss";
 
@@ -21,8 +22,9 @@ export const Card = (props: Project) => {
         <div className={saf.card}>
           <div className={saf.flipper}>
             <div className={saf.front}>
-              <img
-                src={require(`../../../../assets/${props.imageURL}`)}
+              <LazyLoadImage
+                effect="blur"
+                src={require(`assets/${props.imageURL}`)}
                 alt={props.name}
               />
             </div>
@@ -55,8 +57,9 @@ export const Card = (props: Project) => {
         <div className={s.card}>
           <div className={s.flipper}>
             <div className={s.front}>
-              <img
-                src={require(`../../../../assets/${props.imageURL}`)}
+              <LazyLoadImage
+                effect="blur"
+                src={require(`assets/${props.imageURL}`)}
                 alt={props.name}
               />
             </div>

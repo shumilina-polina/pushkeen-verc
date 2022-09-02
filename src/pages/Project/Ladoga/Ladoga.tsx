@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import s from "./Ladoga.module.scss";
-import mainscreen from "../../../assets/projects/ladoga/mainscreen.png";
-import phones from "../../../assets/projects/ladoga/phones.png";
+import mainscreen from "assets/projects/ladoga/mainscreen.png";
+import phones from "assets/projects/ladoga/phones.png";
 
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Ladoga = () => {
@@ -84,7 +84,7 @@ export const Ladoga = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/projects/ladoga/appvideo.mp4")}
+              src={require("assets/projects/ladoga/appvideo.mp4")}
               type="video/mp4"
             />
           </video>

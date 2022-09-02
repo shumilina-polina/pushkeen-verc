@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { ArrowUp } from "../../shared/components/ArrowUp/ArrowUp";
-import { CustomLink } from "../../shared/components/CustomLink";
+import { ArrowUp } from "shared/components/ArrowUp/ArrowUp";
+import { CustomLink } from "shared/components/CustomLink";
 import s from "./Project.module.scss";
 
 type Props = {

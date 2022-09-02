@@ -3,7 +3,7 @@ import {
   LazyLoadComponent,
   LazyLoadImage,
 } from "react-lazy-load-image-component";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import s from "./GuideKur.module.scss";
 
 export const GuideKur = () => {
@@ -14,7 +14,7 @@ export const GuideKur = () => {
       <LazyLoadImage
         effect="blur"
         className={s.guide_image}
-        src={require("../../../assets/projects/guidekur/mainscreen.png")}
+        src={require("assets/projects/guidekur/mainscreen.png")}
         alt="Guide Kurortnyy"
       />
       <div className={s.about}>
@@ -84,7 +84,7 @@ export const GuideKur = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/projects/guidekur/video.mp4")}
+              src={require("assets/projects/guidekur/video.mp4")}
               type="video/mp4"
             />
           </video>

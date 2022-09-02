@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
 import s from "./NewCityArtist.module.scss";
 
 export const NewCityArtist = () => {
@@ -7,9 +7,10 @@ export const NewCityArtist = () => {
 
   return (
     <section className={s.newcity}>
-      <img
+      <LazyLoadImage
+        effect="blur"
         className={s.newcity_image}
-        src={require("../../../assets/nft/newcityartist/mainscreen.png")}
+        src={require("assets/nft/newcityartist/mainscreen.png")}
         alt="New City Driver"
       />
       <div className={s.about}>
@@ -50,7 +51,7 @@ export const NewCityArtist = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/newcityartist/video1.mp4")}
+              src={require("assets/nft/newcityartist/video1.mp4")}
               type="video/mp4"
             />
           </video>
@@ -66,14 +67,14 @@ export const NewCityArtist = () => {
       </ul>
       <img
         className={s.car_image}
-        src={require("../../../assets/nft/newcityartist/car.png")}
+        src={require("assets/nft/newcityartist/car.png")}
         alt="New City Driver"
       />
       <div className={s.video_wrapper_2}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/newcityartist/video2.mp4")}
+              src={require("assets/nft/newcityartist/video2.mp4")}
               type="video/mp4"
             />
           </video>
@@ -84,7 +85,7 @@ export const NewCityArtist = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/newcityartist/video3.mp4")}
+              src={require("assets/nft/newcityartist/video3.mp4")}
               type="video/mp4"
             />
           </video>
@@ -94,7 +95,7 @@ export const NewCityArtist = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/nft/newcityartist/video4.mp4")}
+              src={require("assets/nft/newcityartist/video4.mp4")}
               type="video/mp4"
             />
           </video>

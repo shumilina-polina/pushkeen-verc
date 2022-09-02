@@ -10,7 +10,7 @@ export const BrodilkaViborg = () => {
       <LazyLoadImage
         effect="blur"
         className={s.viborg_image}
-        src={require("../../../assets/projects/brodilkaviborg/mainscreen.png")}
+        src={require("assets/projects/brodilkaviborg/mainscreen.png")}
         alt="Brodilka Viborg"
       />
       <div className={s.about}>
@@ -39,7 +39,7 @@ export const BrodilkaViborg = () => {
       </div>
       <img
         className={s.viborg_image_1}
-        src={require("../../../assets/projects/brodilkaviborg/image1.png")}
+        src={require("assets/projects/brodilkaviborg/image1.png")}
         alt="Brodilka Viborg"
       />
       <div className={s.task}>
@@ -73,17 +73,17 @@ export const BrodilkaViborg = () => {
       </div>
       <img
         className={s.viborg_image_2}
-        src={require("../../../assets/projects/brodilkaviborg/image2.png")}
+        src={require("assets/projects/brodilkaviborg/image2.png")}
         alt="Brodilka Viborg"
       />
       <img
         className={s.viborg_image_3}
-        src={require("../../../assets/projects/brodilkaviborg/image3.png")}
+        src={require("assets/projects/brodilkaviborg/image3.png")}
         alt="Brodilka Viborg"
       />
       <img
         className={s.viborg_image_4}
-        src={require("../../../assets/projects/brodilkaviborg/image4.png")}
+        src={require("assets/projects/brodilkaviborg/image4.png")}
         alt="Brodilka Viborg"
       />
       <div className={s.result_content}>

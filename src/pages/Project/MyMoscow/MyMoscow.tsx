@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
 import s from "./MyMoscow.module.scss";
-import { ButtonDownload } from "../../../shared/components/ButtonDownload/ButtonDownload";
-import mainscreen from "../../../assets/projects/mymoscow/mainscreen.png";
-import logoimg from "../../../assets/projects/mymoscow/logoimg.png";
-import gameimg from "../../../assets/projects/mymoscow/image_create.png";
-import site from "../../../assets/projects/mymoscow/site.png";
-import book_1 from "../../../assets/projects/mymoscow/book_1.png";
-import book_2 from "../../../assets/projects/mymoscow/book_2.png";
+import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
+import mainscreen from "assets/projects/mymoscow/mainscreen.png";
+import logoimg from "assets/projects/mymoscow/logoimg.png";
+import gameimg from "assets/projects/mymoscow/image_create.png";
+import site from "assets/projects/mymoscow/site.png";
+import book_1 from "assets/projects/mymoscow/book_1.png";
+import book_2 from "assets/projects/mymoscow/book_2.png";
 import {
   LazyLoadComponent,
   LazyLoadImage,
@@ -110,7 +110,7 @@ export const MyMoscow = () => {
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("../../../assets/projects/mymoscow/video.mp4")}
+              src={require("assets/projects/mymoscow/video.mp4")}
               type="video/mp4"
             />
           </video>
