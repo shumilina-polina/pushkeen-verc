@@ -10,11 +10,15 @@ import Model from "assets/animate/glb/Test_2";
 import { DropdownMenu } from "shared/components/DropdownMenu/DropdownMenu";
 import PairsSlider from "shared/components/PairsSlider/PairsSlider";
 import { projectsList } from "shared/constants/lists";
+import { Helmet } from "react-helmet";
 
 export const Home = () => {
   const { t } = useTranslation();
   return (
     <>
+      <Helmet>
+        <title>PushKeen</title>
+      </Helmet>
       <section className={s.main}>
         <div className={s.title_container}>
           <h1 className={s.title}>pushkeen</h1>

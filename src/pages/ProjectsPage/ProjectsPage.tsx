@@ -16,6 +16,7 @@ import { StreetArt } from "pages/Project/StreetArt/StreetArt";
 import { PublicArt } from "pages/PublicArt/PublicArt";
 import s from "./ProjectsPage.module.scss";
 import { projectsList } from "shared/constants/lists";
+import { Helmet } from "react-helmet";
 
 export const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -27,12 +28,18 @@ export const ProjectsPage = () => {
       <Route
         path="/"
         element={
-          <div className="container">
-            <section className={s.projects_page}>
-              <h2 className={s.title}>{t("projects")}</h2>
-              <Cards list={projectsList} />
-            </section>
-          </div>
+          <>
+            <Helmet>
+              <title>PushKeen - Projects</title>
+              <meta name="description" content="NFT" />
+            </Helmet>
+            <div className="container">
+              <section className={s.projects_page}>
+                <h2 className={s.title}>{t("projects")}</h2>
+                <Cards list={projectsList} />
+              </section>
+            </div>
+          </>
         }
       />
       <Route

@@ -14,6 +14,7 @@ import { NewEast } from "./NewEast/NewEast";
 import { NewNames } from "./NewNames/NewNames";
 import s from "./Nft.module.scss";
 import { nftList } from "shared/constants/lists";
+import { Helmet } from "react-helmet";
 
 export const Nft = () => {
   const { t } = useTranslation();
@@ -26,6 +27,10 @@ export const Nft = () => {
         path="/"
         element={
           <>
+            <Helmet>
+              <title>PushKeen - NFT</title>
+              <meta name="description" content="NFT" />
+            </Helmet>
             <div className="container">
               <section className={s.desc}>
                 <CustomLink className="link" to="/">
