@@ -2,6 +2,7 @@ import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import MediaQuery from "react-responsive";
 import s from "./DropdownMenu.module.scss";
+import React from "react";
 
 export const DropdownMenu = () => {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ export const DropdownMenu = () => {
     <div>
       {[4, 2, 6, 3, 3].map((countInList, indexList) => {
         return (
-          <>
+          <React.Fragment key={indexList}>
             <MediaQuery minWidth={771}>
               <Accordion
                 className={s.accordion}
@@ -71,7 +72,7 @@ export const DropdownMenu = () => {
                 </Accordion>
               </div>
             </MediaQuery>
-          </>
+          </React.Fragment>
         );
       })}
     </div>
