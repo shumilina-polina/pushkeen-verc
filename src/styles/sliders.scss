@@ -1,0 +1,68 @@
+@import "styles/variables.scss";
+
+.interior_1,
+.interior_2,
+.interior_3 {
+  width: 100%;
+  height: 943px;
+  & .swiper-slide {
+    height: 900px;
+  }
+  & .swiper-pagination-bullet {
+    height: 17px;
+    width: 17px;
+    background-color: transparent;
+    border: 1px solid $projects_text;
+    opacity: 1;
+    cursor: none !important;
+    &-active {
+      background-color: $text-blue;
+      border: none;
+    }
+  }
+  & .swiper-button-prev,
+  & .swiper-button-next {
+    color: $text-light;
+  }
+}
+
+@media (max-width: 1400px) {
+  .interior_1,
+  .interior_2,
+  .interior_3 {
+    height: 560px;
+    & .swiper-slide {
+      height: 523px;
+    }
+    & .swiper-pagination-bullet {
+      height: 13px;
+      width: 13px;
+    }
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      top: calc(50% - 15px);
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .interior_1,
+  .interior_2,
+  .interior_3 {
+    height: 270px;
+    & .swiper-slide {
+      height: 236px;
+    }
+    & .swiper-pagination-bullet {
+      height: 10px;
+      width: 10px;
+      cursor: pointer !important;
+    }
+    & .swiper-button-prev,
+    & .swiper-button-next {
+      &::after {
+        transform: scale(0.7);
+      }
+    }
+  }
+}

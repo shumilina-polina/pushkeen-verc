@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom/client";
 import "./styles/index.scss";
+import "./styles/sliders.scss";
 import App from "./App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./i18n/i18n";

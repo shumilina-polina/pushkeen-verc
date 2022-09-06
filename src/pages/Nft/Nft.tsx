@@ -15,6 +15,7 @@ import { NewNames } from "./NewNames/NewNames";
 import s from "./Nft.module.scss";
 import { nftList } from "shared/constants/lists";
 import { Helmet } from "react-helmet";
+import { Interior } from "pages/Nft/Interior/Interior";
 
 export const Nft = () => {
   const { t } = useTranslation();
@@ -101,6 +102,14 @@ export const Nft = () => {
         element={
           <Project locales_page="nft" locales_title="nft_list.neweast">
             <NewEast />
+          </Project>
+        }
+      />
+      <Route
+        path="/nftInterior"
+        element={
+          <Project locales_page="nft" locales_title="interior">
+            <Interior />
           </Project>
         }
       />
