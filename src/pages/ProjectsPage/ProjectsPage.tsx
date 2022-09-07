@@ -45,6 +45,7 @@ export const ProjectsPage = () => {
       />
       {projectRoutes.map(({ path, locales, Component }) => (
         <Route
+          key={path}
           path={path}
           element={
             <Project locales_page="projects" locales_title={locales}>

@@ -11,6 +11,8 @@ import { DropdownMenu } from "shared/components/DropdownMenu/DropdownMenu";
 import PairsSlider from "shared/components/PairsSlider/PairsSlider";
 import { projectsList } from "shared/constants/lists";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
+import { titleVariants, viewPort } from "shared/constants/framer";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -108,14 +110,40 @@ export const Home = () => {
           </div>
           <Cards list={projectsList} />
         </section>
-
         <section className={s.activity}>
-          <h2 className={s.activity_title}>{t("main.activity.title")}</h2>
-          <p className={s.activity_desc}>{t("main.activity.description")}</p>
+          <motion.h2
+            className={s.activity_title}
+            transition={{ duration: 0.5 }}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={viewPort}
+            variants={titleVariants}
+          >
+            {t("main.activity.title")}
+          </motion.h2>
+          <motion.p
+            transition={{ duration: 0.5, delay: 0.2 }}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={viewPort}
+            variants={titleVariants}
+            className={s.activity_desc}
+          >
+            {t("main.activity.description")}
+          </motion.p>
           <DropdownMenu />
         </section>
         <section className={s.pairs}>
-          <h2 className={s.pairs_title}>{t("main.pairs.title")}</h2>
+          <motion.h2
+            className={s.pairs_title}
+            transition={{ duration: 0.5 }}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={viewPort}
+            variants={titleVariants}
+          >
+            {t("main.pairs.title")}
+          </motion.h2>
           <PairsSlider />
         </section>
       </div>

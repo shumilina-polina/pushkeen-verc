@@ -44,6 +44,7 @@ export const Nft = () => {
       />
       {nftRoutes.map(({ path, locales, Component }) => (
         <Route
+          key={path}
           path={path}
           element={
             <Project locales_page="nft" locales_title={`nft_list.${locales}`}>
