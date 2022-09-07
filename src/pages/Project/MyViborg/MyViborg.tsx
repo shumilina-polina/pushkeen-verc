@@ -18,6 +18,7 @@ export const MyViborg = () => {
         alt="My Viborg"
         effect="blur"
         src={mainscreen}
+        visibleByDefault={true}
       />
       <div className={s.about}>
         <div className={s.about_title}>

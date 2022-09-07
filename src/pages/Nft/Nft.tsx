@@ -5,17 +5,10 @@ import { Cards } from "shared/components/Cards/Cards";
 import { CustomLink } from "shared/components/CustomLink";
 import { Contact } from "shared/Contact/Contact";
 import { Project } from "pages/Project/Project";
-import { BackToTheRootsNFT } from "./BackToTheRootsNFT/BackToTheRootsNFT";
-import { DirtyDrops } from "./DirtyDrops/DirtyDrops";
-import { Halloween } from "./Halloween/Halloween";
-import { MetaFemHistory } from "./MetaFemHistory/MetaFemHistory";
-import { NewCityArtist } from "./NewCityArtist/NewCityArtist";
-import { NewEast } from "./NewEast/NewEast";
-import { NewNames } from "./NewNames/NewNames";
 import s from "./Nft.module.scss";
 import { nftList } from "shared/constants/lists";
 import { Helmet } from "react-helmet";
-import { Interior } from "pages/Nft/Interior/Interior";
+import { nftRoutes } from "shared/constants/routes";
 
 export const Nft = () => {
   const { t } = useTranslation();
@@ -49,70 +42,16 @@ export const Nft = () => {
           </>
         }
       />
-      <Route
-        path="/dirtyDrops"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.dirtydrops">
-            <DirtyDrops />
-          </Project>
-        }
-      />
-      <Route
-        path="/halloween"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.halloween">
-            <Halloween />
-          </Project>
-        }
-      />
-      <Route
-        path="/backToTheRoots"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.btrNft">
-            <BackToTheRootsNFT />
-          </Project>
-        }
-      />
-      <Route
-        path="/metaFemHistory"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.metafemhistory">
-            <MetaFemHistory />
-          </Project>
-        }
-      />
-      <Route
-        path="/newNamesInFashion"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.newnames">
-            <NewNames />
-          </Project>
-        }
-      />
-      <Route
-        path="/newCityDriver"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.newcity">
-            <NewCityArtist />
-          </Project>
-        }
-      />
-      <Route
-        path="/newEastTechAwards"
-        element={
-          <Project locales_page="nft" locales_title="nft_list.neweast">
-            <NewEast />
-          </Project>
-        }
-      />
-      <Route
-        path="/nftInterior"
-        element={
-          <Project locales_page="nft" locales_title="interior">
-            <Interior />
-          </Project>
-        }
-      />
+      {nftRoutes.map(({ path, locales, Component }) => (
+        <Route
+          path={path}
+          element={
+            <Project locales_page="nft" locales_title={`nft_list.${locales}`}>
+              <Component />
+            </Project>
+          }
+        />
+      ))}
     </Routes>
   );
 };

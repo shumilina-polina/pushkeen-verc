@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import s from "./Interior.module.scss";
-import mainscreen from "assets/projects/interior/mainscreen.jpg";
+import mainscreen from "assets/nft/interior/mainscreen.jpg";
 import {
   LazyLoadComponent,
   LazyLoadImage,
@@ -21,27 +21,28 @@ export const Interior = () => {
         effect="blur"
         className={s.interior_image}
         src={mainscreen}
+        visibleByDefault={true}
         alt="interior"
       />
       <div className={s.about}>
         <h2 className={s.about_title}>
-          {t("project.list.interior.about.name")}
+          {t("project.list.nft_list.interior.about.name")}
         </h2>
         <div className={s.about_content}>
           <h3 className={s.about_content_name}>
-            {t("project.list.interior.about.content.name")}
+            {t("project.list.nft_list.interior.about.content.name")}
           </h3>
           <span className={s.about_content_label}>
-            {t("project.list.interior.about.content.label_1")}
+            {t("project.list.nft_list.interior.about.content.label_1")}
             <a
               className={s.link}
               href="http://sergeisavateev.ru/"
               target="_blank"
               rel="noreferrer"
             >
-              {t("project.list.interior.about.content.link")}
+              {t("project.list.nft_list.interior.about.content.link")}
             </a>
-            {t("project.list.interior.about.content.label_2")}
+            {t("project.list.nft_list.interior.about.content.label_2")}
           </span>
         </div>
       </div>
@@ -66,24 +67,24 @@ export const Interior = () => {
       >
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_1/image_1.jpg")}
+            src={require("assets/nft/interior/slider_1/image_1.jpg")}
             alt="interior 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_1/image_2.jpg")}
+            src={require("assets/nft/interior/slider_1/image_2.jpg")}
             alt="interior 2"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_1/image_3.jpg")}
+            src={require("assets/nft/interior/slider_1/image_3.jpg")}
             alt="interior 3"
           />
         </SwiperSlide>
       </Swiper>
-      <p className={s.text_1}>{t("project.list.interior.text_1")}</p>
+      <p className={s.text_1}>{t("project.list.nft_list.interior.text_1")}</p>
       <Swiper
         keyboard={{
           enabled: true,
@@ -102,18 +103,18 @@ export const Interior = () => {
       >
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_2/image_1.jpg")}
+            src={require("assets/nft/interior/slider_2/image_1.jpg")}
             alt="interior 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_2/image_2.jpg")}
+            src={require("assets/nft/interior/slider_2/image_2.jpg")}
             alt="interior 2"
           />
         </SwiperSlide>
       </Swiper>
-      <p className={s.text_2}>{t("project.list.interior.text_2")}</p>
+      <p className={s.text_2}>{t("project.list.nft_list.interior.text_2")}</p>
       <Swiper
         keyboard={{
           enabled: true,
@@ -132,31 +133,31 @@ export const Interior = () => {
       >
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_3/image_1.jpg")}
+            src={require("assets/nft/interior/slider_3/image_1.jpg")}
             alt="interior 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/projects/interior/slider_3/image_2.jpg")}
+            src={require("assets/nft/interior/slider_3/image_2.jpg")}
             alt="interior 2"
           />
         </SwiperSlide>
       </Swiper>
       <div className={s.tokens}>
         <h3 className={s.tokens_title}>
-          {t("project.list.interior.tokens.title")}
+          {t("project.list.nft_list.interior.tokens.title")}
         </h3>
         <ul className={s.tokens_text}>
-          <li>{t("project.list.interior.tokens.1")}</li>
-          <li>{t("project.list.interior.tokens.2")}</li>
+          <li>{t("project.list.nft_list.interior.tokens.1")}</li>
+          <li>{t("project.list.nft_list.interior.tokens.2")}</li>
         </ul>
       </div>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
           <video autoPlay loop preload="metadata" muted>
             <source
-              src={require("assets/projects/interior/video.mp4")}
+              src={require("assets/nft/interior/video.mp4")}
               type="video/mp4"
             />
           </video>

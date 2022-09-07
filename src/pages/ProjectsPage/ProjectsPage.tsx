@@ -17,6 +17,7 @@ import { PublicArt } from "pages/PublicArt/PublicArt";
 import s from "./ProjectsPage.module.scss";
 import { projectsList } from "shared/constants/lists";
 import { Helmet } from "react-helmet";
+import { projectRoutes } from "shared/constants/routes";
 
 export const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -42,86 +43,16 @@ export const ProjectsPage = () => {
           </>
         }
       />
-      <Route
-        path="/mymoscow"
-        element={
-          <Project locales_page="projects" locales_title="mymoscow">
-            <MyMoscow />
-          </Project>
-        }
-      />
-      <Route
-        path="/ladogaGuide"
-        element={
-          <Project locales_page="projects" locales_title="ladoga">
-            <Ladoga />
-          </Project>
-        }
-      />
-      <Route
-        path="/myViborg"
-        element={
-          <Project locales_page="projects" locales_title="myviborg">
-            <MyViborg />
-          </Project>
-        }
-      />
-      <Route
-        path="/streetArtMemo"
-        element={
-          <Project locales_page="projects" locales_title="streetart">
-            <StreetArt />
-          </Project>
-        }
-      />
-      <Route
-        path="/geniusLociMemo"
-        element={
-          <Project locales_page="projects" locales_title="geniusloci">
-            <GeniusLoci />
-          </Project>
-        }
-      />
-      <Route
-        path="/backToTheRootsLanding"
-        element={
-          <Project locales_page="projects" locales_title="backtotheroots">
-            <BackToTheRoots />
-          </Project>
-        }
-      />
-      <Route
-        path="/questViborg"
-        element={
-          <Project locales_page="projects" locales_title="brodilkaviborg">
-            <BrodilkaViborg />
-          </Project>
-        }
-      />
-      <Route
-        path="/questMoscow"
-        element={
-          <Project locales_page="projects" locales_title="brodilkamoscow">
-            <BrodilkaMoscow />
-          </Project>
-        }
-      />
-      <Route
-        path="/questKurortnyy"
-        element={
-          <Project locales_page="projects" locales_title="brodilkakurortnyy">
-            <BrodilkaKurortnyy />
-          </Project>
-        }
-      />
-      <Route
-        path="/kurortnyyGuide"
-        element={
-          <Project locales_page="projects" locales_title="guidekur">
-            <GuideKur />
-          </Project>
-        }
-      />
+      {projectRoutes.map(({ path, locales, Component }) => (
+        <Route
+          path={path}
+          element={
+            <Project locales_page="projects" locales_title={locales}>
+              <Component />
+            </Project>
+          }
+        />
+      ))}
       <Route path="/publicart" element={<PublicArt />} />
     </Routes>
   );

@@ -21,6 +21,7 @@ export const MyMoscow = () => {
         effect="blur"
         className={s.mymoscow_image}
         src={mainscreen}
+        visibleByDefault={true}
         alt="My Moscow"
       />
       <div className={s.tasks}>

@@ -15,6 +15,7 @@ export const StreetArt = () => {
         alt="Street Art Memo"
         effect="blur"
         src={mainscreen}
+        visibleByDefault={true}
         className={s.streetart_image}
       />
       <div className={s.about}>

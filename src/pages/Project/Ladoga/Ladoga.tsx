@@ -4,7 +4,10 @@ import mainscreen from "assets/projects/ladoga/mainscreen.png";
 import phones from "assets/projects/ladoga/phones.png";
 
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
-import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 
 export const Ladoga = () => {
   const { t } = useTranslation();
@@ -15,6 +18,7 @@ export const Ladoga = () => {
         effect="blur"
         className={s.ladoga_image}
         src={mainscreen}
+        visibleByDefault={true}
         alt="Ladoga Audio Guide"
       />
       <div className={s.tasks}>

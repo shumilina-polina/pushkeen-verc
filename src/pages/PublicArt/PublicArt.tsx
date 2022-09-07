@@ -29,6 +29,7 @@ export const PublicArt = () => {
             effect="blur"
             className={s.publicart_image}
             src={mainscreen}
+            visibleByDefault={true}
             alt="Public Art"
           />
           <div className={s.about}>
