@@ -123,25 +123,25 @@ export const Collab = () => {
         <div className={s.grid}>
           <div className={s.item_1}>
             <img
-              src={require("assets/merch/item_1.png")}
+              src={require("assets/merch/item_1.jpeg")}
               alt="Photo"
             />
           </div>
           <div className={s.item_2}>
             <img
-              src={require("assets/merch/item_2.png")}
+              src={require("assets/merch/item_2.jpeg")}
               alt="Photo"
             />
           </div>
           <div className={s.item_3}>
             <img
-              src={require("assets/merch/item_3.png")}
+              src={require("assets/merch/item_3.jpeg")}
               alt="Photo"
             />
           </div>
           <div className={s.item_4}>
             <img
-              src={require("assets/merch/item_4.png")}
+              src={require("assets/merch/item_4.jpeg")}
               alt="Photo"
             />
           </div>
@@ -149,8 +149,8 @@ export const Collab = () => {
             <img
               src={
                 color === "white"
-                  ? require("assets/merch/item_5.png")
-                  : require("assets/merch/item_5_black.png")
+                  ? require("assets/merch/item_5.jpeg")
+                  : require("assets/merch/item_5_black.jpeg")
               }
               alt="Photo"
             />
@@ -160,7 +160,7 @@ export const Collab = () => {
           </div>
           <div className={s.item_7}>
             <img
-              src={require("assets/merch/item_7.png")}
+              src={require("assets/merch/item_7.jpeg")}
               alt="Photo"
             />
           </div>

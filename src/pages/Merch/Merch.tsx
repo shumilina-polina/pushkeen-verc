@@ -35,7 +35,7 @@ export const Merch = () => {
               >
                 <div className={s.card_wrapper}>
                   <img
-                    src={require("assets/merch/obj_1.jpg")}
+                    src={require("assets/merch/obj_1.jpeg")}
                     alt="first tshirt"
                   />
                   <div className={s.card_colors}>
@@ -63,7 +63,7 @@ export const Merch = () => {
               >
                 <div className={s.card_wrapper}>
                   <img
-                    src={require("assets/merch/obj_2.jpg")}
+                    src={require("assets/merch/obj_2.jpeg")}
                     alt="second tshirt"
                   />
                   <div className={s.card_colors}>

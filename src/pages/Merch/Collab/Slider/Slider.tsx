@@ -12,13 +12,13 @@ export const Slider = ({
       <img
         style={color === "white" ? { display: "block" } : { display: "none" }}
         className={s.image_white}
-        src={require("assets/merch/obj_1.jpg")}
+        src={require("assets/merch/obj_1.jpeg")}
         alt="White tshirt"
       />
       <img
         style={color === "black" ? { display: "block" } : { display: "none" }}
         className={s.image_black}
-        src={require("assets/merch/obj_2.jpg")}
+        src={require("assets/merch/obj_2.jpeg")}
         alt="Black tshirt"
       />
       <button
