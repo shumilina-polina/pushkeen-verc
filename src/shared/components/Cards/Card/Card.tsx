@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { Project } from "types/types";
 import s from "./Card.module.scss";
 import saf from "./CardSafari.module.scss";
-import { motion } from "framer-motion";
-import { CardVariants, cardViewPort, titleVariants, viewPort } from "shared/constants/framer";
 
 export const Card = (props: Project) => {
   const { t } = useTranslation();
@@ -91,15 +89,5 @@ export const Card = (props: Project) => {
       );
   }, [is_safari]);
 
-  return (
-    <motion.div
-      transition={{ duration: 0.3 }}
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={cardViewPort}
-      variants={CardVariants}
-    >
-      {renderCard()}
-    </motion.div>
-  );
+  return <div>{renderCard()}</div>;
 };

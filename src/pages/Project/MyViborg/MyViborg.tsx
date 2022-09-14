@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import s from "./MyViborg.module.scss";
-import mainscreen from "assets/projects/myviborg/mainscreen.png";
+import mainscreen from "assets/projects/myviborg/mainscreen.jpeg";
 import phones from "assets/projects/myviborg/phones.png";
 import {
   LazyLoadComponent,

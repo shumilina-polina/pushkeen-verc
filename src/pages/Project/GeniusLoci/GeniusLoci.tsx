@@ -10,7 +10,7 @@ export const GeniusLoci = () => {
       <LazyLoadImage
         effect="blur"
         className={s.geniusloci_image}
-        src={require("assets/projects/geniusloci/mainscreen.png")}
+        src={require("assets/projects/geniusloci/mainscreen.jpeg")}
         alt="Genius Loci Memo"
       />
       <div className={s.about}>
@@ -43,23 +43,23 @@ export const GeniusLoci = () => {
 
       <div className={s.image_wrapper_1}>
         <LazyLoadImage
-          src={require("assets/projects/geniusloci/image_1.png")}
+          src={require("assets/projects/geniusloci/image_1.jpeg")}
           alt="Genius Loci Memo Game"
         />
         <LazyLoadImage
-          src={require("assets/projects/geniusloci/image_2.png")}
+          src={require("assets/projects/geniusloci/image_2.jpeg")}
           alt="Genius Loci Memo Game"
         />
       </div>
       <p className={s.description}>{t("project.list.geniusloci.desc")}</p>
       <LazyLoadImage
         className={s.image_3}
-        src={require("assets/projects/geniusloci/image_3.png")}
+        src={require("assets/projects/geniusloci/image_3.jpeg")}
         alt="Genius Loci Memo Game"
       />
       <LazyLoadImage
         className={s.image_4}
-        src={require("assets/projects/geniusloci/image_4.png")}
+        src={require("assets/projects/geniusloci/image_4.jpeg")}
         alt="Genius Loci Memo Game"
       />
       <div className={s.task}>
@@ -87,7 +87,7 @@ export const GeniusLoci = () => {
       </div>
       <LazyLoadImage
         className={s.image_5}
-        src={require("assets/projects/geniusloci/image_5.png")}
+        src={require("assets/projects/geniusloci/image_5.jpeg")}
         alt="Genius Loci Memo Game"
       />
       <div className={s.results}>

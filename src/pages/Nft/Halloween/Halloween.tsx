@@ -14,7 +14,7 @@ export const Halloween = () => {
       <LazyLoadImage
         effect="blur"
         className={s.halloween_image}
-        src={require("assets/nft/halloween/mainscreen.png")}
+        src={require("assets/nft/halloween/mainscreen.jpeg")}
         alt="Halloween"
       />
       <div className={s.about}>

@@ -12,24 +12,6 @@ export const titleVariants: Variants = {
 };
 
 export const viewPort: any = {
-  once: false,
-  amount: "some",
-  margin: "-80px 0px -80px 0px",
-};
-
-export const CardVariants: Variants = {
-  offscreen: {
-    scale: 0.5,
-    opacity: 0,
-    x: -150,
-  },
-  onscreen: {
-    scale: 1,
-    opacity: 1,
-    x: 0,
-  },
-};
-export const cardViewPort: any = {
   once: true,
   amount: "some",
   margin: "-80px 0px -80px 0px",
@@ -46,5 +28,5 @@ export const buttonVariants: Variants = {
   },
 };
 export const buttonViewPort: any = {
-  once: false,
+  once: true,
 };

@@ -12,7 +12,7 @@ export const BackToTheRootsNFT = () => {
         <LazyLoadImage
           effect="blur"
           className={s.btrNft_image}
-          src={require("assets/nft/btrNft/mainscreen.png")}
+          src={require("assets/nft/btrNft/mainscreen.jpeg")}
           alt="Back To The Roots NFT"
         />
         <div className={s.img_label_1}>
@@ -60,7 +60,7 @@ export const BackToTheRootsNFT = () => {
       </div>
       <img
         className={s.btrNft_image1}
-        src={require("assets/nft/btrNft/image1.png")}
+        src={require("assets/nft/btrNft/image1.jpeg")}
         alt="Back To The Roots NFT"
       />
       <p className={s.desc}>

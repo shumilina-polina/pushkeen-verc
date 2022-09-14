@@ -11,7 +11,7 @@ export const DirtyDrops = () => {
       <LazyLoadImage
         effect="blur"
         className={s.dirtydrops_image}
-        src={require("assets/nft/dirtydrops/mainscreen.png")}
+        src={require("assets/nft/dirtydrops/mainscreen.jpeg")}
         alt="Dirty Drops"
       />
       <div className={s.about}>
@@ -55,12 +55,12 @@ export const DirtyDrops = () => {
       </div>
       <img
         className={s.dirtydrops_image_bottom}
-        src={require("assets/nft/dirtydrops/image1.png")}
+        src={require("assets/nft/dirtydrops/image1.jpeg")}
         alt="Dirty Drops"
       />
       <img
         className={s.dirtydrops_image_bottom}
-        src={require("assets/nft/dirtydrops/image2.png")}
+        src={require("assets/nft/dirtydrops/image2.jpeg")}
         alt="Dirty Drops"
       />
       <p className={s.desc}>
@@ -81,12 +81,12 @@ export const DirtyDrops = () => {
       </div>
       <img
         className={s.dirtydrops_image_bottom}
-        src={require("assets/nft/dirtydrops/image3.png")}
+        src={require("assets/nft/dirtydrops/image3.jpeg")}
         alt="Dirty Drops"
       />
       <img
         className={s.dirtydrops_image_bottom}
-        src={require("assets/nft/dirtydrops/image4.png")}
+        src={require("assets/nft/dirtydrops/image4.jpeg")}
         alt="Dirty Drops"
       />
     </section>

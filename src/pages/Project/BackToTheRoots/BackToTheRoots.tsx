@@ -11,7 +11,7 @@ export const BackToTheRoots = () => {
       <LazyLoadImage
         effect="blur"
         className={s.backtotheroots_image}
-        src={require("assets/projects/backtotheroots/mainscreen.png")}
+        src={require("assets/projects/backtotheroots/mainscreen.jpeg")}
         alt="Back To The Roots"
       />
       <div className={s.about}>
@@ -65,7 +65,7 @@ export const BackToTheRoots = () => {
       <div className={s.img_wrapper}>
         <img
           className={s.landing_image}
-          src={require("assets/projects/backtotheroots/landing.png")}
+          src={require("assets/projects/backtotheroots/landing.jpeg")}
           alt="Back To The Roots Landing"
         />
         <div className={s.img_label}>

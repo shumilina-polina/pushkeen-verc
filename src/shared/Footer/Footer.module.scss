@@ -30,7 +30,6 @@
     justify-content: space-between;
 
     & img {
-      animation: link 1s ease infinite alternate;
       will-change: box-shadow;
       transition: transform 0.3s ease;
       border-radius: 100%;
@@ -90,14 +89,6 @@
   }
 }
 
-@keyframes link {
-  0% {
-    box-shadow: none;
-  }
-  100% {
-    box-shadow: $box-shadow;
-  }
-}
 
 //--------- MEDIA ---------
 @media (max-width: 1400px) {

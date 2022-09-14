@@ -11,7 +11,7 @@ export const MetaFemHistory = () => {
       <LazyLoadImage
         effect="blur"
         className={s.metafemhistory_image}
-        src={require("assets/nft/metafemhistory/mainscreen.png")}
+        src={require("assets/nft/metafemhistory/mainscreen.jpeg")}
         alt="MetaFemHistory"
       />
       <div className={s.about}>
@@ -49,27 +49,27 @@ export const MetaFemHistory = () => {
       </div>
       <div className={s.image_wrapper}>
         <img
-          src={require("assets/nft/metafemhistory/i1.png")}
+          src={require("assets/nft/metafemhistory/i1.jpeg")}
           alt="MetaFemHistory"
         />
         <img
-          src={require("assets/nft/metafemhistory/i2.png")}
-          alt="MetaFemHistory"
-        />
-      </div>
-      <div className={s.image_wrapper}>
-        <img
-          src={require("assets/nft/metafemhistory/i3.png")}
-          alt="MetaFemHistory"
-        />
-        <img
-          src={require("assets/nft/metafemhistory/i4.png")}
+          src={require("assets/nft/metafemhistory/i2.jpeg")}
           alt="MetaFemHistory"
         />
       </div>
       <div className={s.image_wrapper}>
         <img
-          src={require("assets/nft/metafemhistory/i5.png")}
+          src={require("assets/nft/metafemhistory/i3.jpeg")}
+          alt="MetaFemHistory"
+        />
+        <img
+          src={require("assets/nft/metafemhistory/i4.jpeg")}
+          alt="MetaFemHistory"
+        />
+      </div>
+      <div className={s.image_wrapper}>
+        <img
+          src={require("assets/nft/metafemhistory/i5.jpeg")}
           alt="MetaFemHistory"
         />
       </div>

@@ -10,7 +10,7 @@ export const NewCityArtist = () => {
       <LazyLoadImage
         effect="blur"
         className={s.newcity_image}
-        src={require("assets/nft/newcityartist/mainscreen.png")}
+        src={require("assets/nft/newcityartist/mainscreen.jpeg")}
         alt="New City Driver"
       />
       <div className={s.about}>
@@ -67,7 +67,7 @@ export const NewCityArtist = () => {
       </ul>
       <img
         className={s.car_image}
-        src={require("assets/nft/newcityartist/car.png")}
+        src={require("assets/nft/newcityartist/car.jpeg")}
         alt="New City Driver"
       />
       <div className={s.video_wrapper_2}>

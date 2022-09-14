@@ -14,7 +14,7 @@ export const GuideKur = () => {
       <LazyLoadImage
         effect="blur"
         className={s.guide_image}
-        src={require("assets/projects/guidekur/mainscreen.png")}
+        src={require("assets/projects/guidekur/mainscreen.jpeg")}
         alt="Guide Kurortnyy"
       />
       <div className={s.about}>

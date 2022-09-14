@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import s from "./Interior.module.scss";
-import mainscreen from "assets/nft/interior/mainscreen.jpg";
+import mainscreen from "assets/nft/interior/mainscreen.jpeg";
 import {
   LazyLoadComponent,
   LazyLoadImage,
@@ -67,19 +67,19 @@ export const Interior = () => {
       >
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_1/image_1.jpg")}
+            src={require("assets/nft/interior/slider_1/image_1.jpeg")}
             alt="interior 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_1/image_2.jpg")}
+            src={require("assets/nft/interior/slider_1/image_2.jpeg")}
             alt="interior 2"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_1/image_3.jpg")}
+            src={require("assets/nft/interior/slider_1/image_3.jpeg")}
             alt="interior 3"
           />
         </SwiperSlide>
@@ -103,13 +103,13 @@ export const Interior = () => {
       >
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_2/image_1.jpg")}
+            src={require("assets/nft/interior/slider_2/image_1.jpeg")}
             alt="interior 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_2/image_2.jpg")}
+            src={require("assets/nft/interior/slider_2/image_2.jpeg")}
             alt="interior 2"
           />
         </SwiperSlide>
@@ -133,13 +133,13 @@ export const Interior = () => {
       >
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_3/image_1.jpg")}
+            src={require("assets/nft/interior/slider_3/image_1.jpeg")}
             alt="interior 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src={require("assets/nft/interior/slider_3/image_2.jpg")}
+            src={require("assets/nft/interior/slider_3/image_2.jpeg")}
             alt="interior 2"
           />
         </SwiperSlide>

@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import s from "./StreetArt.module.scss";
-import mainscreen from "assets/projects/streetart/mainscreen.png";
-import box from "assets/projects/streetart/box.png";
-import i1 from "assets/projects/streetart/image1.png";
-import i2 from "assets/projects/streetart/image2.png";
+import mainscreen from "assets/projects/streetart/mainscreen.jpeg";
+import box from "assets/projects/streetart/box.jpeg";
+import i1 from "assets/projects/streetart/image1.jpeg";
+import i2 from "assets/projects/streetart/image2.jpeg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const StreetArt = () => {

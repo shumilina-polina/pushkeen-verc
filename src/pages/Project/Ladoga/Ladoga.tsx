@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import s from "./Ladoga.module.scss";
-import mainscreen from "assets/projects/ladoga/mainscreen.png";
-import phones from "assets/projects/ladoga/phones.png";
+import mainscreen from "assets/projects/ladoga/mainscreen.jpeg";
+import phones from "assets/projects/ladoga/phones.jpeg";
 
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import {

@@ -11,7 +11,7 @@ export const NewNames = () => {
       <LazyLoadImage
         effect="blur"
         className={s.newnames_image}
-        src={require("assets/nft/newnames/mainscreen.png")}
+        src={require("assets/nft/newnames/mainscreen.jpeg")}
         alt="New Names In Fashion"
       />
       <div className={s.about}>
