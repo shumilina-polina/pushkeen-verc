@@ -71,7 +71,7 @@ export const BackToTheRootsNFT = () => {
       </p>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/btrNft/video1.mp4")}
               type="video/mp4"
@@ -85,7 +85,7 @@ export const BackToTheRootsNFT = () => {
       </div>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/btrNft/video2.mp4")}
               type="video/mp4"

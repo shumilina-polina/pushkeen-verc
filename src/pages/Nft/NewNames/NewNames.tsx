@@ -45,7 +45,7 @@ export const NewNames = () => {
       </div>
       <div className={s.video_wrapper}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/newnames/video.mp4")}
               type="video/mp4"

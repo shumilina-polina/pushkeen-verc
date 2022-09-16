@@ -49,7 +49,7 @@ export const NewCityArtist = () => {
       </p>
       <div className={s.video_wrapper_1}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/newcityartist/video1.mp4")}
               type="video/mp4"
@@ -72,7 +72,7 @@ export const NewCityArtist = () => {
       />
       <div className={s.video_wrapper_2}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/newcityartist/video2.mp4")}
               type="video/mp4"
@@ -83,7 +83,7 @@ export const NewCityArtist = () => {
       <p className={s.desc_2}>{t("project.list.nft_list.newcity.desc_4")}</p>
       <div className={s.video_wrapper_3}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/newcityartist/video3.mp4")}
               type="video/mp4"
@@ -93,7 +93,7 @@ export const NewCityArtist = () => {
       </div>
       <div className={s.video_wrapper_4}>
         <LazyLoadComponent>
-          <video autoPlay loop preload="metadata" muted>
+          <video autoPlay loop preload="metadata" muted playsInline>
             <source
               src={require("assets/nft/newcityartist/video4.mp4")}
               type="video/mp4"
