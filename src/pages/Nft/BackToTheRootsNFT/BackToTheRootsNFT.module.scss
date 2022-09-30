@@ -6,7 +6,7 @@
     .img_label_1 {
       position: absolute;
       right: 0;
-      bottom: 30px;
+      bottom: -30px;
       display: flex;
       align-items: center;
       font-family: "IBM Plex Mono";
@@ -179,14 +179,6 @@
 }
 @media (max-width: 770px) {
   .btrNft {
-    .btrNft_image {
-      margin-bottom: 40px;
-    }
-    .img_wrapper {
-      .img_label_1 {
-        bottom: 20px;
-      }
-    }
     .about {
       margin-bottom: 40px;
       flex-direction: column;

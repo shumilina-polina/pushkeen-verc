@@ -19,8 +19,8 @@ export const Project = (props: Props) => {
 
   return (
     <>
-      <div className="container">
-        <section className={s.project}>
+      <section className={s.project}>
+        <div className="container">
           <nav className={s.nav_wrapper}>
             <div className={s.link_wrapper}>
               <CustomLink className="link " to="/">
@@ -48,10 +48,9 @@ export const Project = (props: Props) => {
               </li>
             </ul>
           </nav>
-
-          {props.children}
-        </section>
-      </div>
+        </div>
+        {props.children}
+      </section>
       <ArrowUp />
     </>
   );

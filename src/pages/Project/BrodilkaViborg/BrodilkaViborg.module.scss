@@ -1,11 +1,6 @@
 @import "styles/variables.scss";
 
 .viborg {
-  .viborg_image {
-    margin-bottom: 58px;
-    max-width: 100%;
-    object-fit: contain;
-  }
   .result_content {
     width: 50%;
     line-height: 31px;
@@ -248,9 +243,6 @@
 }
 @media (max-width: 770px) {
   .viborg {
-    .viborg_image {
-      margin-bottom: 40px;
-    }
     .result_content {
       width: 100%;
     }

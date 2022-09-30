@@ -18,12 +18,14 @@ export const Merch = () => {
         <title>PushKeen - Merch</title>
         <meta name="description" content="Merch" />
       </Helmet>
-      <div className="container">
-        <section className={s.merch}>
-          <div className={s.main}>
+      <section className={s.merch}>
+        <div className={s.main}>
+          <div className="container">
             <h2 className={s.main_title}>{t("merch.main.title")}</h2>
             <span className={s.main_label}>{t("merch.main.label")}</span>
           </div>
+        </div>
+        <div className="container">
           <p className={s.title}>{t("merch.main.label")}</p>
           <div className={s.grid}>
             <Link className="link" to="/merch/nca_publicart">
@@ -83,8 +85,8 @@ export const Merch = () => {
               </div>
             </Link>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </>
   );
 };

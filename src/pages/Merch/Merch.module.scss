@@ -4,13 +4,15 @@ img {
   max-width: 100%;
 }
 .merch {
-  padding-top: 30px;
   .main {
     margin-bottom: 71px;
     padding: 38px;
     width: 100%;
     height: 511px;
     background-image: url("../../assets/merch/mainscreen.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &_title,
     &_label {

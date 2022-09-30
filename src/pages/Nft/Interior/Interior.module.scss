@@ -1,11 +1,6 @@
 @import "styles/variables.scss";
 
 .interior {
-  &_image {
-    margin-bottom: 83px;
-    max-width: 100%;
-    object-fit: contain;
-  }
   .about {
     color: $projects_text;
     display: flex;
