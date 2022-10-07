@@ -1,3 +1,5 @@
+import { AppKolpino } from './../../pages/Project/AppKolpino/AppKolpino';
+import { BrodilkaKolpino } from './../../pages/Project/BrodilkaKolpino/BrodilkaKolpino';
 import { BackToTheRootsNFT } from "pages/Nft/BackToTheRootsNFT/BackToTheRootsNFT";
 import { DirtyDrops } from "pages/Nft/DirtyDrops/DirtyDrops";
 import { Halloween } from "pages/Nft/Halloween/Halloween";
@@ -116,5 +118,15 @@ export const projectRoutes: Routes[] = [
     path: "/kurortnyyGuide",
     locales: "guidekur",
     Component: GuideKur,
+  },
+  {
+    path: "/questKolpino",
+    locales: "brodilkakolpino",
+    Component: BrodilkaKolpino,
+  },
+  {
+    path: "/appKolpino",
+    locales: "appkolpino",
+    Component: AppKolpino,
   },
 ];

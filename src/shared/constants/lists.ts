@@ -78,6 +78,20 @@ export const projectsList: Project[] = [
     content_locales: "streetart",
     tag_count: 1,
   },
+  {
+    id: 11,
+    imageURL: "projects/brodilkakolpino/logo.jpeg",
+    name: "projects/questKolpino",
+    content_locales: "brodilkakolpino",
+    tag_count: 2,
+  },
+  {
+    id: 12,
+    imageURL: "projects/appkolpino/logo.jpeg",
+    name: "projects/appKolpino",
+    content_locales: "appkolpino",
+    tag_count: 2,
+  },
 ];
 
 export const nftList: Project[] = [
