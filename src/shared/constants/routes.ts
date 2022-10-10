@@ -1,3 +1,4 @@
+import { Koporye } from './../../pages/Project/Koporye/Koporye';
 import { AppKolpino } from './../../pages/Project/AppKolpino/AppKolpino';
 import { BrodilkaKolpino } from './../../pages/Project/BrodilkaKolpino/BrodilkaKolpino';
 import { BackToTheRootsNFT } from "pages/Nft/BackToTheRootsNFT/BackToTheRootsNFT";
@@ -18,6 +19,7 @@ import { Ladoga } from "pages/Project/Ladoga/Ladoga";
 import { MyMoscow } from "pages/Project/MyMoscow/MyMoscow";
 import { MyViborg } from "pages/Project/MyViborg/MyViborg";
 import { StreetArt } from "pages/Project/StreetArt/StreetArt";
+import { Kdc } from 'pages/Project/Kdc/Kdc';
 
 type Routes = {
   path: string;
@@ -128,5 +130,15 @@ export const projectRoutes: Routes[] = [
     path: "/appKolpino",
     locales: "appkolpino",
     Component: AppKolpino,
+  },
+  {
+    path: "/kdc",
+    locales: "kdc",
+    Component: Kdc,
+  },
+  {
+    path: "/koporye",
+    locales: "koporye",
+    Component: Koporye,
   },
 ];
