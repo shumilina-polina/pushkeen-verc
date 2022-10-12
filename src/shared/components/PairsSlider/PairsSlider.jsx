@@ -29,6 +29,7 @@ export default function PairsSlider() {
     <>
       <MediaQuery minWidth={770}>
         <Swiper
+          speed={800}
           slidesPerView={1}
           loop={true}
           spaceBetween={30}
@@ -85,6 +86,7 @@ export default function PairsSlider() {
       </MediaQuery>
       <MediaQuery maxWidth={770}>
         <Swiper
+          speed={800}
           slidesPerView={1}
           loop={true}
           spaceBetween={30}
