@@ -89,5 +89,5 @@ export const Card = (props: Project) => {
       );
   }, [is_safari]);
 
-  return <div>{renderCard()}</div>;
+  return <>{renderCard()}</>;
 };

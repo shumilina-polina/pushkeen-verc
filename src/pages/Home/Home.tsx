@@ -94,21 +94,11 @@ export const Home = () => {
         <section className={s.projects}>
           <div className={s.projects_wrapper}>
             <h2 className={s.projects_title}>{t("main.projects")}</h2>
-            <Link
-              className="link"
-              to="/projects"
-              style={
-                projectsList.length > 9
-                  ? { display: "block" }
-                  : { display: "none" }
-              }
-            >
-              <button type="button" className={s.button_more}>
-                {t("main.button")}
-              </button>
-            </Link>
           </div>
           <Cards list={projectsList} />
+          <Link to="/projects">
+            <button className={s.button_more}>{t("main.button_plus")}</button>
+          </Link>
         </section>
         <section className={s.activity}>
           <motion.h2

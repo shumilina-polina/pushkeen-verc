@@ -215,25 +215,20 @@
   }
 
   .button_more {
-    z-index: 100;
+    margin-top: 28px;
+    display: none;
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
-    color: #ffffff;
-    padding: 18px 20px;
-    background: $header;
-    text-transform: uppercase;
+    background: $text-blue;
     border-radius: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
     border: none;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-
-    &:hover {
-      box-shadow: $box-shadow;
-      transform: translateY(-3px);
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
+    padding: 18px 0;
+    width: 100%;
   }
 
   &_title {
@@ -298,11 +293,6 @@
   }
 
   .projects {
-    .button_more {
-      font-size: 20px;
-      border-radius: 40px;
-    }
-
     &_title {
       font-size: 50px;
       line-height: 40px;
@@ -398,7 +388,7 @@
   }
 
   .projects {
-    margin-bottom: 35px;
+    margin-bottom: 58px;
     &_wrapper {
       margin-bottom: 15px;
       display: flex;
@@ -412,11 +402,7 @@
     }
 
     .button_more {
-      font-size: 14px;
-      line-height: 18px;
-      margin-bottom: 0px;
-      color: #ffffff;
-      padding: 9px 10px;
+      display: block;
     }
 
     &_title {

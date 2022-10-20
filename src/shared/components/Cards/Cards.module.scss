@@ -10,10 +10,74 @@
   gap: 2px;
 }
 
+.card_more {
+  border: 2px solid #181818;
+  width: 439px;
+  height: 443px;
+  padding: 20px;
+  position: relative;
+  background-color: transparent;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
+  & svg {
+    & path {
+      transition: fill 0.3s;
+    }
+  }
+
+  & span {
+    position: absolute;
+    bottom: 78px;
+    left: 0;
+    display: inline;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $text-blue;
+    color: $text-light;
+    border-color: transparent;
+    & svg {
+      & path {
+        fill: $text-light;
+      }
+    }
+  }
+}
+
 //--------- MEDIA ---------
+
+@media (max-width: 1400px) {
+  .card_more {
+    width: 255px;
+    height: 258px;
+    font-size: 23px;
+    line-height: 26px;
+    & svg {
+      width: 70px;
+      height: 70px;
+    }
+    & span {
+      bottom: 30px;
+    }
+  }
+}
 
 @media (max-width: 770px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card_more {
+    display: none;
   }
 }
