@@ -141,7 +141,7 @@ const Header = () => {
             >
               <li className={s.burger_merch}>{t("header.merch")}</li>
             </CustomLink>
-            <li>
+            <li style={{display: "none"}}>
               <button
                 className={
                   s.ru +

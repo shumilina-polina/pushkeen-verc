@@ -91,7 +91,7 @@
   .contacts_list {
     display: flex;
     align-items: center;
-    margin-right: 67px;
+    // margin-right: 67px;
 
     .phone {
       margin-right: 36px;
@@ -106,6 +106,10 @@
       }
     }
   }
+}
+
+.lang{
+  display: none;
 }
 
 .ru,
@@ -208,7 +212,7 @@
 
   .wrapper_right {
     .contacts_list {
-      margin-right: 50px;
+      // margin-right: 50px;
 
       .phone {
         margin-right: 26px;
