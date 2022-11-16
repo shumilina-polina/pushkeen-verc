@@ -20,6 +20,7 @@ import { MyMoscow } from "pages/Project/MyMoscow/MyMoscow";
 import { MyViborg } from "pages/Project/MyViborg/MyViborg";
 import { StreetArt } from "pages/Project/StreetArt/StreetArt";
 import { Kdc } from 'pages/Project/Kdc/Kdc';
+import { DiscoveryCity } from 'pages/Project/DiscoveryCity/DiscoveryCity';
 
 type Routes = {
   path: string;
@@ -140,5 +141,10 @@ export const projectRoutes: Routes[] = [
     path: "/koporye",
     locales: "koporye",
     Component: Koporye,
+  },
+  {
+    path: "/discoveryCity",
+    locales: "discoverycity",
+    Component: DiscoveryCity,
   },
 ];

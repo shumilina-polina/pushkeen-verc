@@ -70,10 +70,13 @@ export const Koporye = () => {
           </div>
         </div>
         <div className={s.image_2}>
-          <img
-            src={require("assets/projects/koporye/image2.jpeg")}
-            alt="koporye"
-          />
+          <iframe
+            src="https://www.youtube.com/embed/LEhTsXxG9-Y"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className={s.result_content}>
           <h3 className={s.result_content_name}>
