@@ -34,6 +34,9 @@ export const DiscoveryCity = () => {
           <div className={s.game}>
             {t("project.list.discoverycity.buttons.2")}
           </div>
+          <div className={s.game}>
+            {t("project.list.discoverycity.buttons.3")}
+          </div>
         </div>
         <div className={s.image_1}>
           <img

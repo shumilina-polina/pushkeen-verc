@@ -50,6 +50,7 @@ export const MyViborg = () => {
           </a>
           <div className={s.app}>{t("project.list.myviborg.buttons.3")}</div>
           <div className={s.game}>{t("project.list.myviborg.buttons.4")}</div>
+          <div className={s.game}>{t("project.list.myviborg.buttons.5")}</div>
         </div>
         <div className={s.phones_wrapper}>
           <LazyLoadImage

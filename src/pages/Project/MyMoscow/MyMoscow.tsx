@@ -61,6 +61,9 @@ export const MyMoscow = () => {
           <div className={s.button_6}>
             {t("project.list.mymoscow.buttons.6")}
           </div>
+          <div className={s.button_6}>
+            {t("project.list.mymoscow.buttons.7")}
+          </div>
         </div>
         <div className={s.img_wrapper_1}>
           <LazyLoadImage

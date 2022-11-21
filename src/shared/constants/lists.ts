@@ -6,7 +6,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/discoverycity/logo.jpeg",
     name: "projects/discoveryCity",
     content_locales: "discoverycity",
-    tag_count: 2,
+    tag_count: 3,
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/geniusloci/logo.jpeg",
     name: "projects/geniusLociMemo",
     content_locales: "geniusloci",
-    tag_count: 2,
+    tag_count: 3,
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/brodilkamoscow/logo.jpeg",
     name: "projects/questMoscow",
     content_locales: "brodilkamoscow",
-    tag_count: 1,
+    tag_count: 2,
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/publicart/logo.jpeg",
     name: "projects/publicart",
     content_locales: "publicart",
-    tag_count: 4,
+    tag_count: 5,
   },
 
   {
@@ -77,7 +77,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/mymoscow/logo.jpeg",
     name: "projects/myMoscow",
     content_locales: "mymoscow",
-    tag_count: 5,
+    tag_count: 6,
   },
 
   {
@@ -92,7 +92,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/brodilkaviborg/logo.jpeg",
     name: "projects/questViborg",
     content_locales: "brodilkaviborg",
-    tag_count: 1,
+    tag_count: 2,
   },
 
   {
@@ -100,7 +100,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/myviborg/logo.jpeg",
     name: "projects/myViborg",
     content_locales: "myviborg",
-    tag_count: 2,
+    tag_count: 3,
   },
 
   {
@@ -115,7 +115,7 @@ export const projectsList: Project[] = [
     imageURL: "projects/streetart/logo.jpeg",
     name: "projects/streetArtMemo",
     content_locales: "streetart",
-    tag_count: 1,
+    tag_count: 2,
   },
 ];
 

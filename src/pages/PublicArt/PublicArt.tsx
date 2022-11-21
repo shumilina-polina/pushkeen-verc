@@ -70,6 +70,9 @@ export const PublicArt = () => {
               <div className={s.game}>
                 {t("project.list.publicart.buttons.4")}
               </div>
+              <div className={s.game}>
+                {t("project.list.publicart.buttons.5")}
+              </div>
             </div>
             <div className={s.img_wrapper_1}>
               <img className={s.image} src={image_1} alt="Public Art Screens" />

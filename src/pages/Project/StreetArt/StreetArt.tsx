@@ -37,6 +37,9 @@ export const StreetArt = () => {
           <div className={s.button_2}>
             {t("project.list.streetart.buttons.2")}
           </div>
+          <div className={s.button_2}>
+            {t("project.list.streetart.buttons.3")}
+          </div>
         </div>
         <div className={s.image_wrapper}>
           <img className={s.image_box} src={box} alt="Street Art Memo Box" />
