@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 import s from "./Koporye.module.scss";
 
 export const Koporye = () => {
@@ -69,15 +71,12 @@ export const Koporye = () => {
             </span>
           </div>
         </div>
-        <div className={s.image_2}>
-          <iframe
-            src="https://www.youtube.com/embed/LEhTsXxG9-Y"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <LazyLoadComponent>
+          <Video
+            videoSrc={"projects/koporye/video.mp4"}
+            poster={"projects/koporye/poster.jpeg"}
+          />
+        </LazyLoadComponent>
         <div className={s.result_content}>
           <h3 className={s.result_content_name}>
             {t("project.list.koporye.result.title")}

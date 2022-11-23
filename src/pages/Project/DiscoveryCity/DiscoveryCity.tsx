@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 import s from "./DiscoveryCity.module.scss";
 
 export const DiscoveryCity = () => {
@@ -38,15 +39,13 @@ export const DiscoveryCity = () => {
             {t("project.list.discoverycity.buttons.3")}
           </div>
         </div>
+        <Video
+          videoSrc={"projects/discoverycity/video.mp4"}
+          poster={"projects/discoverycity/poster.jpeg"}
+        />
         <div className={s.image_1}>
           <img
             src={require("assets/projects/discoverycity/image1.jpeg")}
-            alt="discoverycity"
-          />
-        </div>
-        <div className={s.image_2}>
-          <img
-            src={require("assets/projects/discoverycity/image2.jpeg")}
             alt="discoverycity"
           />
         </div>
@@ -77,6 +76,12 @@ export const DiscoveryCity = () => {
               {t("project.list.discoverycity.steps.date.label")}
             </span>
           </div>
+        </div>
+        <div className={s.image_2}>
+          <img
+            src={require("assets/projects/discoverycity/image2.jpeg")}
+            alt="discoverycity"
+          />
         </div>
         <div className={s.image_3}>
           <img

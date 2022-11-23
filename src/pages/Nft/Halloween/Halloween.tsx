@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import s from "./Halloween.module.scss";
-import MediaQuery from "react-responsive";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 
 export const Halloween = () => {
   const { t } = useTranslation();
@@ -52,55 +52,15 @@ export const Halloween = () => {
         </div>
         <LazyLoadComponent>
           <div className={s.video_wrapper}>
-            <MediaQuery minWidth={771}>
-              <video autoPlay loop preload="metadata">
-                <source
-                  src={require("assets/nft/halloween/video1.mp4")}
-                  type="video/mp4"
-                />
-              </video>
-            </MediaQuery>
-            <MediaQuery maxWidth={770}>
-              <video autoPlay loop preload="metadata" muted playsInline>
-                <source
-                  src={require("assets/nft/halloween/video1.mp4")}
-                  type="video/mp4"
-                />
-              </video>
-            </MediaQuery>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/halloween/video2.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/halloween/video1.mp4"} />
+            <Video videoSrc={"nft/halloween/video2.mp4"} />
             <p className={s.desc}>
               {t("project.list.nft_list.halloween.desc")}
             </p>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/halloween/video3.mp4")}
-                type="video/mp4"
-              />
-            </video>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/halloween/video4.mp4")}
-                type="video/mp4"
-              />
-            </video>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/halloween/video5.mp4")}
-                type="video/mp4"
-              />
-            </video>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/halloween/video6.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/halloween/video3.mp4"} />
+            <Video videoSrc={"nft/halloween/video4.mp4"} />
+            <Video videoSrc={"nft/halloween/video5.mp4"} />
+            <Video videoSrc={"nft/halloween/video6.mp4"} />
           </div>
         </LazyLoadComponent>
       </div>

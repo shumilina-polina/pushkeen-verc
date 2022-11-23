@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 import s from "./NewCityArtist.module.scss";
 
 export const NewCityArtist = () => {
@@ -46,12 +47,7 @@ export const NewCityArtist = () => {
         </p>
         <div className={s.video_wrapper_1}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/newcityartist/video1.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/newcityartist/video1.mp4"} />
           </LazyLoadComponent>
         </div>
         <h3 className={s.point_title}>
@@ -69,33 +65,18 @@ export const NewCityArtist = () => {
         />
         <div className={s.video_wrapper_2}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/newcityartist/video2.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/newcityartist/video2.mp4"} />
           </LazyLoadComponent>
         </div>
         <p className={s.desc_2}>{t("project.list.nft_list.newcity.desc_4")}</p>
         <div className={s.video_wrapper_3}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/newcityartist/video3.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/newcityartist/video3.mp4"} />
           </LazyLoadComponent>
         </div>
         <div className={s.video_wrapper_4}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/newcityartist/video4.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/newcityartist/video4.mp4"} />
           </LazyLoadComponent>
         </div>
       </div>

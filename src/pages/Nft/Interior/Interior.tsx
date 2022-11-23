@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/keyboard";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 
 export const Interior = () => {
   const { t } = useTranslation();
@@ -147,12 +148,7 @@ export const Interior = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/interior/video.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/interior/video.mp4"} />
           </LazyLoadComponent>
         </div>
       </div>

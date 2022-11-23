@@ -5,6 +5,7 @@ import {
 } from "react-lazy-load-image-component";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 import s from "./NewNames.module.scss";
 
 export const NewNames = () => {
@@ -45,12 +46,7 @@ export const NewNames = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/newnames/video.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/newnames/video.mp4"} />
           </LazyLoadComponent>
         </div>
       </div>

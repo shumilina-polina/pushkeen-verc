@@ -5,6 +5,7 @@
     width: 75%;
     line-height: 31px;
     margin-bottom: 53px;
+    margin-top: 50px;
     &_name {
       font-style: normal;
       font-weight: 400;
@@ -97,13 +98,6 @@
       border-radius: 100px;
       display: inline-block;
       padding: 13px 20px;
-    }
-  }
-  .image_2 {
-    & iframe {
-      cursor: none;
-      width: 100%;
-      height: 750px;
     }
   }
   .task {
@@ -246,11 +240,6 @@
         margin-bottom: 10px;
       }
     }
-    .image_2 {
-      & iframe {
-        height: 500px;
-      }
-    }
     .task {
       &_wrapper {
         .task_title,
@@ -284,11 +273,6 @@
         .task_text {
           max-width: 100%;
         }
-      }
-    }
-    .image_2 {
-      & iframe {
-        height: 200px;
       }
     }
     .about {

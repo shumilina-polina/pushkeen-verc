@@ -5,6 +5,7 @@ import {
 } from "react-lazy-load-image-component";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 import s from "./NewEast.module.scss";
 
 export const NewEast = () => {
@@ -45,12 +46,7 @@ export const NewEast = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/neweast/video.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/neweast/video.mp4"} />
           </LazyLoadComponent>
         </div>
         <p className={s.desc}>{t("project.list.nft_list.neweast.desc")}</p>

@@ -7,6 +7,7 @@ import {
   LazyLoadImage,
 } from "react-lazy-load-image-component";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 
 export const MyViborg = () => {
   const { t } = useTranslation();
@@ -90,12 +91,7 @@ export const MyViborg = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/projects/myviborg/appvideo.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"projects/myviborg/appvideo.mp4"} />
           </LazyLoadComponent>
         </div>
         <div className={s.results}>

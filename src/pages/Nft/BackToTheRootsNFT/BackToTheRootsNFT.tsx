@@ -3,6 +3,7 @@ import s from "./BackToTheRootsNFT.module.scss";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 
 export const BackToTheRootsNFT = () => {
   const { t } = useTranslation();
@@ -73,12 +74,7 @@ export const BackToTheRootsNFT = () => {
         </p>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/btrNft/video1.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/btrNft/video1.mp4"} />
           </LazyLoadComponent>
           <div className={s.img_label}>
             <span>{t("project.list.nft_list.btrNft.image_labels.token1")}</span>
@@ -87,12 +83,7 @@ export const BackToTheRootsNFT = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/btrNft/video2.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/btrNft/video2.mp4"} />
           </LazyLoadComponent>
           <div className={s.img_label}>
             <span>{t("project.list.nft_list.btrNft.image_labels.token2")}</span>

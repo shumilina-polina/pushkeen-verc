@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 import s from "./DirtyDrops.module.scss";
 
 export const DirtyDrops = () => {
@@ -42,12 +43,7 @@ export const DirtyDrops = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/dirtydrops/video1.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/dirtydrops/video1.mp4"} />
           </LazyLoadComponent>
         </div>
         <img
@@ -68,12 +64,7 @@ export const DirtyDrops = () => {
         </p>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/nft/dirtydrops/video2.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"nft/dirtydrops/video2.mp4"} />
           </LazyLoadComponent>
         </div>
         <img

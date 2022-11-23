@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import s from "./MyMoscow.module.scss";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
-import mainscreen from "assets/projects/mymoscow/mainscreen.jpeg";
 import logoimg from "assets/projects/mymoscow/logoimg.jpeg";
 import gameimg from "assets/projects/mymoscow/image_create.jpeg";
 import site from "assets/projects/mymoscow/site.jpeg";
@@ -12,6 +11,7 @@ import {
   LazyLoadImage,
 } from "react-lazy-load-image-component";
 import { Mainscreen } from "shared/components/Mainscreen/Mainscreen";
+import Video from "shared/components/Video/Video";
 
 export const MyMoscow = () => {
   const { t } = useTranslation();
@@ -120,12 +120,7 @@ export const MyMoscow = () => {
         </div>
         <div className={s.video_wrapper}>
           <LazyLoadComponent>
-            <video autoPlay loop preload="metadata" muted playsInline>
-              <source
-                src={require("assets/projects/mymoscow/video.mp4")}
-                type="video/mp4"
-              />
-            </video>
+            <Video videoSrc={"projects/mymoscow/video.mp4"} />
           </LazyLoadComponent>
           <div className={s.img_label}>
             <span>{t("project.list.mymoscow.image_labels.app")}</span>

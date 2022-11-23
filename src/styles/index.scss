@@ -25,6 +25,9 @@ body {
 
 button {
   outline: none;
+  background-color: transparent;
+  border: none;
+
   &:focus {
     opacity: 0.6;
   }
