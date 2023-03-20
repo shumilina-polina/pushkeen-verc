@@ -62,7 +62,9 @@ const Footer = () => {
                 {t("footer.address_2")}
               </a>
             </span>
-            <span className={s.label}>PushKeen © 2021-2022</span>
+            <span className={s.label}>
+              PushKeen © 2021-{new Date().getFullYear()}
+            </span>
           </div>
         </div>
       </div>
