@@ -15,8 +15,11 @@ export const Merch = () => {
   return (
     <>
       <Helmet>
-        <title>PushKeen - Merch</title>
-        <meta name="description" content="Merch" />
+        <title>PushKeen - Мерч</title>
+        <meta
+          name="description"
+          content="Коллаборация NEW CITY ARTISTS x PUBLICART"
+        />
       </Helmet>
       <section className={s.merch}>
         <div className={s.main}>

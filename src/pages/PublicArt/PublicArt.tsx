@@ -19,8 +19,11 @@ export const PublicArt = () => {
   return (
     <>
       <Helmet>
-        <title>PushKeen - Public Art</title>
-        <meta name="description" content="Public Art" />
+        <title>PushKeen - PublicARt</title>
+        <meta
+          name="description"
+          content="PublicARt — проект, посвященный миру стрит-арта и публичному искусству."
+        />
       </Helmet>
       <Project locales_page="projects" locales_title="publicart">
         <section className={s.publicart}>

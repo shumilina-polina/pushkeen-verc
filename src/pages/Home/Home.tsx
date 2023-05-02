@@ -13,6 +13,7 @@ import { projectsList } from "shared/constants/lists";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { titleVariants, viewPort } from "shared/constants/framer";
+import Video from "shared/components/Video/Video";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -123,6 +124,7 @@ export const Home = () => {
           </motion.p>
           <DropdownMenu />
         </section>
+        <Video videoSrc={"showreel.mp4"} poster={"showreel.jpg"} />
         <section className={s.pairs}>
           <motion.h2
             className={s.pairs_title}

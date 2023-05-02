@@ -23,7 +23,10 @@ export const Nft = () => {
           <>
             <Helmet>
               <title>PushKeen - NFT</title>
-              <meta name="description" content="NFT" />
+              <meta
+                name="description"
+                content="Мы компания, которая создаёт, продюсирует и продвигает NFT. Большинство нами представленных NFT-коллекций фокусируют внимание на локальной культуре, благотворительных проектах и социально значимых проблемах общества."
+              />
             </Helmet>
             <div className="container">
               <section className={s.desc}>

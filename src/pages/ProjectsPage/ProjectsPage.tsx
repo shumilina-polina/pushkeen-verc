@@ -2,17 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Route, Routes } from "react-router-dom";
 import { Cards } from "shared/components/Cards/Cards";
-import { BackToTheRoots } from "pages/Project/BackToTheRoots/BackToTheRoots";
-import { BrodilkaKurortnyy } from "pages/Project/BrodilkaKurortnyy/BrodilkaKurortnyy";
-import { BrodilkaMoscow } from "pages/Project/BrodilkaMoscow/BrodilkaMoscow";
-import { BrodilkaViborg } from "pages/Project/BrodilkaViborg/BrodilkaViborg";
-import { GeniusLoci } from "pages/Project/GeniusLoci/GeniusLoci";
-import { GuideKur } from "pages/Project/GuideKur/GuideKur";
-import { Ladoga } from "pages/Project/Ladoga/Ladoga";
-import { MyMoscow } from "pages/Project/MyMoscow/MyMoscow";
-import { MyViborg } from "pages/Project/MyViborg/MyViborg";
 import { Project } from "pages/Project/Project";
-import { StreetArt } from "pages/Project/StreetArt/StreetArt";
 import { PublicArt } from "pages/PublicArt/PublicArt";
 import s from "./ProjectsPage.module.scss";
 import { projectsList } from "shared/constants/lists";
@@ -31,8 +21,8 @@ export const ProjectsPage = () => {
         element={
           <>
             <Helmet>
-              <title>PushKeen - Projects</title>
-              <meta name="description" content="NFT" />
+              <title>PushKeen - Проекты</title>
+              <meta name="description" content="Проекты компании PushKeen" />
             </Helmet>
             <div className="container">
               <section className={s.projects_page}>
