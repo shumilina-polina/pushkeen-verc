@@ -8,6 +8,7 @@ import s from "./ProjectsPage.module.scss";
 import { projectsList } from "shared/constants/lists";
 import { Helmet } from "react-helmet";
 import { projectRoutes } from "shared/constants/routes";
+import { WebAR } from "pages/WebAR/WebAR";
 
 export const ProjectsPage = () => {
   const { t } = useTranslation();
@@ -45,6 +46,7 @@ export const ProjectsPage = () => {
         />
       ))}
       <Route path="/publicart" element={<PublicArt />} />
+      <Route path="/webar" element={<WebAR />} />
     </Routes>
   );
 };

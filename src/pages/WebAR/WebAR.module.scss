@@ -1,0 +1,579 @@
+@import "styles/variables.scss";
+
+.page {
+  overflow-x: hidden;
+}
+.main {
+  margin-bottom: 90px;
+  @include ibm;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-bottom: 58px;
+  width: 100%;
+  height: 654px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: space-between;
+  @include laptop {
+    height: 454px;
+  }
+  @include mobile {
+    height: 270px;
+    margin-bottom: 30px;
+  }
+  & > div {
+    height: 100%;
+  }
+
+  &_wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $text-light;
+  }
+
+  &_new {
+    animation: newStar 2s infinite alternate;
+    width: 176px;
+    height: 176px;
+    margin: 30px 20px;
+    background-image: url(../../assets/projects/webar/star.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include ibm500;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    line-height: 50px;
+    text-transform: uppercase;
+    @include laptop {
+      width: 76px;
+      height: 76px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  &_text {
+    max-width: 50%;
+    @include mobile {
+      max-width: 70%;
+    }
+    & h2 {
+      @include ibm;
+      font-size: 68px;
+      line-height: 79px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      @include laptop {
+        font-size: 48px;
+        line-height: 59px;
+      }
+      @include mobile {
+        font-size: 33px;
+        line-height: 36px;
+      }
+    }
+    & span {
+      @include mulish;
+      font-size: 20px;
+      line-height: 25px;
+      @include mobile {
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.content {
+  margin-bottom: 111px;
+  line-height: 31px;
+  max-width: 50%;
+  @include laptop {
+    margin-bottom: 51px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+  @include mobile {
+    margin-bottom: 24px;
+    line-height: 16px;
+  }
+  & > h3 {
+    font-size: 28px;
+    @include ibm;
+    margin-bottom: 27px;
+    @include laptop {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    @include mobile {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+  & p {
+    font-size: 24px;
+    @include mulish;
+    @include laptop {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+}
+
+.test {
+  padding-left: 111px;
+  margin-bottom: 60px;
+  @include laptop {
+    padding-left: 0px;
+    margin-bottom: 30px;
+  }
+  @include mobile {
+    margin-bottom: 15px;
+  }
+
+  & > h3 {
+    margin-bottom: 27px;
+    font-size: 28px;
+    line-height: 31px;
+    @include ibm;
+    @include laptop {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @include mobile {
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 16px;
+    }
+  }
+  & > ul {
+    padding-bottom: 110px;
+    position: relative;
+    @include laptop {
+      padding-bottom: 50px;
+    }
+    @include mobile {
+      padding-bottom: 30px;
+    }
+    &::after {
+      position: absolute;
+      pointer-events: none;
+      content: "";
+      bottom: 0;
+      right: 303px;
+      background-image: url(../../assets/projects/webar/arrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 452px;
+      height: 270px;
+      @include laptop {
+        width: 300px;
+        height: 240px;
+        right: 10%;
+      }
+      @include mobile {
+        width: 170px;
+        height: 90px;
+        background-size: contain;
+        right: 0;
+      }
+    }
+    & > li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid $projects_text;
+        border-radius: 100px;
+        font-size: 64px;
+        line-height: 71px;
+        @include ibm;
+        margin-right: 31px;
+        @include laptop {
+          width: 70px;
+          height: 70px;
+          font-size: 44px;
+          line-height: 41px;
+        }
+        @include mobile {
+          width: 40px;
+          height: 40px;
+          font-size: 24px;
+          line-height: 31px;
+          margin-right: 15px;
+        }
+      }
+      & > span {
+        font-size: 24px;
+        line-height: 31px;
+        @include mulish;
+        @include laptop {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        @include mobile {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+.img_1,
+.img_2 {
+  margin-bottom: 56px;
+  position: relative;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    @include mobile {
+      margin-bottom: 0px;
+    }
+    & span {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      @include ibm500;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      @include mobile {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 17px;
+      }
+      &::after {
+        content: "";
+        background-color: $text-blue;
+        border-radius: 100px;
+        margin-left: 8px;
+        width: 17px;
+        height: 17px;
+        @include mobile {
+          margin-left: 4px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    & button {
+      margin-right: 0;
+      @include mobile {
+        font-size: 12px;
+        padding: 5px 25px 5px 10px;
+        &::after {
+          right: 10px;
+          width: 8px;
+          height: 8px;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
+
+.img_2 {
+  margin-bottom: 102px;
+  @include laptop {
+    margin-bottom: 70px;
+  }
+  @include mobile {
+    margin-bottom: 30px;
+  }
+  &:hover {
+    & .label_2 {
+      & > span {
+        background-color: rgba($text-light, 0.9);
+      }
+    }
+  }
+  & .label_2 {
+    position: absolute;
+    right: 112px;
+    bottom: 108px;
+    display: flex;
+    align-items: center;
+    @include laptop {
+      right: 30px;
+      bottom: 50px;
+    }
+    @include mobile {
+      right: 10px;
+      bottom: 10px;
+      max-width: 60%;
+    }
+    & > div {
+      margin-right: 10px;
+      width: 17px;
+      height: 17px;
+      border-radius: 100px;
+      background-color: $text-blue;
+      @include mobile {
+        margin-right: 5px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    & > span {
+      display: block;
+      padding: 6px 29px;
+      max-width: 340px;
+      transition: background-color 0.3s;
+      background-color: rgba($text-light, 0.4);
+      border-radius: 15px;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      @include ibm500;
+      @include mobile {
+        padding: 6px;
+        border-radius: 7px;
+        font-size: 10px;
+        line-height: 13px;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+.market {
+  margin-bottom: 87px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 125px;
+  align-items: flex-start;
+  @include laptop {
+    margin-bottom: 57px;
+    row-gap: 65px;
+  }
+  @include mobile {
+    margin-bottom: 27px;
+    row-gap: 35px;
+  }
+  &_tool {
+    max-width: 50%;
+    @include laptop {
+      max-width: 80%;
+    }
+    & > h3 {
+      margin-bottom: 27px;
+      font-size: 28px;
+      line-height: 31px;
+      @include ibm;
+      @include laptop {
+        font-size: 22px;
+        line-height: 21px;
+      }
+      @include mobile {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+      }
+    }
+    & > p {
+      font-size: 24px;
+      line-height: 31px;
+      @include mulish;
+      @include laptop {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      @include mobile {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  &_items {
+    align-self: flex-end;
+    text-align: right;
+    @include mobile {
+      max-width: 82%;
+    }
+    & > h4 {
+      @include mulish;
+      color: $secondary-blue;
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 41px;
+      @include laptop {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 31px;
+      }
+      @include mobile {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+    }
+    & li {
+      @include ibm;
+      font-size: 52px;
+      line-height: 79px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      @include laptop {
+        font-size: 32px;
+        line-height: 39px;
+      }
+      @include mobile {
+        font-size: 15px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+.integration {
+  @include mulish;
+  max-width: 50%;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 87px;
+  & > h3 {
+    @include ibm;
+    font-size: 28px;
+    line-height: 31px;
+    @include laptop {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @include mobile {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  @include laptop {
+    max-width: 80%;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+}
+
+.instruction {
+  padding: 87px 0 94px;
+  background-color: rgba(119, 182, 255, 0.2);
+  @include laptop {
+    padding: 40px 0;
+  }
+  @include mobile {
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+  &_wrapper {
+    padding-left: 111px;
+    @include laptop {
+      padding-left: 0;
+    }
+    & > h3, span {
+      display: block;
+      margin-bottom: 27px;
+      font-size: 24px;
+      line-height: 31px;
+      @include mulish;
+      max-width: 60%;
+      @include laptop {
+        margin-bottom: 17px;
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 70%;
+      }
+      @include mobile {
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 16px;
+        max-width: 100%;
+      }
+    }
+    & li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border: 1px solid $projects_text;
+        border-radius: 100px;
+        font-size: 64px;
+        line-height: 71px;
+        @include ibm;
+        margin-right: 31px;
+        @include laptop {
+          width: 70px;
+          height: 70px;
+          font-size: 44px;
+          line-height: 41px;
+        }
+        @include mobile {
+          width: 40px;
+          height: 40px;
+          font-size: 24px;
+          line-height: 31px;
+          margin-right: 15px;
+        }
+      }
+      & > span {
+        font-size: 24px;
+        line-height: 31px;
+        @include mulish;
+        @include laptop {
+          font-size: 20px;
+          line-height: 25px;
+        }
+        @include mobile {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes newStar {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}

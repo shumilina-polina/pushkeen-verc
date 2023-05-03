@@ -112,7 +112,7 @@
           position: absolute;
           display: block;
           border-radius: 100px;
-          background-color: #0f4cea;
+          background-color: $secondary-blue;
           width: 20px;
           height: 20px;
           top: 5px;
@@ -214,7 +214,7 @@
       max-width: 100%;
       margin-top: 20px;
       margin-bottom: 60px;
-      & span{
+      & span {
         text-align: center;
         width: 100%;
       }

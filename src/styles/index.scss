@@ -14,6 +14,26 @@ h3,
   cursor: none;
 }
 
+p,
+a,
+br,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+img {
+  &::selection {
+    color: $text-light;
+    background-color: $base-blue;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -83,7 +103,7 @@ html {
   }
 
   body {
-    padding: 60px 0 426px;
+    padding: 60px 0 396px;
   }
   .container {
     max-width: 346px;
