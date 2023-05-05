@@ -13,7 +13,9 @@
   & .burger_nft,
   .burger_publicart,
   .burger_pushkeen,
+  .burger_webar,
   .burger_merch {
+    white-space: nowrap;
     margin-bottom: 20px;
     position: relative;
     width: min-content;
@@ -108,7 +110,7 @@
   }
 }
 
-.lang{
+.lang {
   display: none;
 }
 

@@ -4,6 +4,7 @@ export enum linkValue {
   PublicArt = "publicart",
   Merch = "merch",
   Projects = "projects",
+  WebAR = "web ar",
 }
 
 export type Project = {
@@ -13,3 +14,9 @@ export type Project = {
   tag_count: number;
   name: string;
 };
+
+declare global {
+  interface Window {
+    XRIFrame?: any;
+  }
+}

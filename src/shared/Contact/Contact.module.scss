@@ -68,6 +68,9 @@
           font-size: 20px;
           line-height: 26px;
           color: $text-dark;
+          & > p {
+            display: inline;
+          }
         }
         .label_2 {
           text-decoration: underline;

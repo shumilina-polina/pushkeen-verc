@@ -35,7 +35,7 @@
   }
 
   &_new {
-    animation: newStar 2s infinite alternate;
+    animation: newStar 1.5s infinite alternate;
     width: 176px;
     height: 176px;
     margin: 30px 20px;
@@ -86,6 +86,7 @@
       }
     }
     & span {
+      display: block;
       @include mulish;
       font-size: 20px;
       line-height: 25px;

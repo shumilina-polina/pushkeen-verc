@@ -59,14 +59,17 @@ const Header = () => {
               <CustomLink className="link" to="/">
                 <li className={s.pushkeen}>{linkValue.Pushkeen}</li>
               </CustomLink>
-              <CustomLink className="link" to="/nft">
+              {/* <CustomLink className="link" to="/nft">
                 <li className={s.nft}>{linkValue.NFT}</li>
-              </CustomLink>
+              </CustomLink> */}
               <CustomLink className="link" to="/projects/publicart">
                 <li className={s.publicart}>{linkValue.PublicArt}</li>
               </CustomLink>
               <CustomLink className="link" to="/merch">
                 <li className={s.merch}>{t("header.merch")}</li>
+              </CustomLink>
+              <CustomLink className="link" to="/projects/webar">
+                <li className={s.webar}>{linkValue.WebAR}</li>
               </CustomLink>
             </ul>
           </nav>
@@ -120,13 +123,13 @@ const Header = () => {
             >
               <li className={s.burger_pushkeen}>{t("header.main")}</li>
             </CustomLink>
-            <CustomLink
+            {/* <CustomLink
               className="link"
               to="/nft"
               onClick={() => toggleBurder(false)}
             >
               <li className={s.burger_nft}>{linkValue.NFT}</li>
-            </CustomLink>
+            </CustomLink> */}
             <CustomLink
               className="link"
               to="/projects/publicart"
@@ -141,7 +144,14 @@ const Header = () => {
             >
               <li className={s.burger_merch}>{t("header.merch")}</li>
             </CustomLink>
-            <li style={{display: "none"}}>
+            <CustomLink
+              className="link"
+              to="/projects/webar"
+              onClick={() => toggleBurder(false)}
+            >
+              <li className={s.burger_webar}>{linkValue.WebAR}</li>
+            </CustomLink>
+            <li style={{ display: "none" }}>
               <button
                 className={
                   s.ru +

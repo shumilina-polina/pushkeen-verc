@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Project } from "pages/Project/Project";
 import s from "./WebAR.module.scss";
@@ -6,9 +6,12 @@ import { Helmet } from "react-helmet";
 import { ButtonDownload } from "shared/components/ButtonDownload/ButtonDownload";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import AOS from "aos";
+import WebARPopup from "./WebARPopup/WebARPopup";
 
 export const WebAR = () => {
   const { t } = useTranslation();
+
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,8 +39,16 @@ export const WebAR = () => {
             <div className="container">
               <div className={s.main_wrapper}>
                 <div className={s.main_text}>
-                  <h2>{t("project.list.webar.about.title.name")}</h2>
-                  <span>{t("project.list.webar.about.title.label")}</span>
+                  <h2 data-aos="fade-left" data-aos-duration="1000">
+                    {t("project.list.webar.about.title.name")}
+                  </h2>
+                  <span
+                    data-aos="fade-left"
+                    data-aos-delay={300}
+                    data-aos-duration="1000"
+                  >
+                    {t("project.list.webar.about.title.label")}
+                  </span>
                 </div>
                 <div className={s.main_new}>new</div>
               </div>
@@ -68,14 +79,9 @@ export const WebAR = () => {
             <div className={s.img_1}>
               <div className={s.label}>
                 <span>{t("project.list.webar.label_1")}</span>
-                <a
-                  href="https://"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={s.button}
-                >
+                <div onClick={() => setOpen(true)} className={s.button}>
                   <ButtonDownload text={t("project.list.webar.button")} />
-                </a>
+                </div>
               </div>
               <img
                 src={require("assets/projects/webar/img1.jpg")}
@@ -121,14 +127,9 @@ export const WebAR = () => {
             <div className={s.img_2}>
               <div className={s.label}>
                 <span>{t("project.list.webar.label_1")}</span>
-                <a
-                  href="https://"
-                  target="_blank"
-                  rel="noreferrer"
-                  className={s.button}
-                >
+                <div onClick={() => setOpen(true)} className={s.button}>
                   <ButtonDownload text={t("project.list.webar.button")} />
-                </a>
+                </div>
               </div>
               <img
                 src={require("assets/projects/webar/img2.jpg")}
@@ -181,6 +182,8 @@ export const WebAR = () => {
           </div>
         </section>
       </Project>
+
+      <WebARPopup open={open} setOpen={setOpen} />
     </>
   );
 };

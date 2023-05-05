@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import s from "./Contact.module.scss";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export const Content = ({
   sendEmail,
@@ -24,8 +25,8 @@ export const Content = ({
           </button>
           <Link className="link" to="/privacy">
             <span className={s.label_1}>
-              {t("main.contact.button_label_1")}
-            </span>
+              <ReactMarkdown>{t("main.contact.button_label_1")}</ReactMarkdown>
+            </span>{" "}
             <span className={s.label_2}>
               {t("main.contact.button_label_2")}
             </span>
